@@ -1,0 +1,188 @@
+:root{--fx-glow:238,185,99}
+/* ---------------------------------------------------------------------
+   2. Tilt / Magnetic + Glow theo chuot
+--------------------------------------------------------------------- */
+
+.fx-tilt {
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.fx-glow {
+    position: relative;
+    isolation: isolate;
+}
+
+.fx-glow::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 5;
+    background: radial-gradient(
+        220px circle at var(--fx-mx, 50%) var(--fx-my, 50%),
+        rgba(var(--fx-glow), 0.35),
+        transparent 60%
+    );
+    transition: opacity 320ms ease;
+}
+
+.fx-glow:hover::after,
+.fx-glow:focus-within::after {
+    opacity: 1;
+}
+
+.fx-magnetic {
+    will-change: transform;
+    transition: transform 250ms cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+
+/* ---------------------------------------------------------------------
+   3. Micro-interactions — ripple
+--------------------------------------------------------------------- */
+
+.fx-ripple-host {
+    position: relative;
+    overflow: hidden;
+}
+
+.fx-ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.55);
+    transform: scale(0);
+    animation: fx-ripple-anim 620ms ease-out forwards;
+    pointer-events: none;
+    z-index: 3;
+}
+
+[data-theme="dark"] .fx-ripple {
+    background: rgba(238, 185, 99, 0.45);
+}
+
+@keyframes fx-ripple-anim {
+    to {
+        transform: scale(2.6);
+        opacity: 0;
+    }
+}
+
+
+/* ---------------------------------------------------------------------
+   7. Scroll reveal
+--------------------------------------------------------------------- */
+
+.fx-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 700ms ease, transform 700ms ease;
+    transition-delay: var(--fx-delay, 0ms);
+}
+
+.fx-reveal.fx-zoom {
+    transform: translateY(0) scale(0.92);
+}
+
+.fx-reveal.fx-in {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+/* Kinetic word reveal */
+
+.kinetic-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(0.5em);
+    letter-spacing: 0.08em;
+    transition: opacity 560ms ease, transform 560ms ease, letter-spacing 560ms ease;
+    transition-delay: var(--fx-delay, 0ms);
+    will-change: transform, opacity;
+}
+
+.kinetic-word.fx-in {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: normal;
+}
+
+.fx-glass{background:rgba(255,255,255,.4)!important;backdrop-filter:blur(14px) saturate(160%);-webkit-backdrop-filter:blur(14px) saturate(160%);border:1px solid rgba(255,255,255,.55)}
+[data-theme="dark"] .fx-glass{background:rgba(255,255,255,.07)!important;border-color:rgba(255,255,255,.14)}
+.top-btn{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:60;width:52px;height:52px;border-radius:50%;border:3px solid var(--ink);background:var(--gold);color:#2e2a12;font:1.6rem var(--h);cursor:pointer;opacity:0;transform:translateY(20px) scale(.8);pointer-events:none;transition:.3s}
+.top-btn.show{opacity:1;transform:none;pointer-events:auto}
+.top-btn:hover{background:var(--green);color:#fff}
+@media (prefers-reduced-motion:reduce){.fx-reveal,.kinetic-word{opacity:1!important;transform:none!important}}
+
+/* ---------------------------------------------------------------------
+   1. Custom cursor
+--------------------------------------------------------------------- */
+
+@media (pointer: fine) {
+
+    html.fx-has-cursor,
+    html.fx-has-cursor a,
+    html.fx-has-cursor button {
+        cursor: none;
+    }
+
+    .fx-cursor-dot,
+    .fx-cursor-ring {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        pointer-events: none;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        will-change: transform;
+    }
+
+    .fx-cursor-dot {
+        width: 7px;
+        height: 7px;
+        background: var(--green);
+        transition: opacity 200ms ease, background 200ms ease;
+    }
+
+    .fx-cursor-ring {
+        width: 34px;
+        height: 34px;
+        border: 1px solid rgba(var(--fx-glow), 0.75);
+        transition: width 220ms ease, height 220ms ease,
+                    border-color 220ms ease, opacity 200ms ease,
+                    background 220ms ease;
+    }
+
+    html.fx-cursor-hover .fx-cursor-ring {
+        width: 60px;
+        height: 60px;
+        background: rgba(var(--fx-glow), 0.12);
+        border-color: var(--gold);
+    }
+
+    html.fx-cursor-hover .fx-cursor-dot {
+        opacity: 0;
+    }
+
+    html.fx-native .fx-cursor-dot,
+    html.fx-native .fx-cursor-ring,
+    html.fx-cursor-hidden .fx-cursor-dot,
+    html.fx-cursor-hidden .fx-cursor-ring {
+        opacity: 0;
+    }
+}
+
+
+@media (pointer: fine){html.fx-native,html.fx-native *{cursor:auto!important}html.fx-native a,html.fx-native button{cursor:pointer!important}}
+
+.card.gold .tag{background:#2e2a12;color:var(--gold)}
+
+@media (pointer: fine){
+  html.fx-has-cursor:not(.fx-native):not(.fx-iframe),
+  html.fx-has-cursor:not(.fx-native):not(.fx-iframe) *{cursor:none!important}
+  html.fx-iframe .fx-cursor-dot,html.fx-iframe .fx-cursor-ring{opacity:0}
+}

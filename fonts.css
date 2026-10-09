@@ -1,0 +1,8 @@
+/* ==== Font Chapbook ==== */
+@font-face{
+  font-family:'Chapbook';font-style:normal;font-weight:400;font-display:swap;
+  src:local('Chapbook'),local('Chapbook Regular'),
+      url(fonts/Chapbook-Regular.woff2) format('woff2'),
+      url(fonts/Chapbook-Regular.ttf) format('truetype'),
+      url(fonts/Chapbook-Regular.otf) format('opentype');
+}

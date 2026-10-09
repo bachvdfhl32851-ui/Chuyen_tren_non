@@ -1,0 +1,75 @@
+/* ===== header ===== */
+header{flex-wrap:nowrap;gap:10px}
+.logo{margin-right:14px;white-space:nowrap}
+nav{display:flex;gap:2px;flex-wrap:nowrap}
+nav a{white-space:nowrap}
+.hr{margin-left:auto;display:flex;align-items:center;gap:8px;position:relative;flex-shrink:0}
+[hidden]{display:none!important}
+.ic{display:inline-grid;place-items:center;padding:0;flex:none;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.ic:hover{background:var(--gold);color:#2e2a12;border-color:var(--gold)}
+/* sreach button */
+.srch{position:relative;display:flex;align-items:center}
+.sbtn svg{width:20px;height:20px}
+.sfield{width:0;opacity:0;overflow:hidden;height:42px;box-sizing:border-box;border:0 solid var(--ink);border-radius:99px;margin-right:0;background:color-mix(in srgb,var(--paper) 75%,transparent);transition:width .45s cubic-bezier(.3,1.15,.4,1),opacity .25s,margin .3s,border-width .2s,box-shadow .2s}
+.srch.open .sfield{width:min(250px,46vw);opacity:1;margin-right:8px;border-width:2px}
+.sfield:focus-within{border-color:var(--green);box-shadow:0 0 0 4px #33834133}
+.sfield input{width:100%;height:100%;border:0;background:none;color:var(--ink);font:1rem var(--h);padding:0 18px;outline:none}
+.sfield input::placeholder{color:var(--ink);opacity:.5}
+.sfield input::-webkit-search-cancel-button{display:none}
+.srch.open .sbtn{background:var(--green);color:#fff;border-color:var(--green)}
+.res{position:absolute;top:calc(100% + 10px);right:0;width:min(340px,92vw);background:var(--card);color:var(--ink);border:2px solid var(--ink);border-radius:22px;padding:6px;box-shadow:0 14px 34px #0004;z-index:70}
+.res a{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:9px 14px;border-radius:99px;text-decoration:none;font-family:var(--h)}
+.res a small{background:var(--gold);color:#2e2a12;border-radius:99px;padding:0 10px;font:.8rem var(--h);white-space:nowrap}
+.res a:hover,.res a.act{background:color-mix(in srgb,var(--gold) 45%,transparent)}
+.res .none{padding:12px 14px;opacity:.7}
+.ic.login{padding:0 18px;background:var(--green);color:#fff;border-color:var(--green)}
+.ic.login:hover{background:var(--gold);color:#2e2a12;border-color:var(--gold)}
+.av{width:42px;height:42px;border-radius:50%;border:3px solid var(--gold);background:var(--green);color:#fff;font:1.2rem var(--h);cursor:pointer;overflow:hidden;padding:0}
+.av img{width:100%;height:100%;object-fit:cover;display:block}
+.um{position:absolute;top:calc(100% + 10px);right:0;background:var(--card);color:var(--ink);border:2px solid var(--ink);border-radius:20px;padding:12px;min-width:200px;z-index:70;text-align:center}
+.um b{display:block;font:1.1rem var(--h);margin-bottom:8px}
+/* man hinh hep */
+@media(max-width:1240px){header{flex-wrap:wrap}nav{order:3;width:100%;overflow-x:auto;padding-bottom:4px}.pg{padding-top:170px}.hero{padding-top:180px}}
+@media(max-width:620px){header{padding-inline:3vw}.hr{flex-wrap:wrap;justify-content:flex-end}.pg{padding-top:230px}.hero{padding-top:240px}}
+/* log in */
+.mod{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:#000a;backdrop-filter:blur(6px);padding:16px;overflow:auto;animation:mi .25s ease}
+@keyframes mi{from{opacity:0}}
+.mbox{position:relative;width:min(440px,100%);padding:34px 30px 26px;border-radius:26px;background:linear-gradient(160deg,#222a17,#0d110a);color:#f6ecd0;border:1px solid #eeb96377;box-shadow:0 30px 80px #000a,inset 0 0 0 1px #eeb96322;text-align:center;animation:mp .4s cubic-bezier(.3,1.4,.5,1)}
+@keyframes mp{from{transform:translateY(30px) scale(.94);opacity:0}}
+.mlogo{width:64px;height:64px;margin:0 auto 12px;border-radius:50%;border:2px solid #eeb96399;display:grid;place-items:center;font-size:1.8rem;background:#eeb96318}
+.mbox h3{font-size:2rem;color:#fff}
+.mbox p{margin:.3rem auto 18px;opacity:.85;text-align:center}
+.mx{position:absolute;right:16px;top:12px;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer;line-height:1}
+.sb{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;height:52px;margin-top:10px;border-radius:14px;border:0;background:#fff;color:#1f1f1f;font:600 1.05rem var(--b);cursor:pointer;transition:transform .15s}
+.sb.fb{background:#1877f2;color:#fff}
+.sb:hover{transform:translateY(-2px)}
+#gbtn{display:flex;justify-content:center;margin-top:10px}
+.dv{display:flex;align-items:center;gap:12px;margin:18px 0 4px;font:600 .78rem var(--b);letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.dv::before,.dv::after{content:"";flex:1;height:1px;background:#f6ecd066}
+.mf{text-align:left}
+.mf label{display:block;margin:14px 0 6px;font:600 .78rem var(--b);letter-spacing:.1em;text-transform:uppercase}
+.fi{position:relative}
+.fi svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:19px;height:19px;color:#c9a64e;pointer-events:none}
+.fi input{width:100%;height:48px;border-radius:14px;border:2px solid transparent;background:#fff;color:#1f1f1f;padding:0 14px 0 44px;font:1rem var(--b);outline:none;transition:border-color .2s,box-shadow .2s}
+.fi input:focus{border-color:var(--gold);box-shadow:0 0 0 4px #eeb96344}
+.go{width:100%;height:52px;margin-top:20px;border:0;border-radius:14px;background:var(--gold);color:#1f1a08;font:1.25rem var(--h);cursor:pointer;box-shadow:0 8px 24px #eeb96344;transition:transform .15s}
+.go:hover{transform:translateY(-2px)}
+.sw{margin-top:18px}.sw a{color:var(--gold);font-weight:600;cursor:pointer;text-decoration:underline}
+.mmsg{margin-top:12px;min-height:1.4em;color:#ff9b93;font-size:.95rem;text-align:center}
+
+/* nut chon noi dung */
+.toy.chip{width:auto;height:auto;min-height:48px;padding:6px 22px;border-radius:99px;font:1.15rem var(--h);color:inherit}
+.toy.chip:hover,.toy.chip.on{transform:translateY(-3px) rotate(-1.5deg);color:#2e2a12;background:var(--gold)}
+.mlogo svg{display:block}
+
+/* solgan */
+.hero h1{font-family:'Chapbook','Pacifico','Itim',cursive;font-synthesis:none;font-size:clamp(2.8rem,10.5vw,7.6rem);line-height:1.5;letter-spacing:.01em;gap:0 .22em;padding:.1em 0}
+.hero h1 .w:nth-of-type(1){transform:rotate(-3deg) translateY(4px)}
+.hero h1 .w:nth-of-type(2){transform:rotate(2deg) translateY(-10px)}
+.hero h1 .w:nth-of-type(3){transform:rotate(-2deg) translateY(2px)}
+/* hero section */
+.hero>div:first-child{position:relative;z-index:3}
+.hero .hills{z-index:1}
+
+/* cum nut ben phai */
+@media(min-width:1100px) and (max-width:1300px){.hr{position:absolute;right:4vw;top:calc(50% - 2px);transform:translateY(-50%);z-index:60}}

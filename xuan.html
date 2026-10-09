@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Xuân · Chuyện trên non</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@400;600&family=Pacifico&family=Baloo+2:wght@500;600;700&display=swap" rel="stylesheet">
+<script>try{document.documentElement.dataset.theme=sessionStorage.getItem("ctn-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script>
+<link rel="stylesheet" href="style.css?v=20261011">
+<link rel="stylesheet" href="effects.css">
+<link rel="stylesheet" href="header.css?v=20261012">
+<link rel="stylesheet" href="fun.css?v=20261102">
+<link rel="stylesheet" href="footer.css?v=3">
+<link rel="stylesheet" href="theme.css?v=5">
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html" data-en="Chuyen tren non">Chuyện trên non</a>
+  <nav><a href="index.html" data-en="Home">Trang chủ</a><a href="xuan.html" data-en="Spring">Mùa Xuân</a><a href="ha.html" data-en="Summer">Mùa Hạ</a><a href="thu.html" data-en="Autumn">Mùa Thu</a><a href="dong.html" data-en="Winter">Mùa Đông</a><a href="thuong.html" data-en="Love">Mùa Yêu thương</a></nav>
+  <div class="hr">
+    <div class="srch"><div class="sfield"><input id="q" type="search" placeholder="Tìm kiếm…" autocomplete="off" aria-label="Tìm kiếm" role="combobox" aria-expanded="false" aria-controls="res"></div><button class="ic sbtn" id="sbtn" type="button" aria-label="Tìm kiếm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg></button><div class="res" id="res" role="listbox" hidden></div></div>
+    <button class="ic lang-toggle" id="lang" aria-label="Switch language"><span class="lt">EN</span></button>
+    <button class="ic" id="theme" aria-label="Sáng / tối">◐</button>
+    <button class="ic login" id="login" data-en="Log in">Đăng nhập</button>
+    <button class="av" id="av" aria-label="Tài khoản" hidden></button>
+  </div>
+</header>
+<main id="top">
+<section id="xuan" class="pg"><div class="in">
+  <span class="sea" data-en="1 · Spring: the season of growing up">1 · Mùa xuân: mùa em lớn</span>
+  <h2 data-en="Family, culture, customs, first things">Gia đình, văn hoá, phong tục, những điều đầu tiên</h2>
+  <div class="grid">
+    <div class="card rv"><h3 data-en="Spring at my home">Xuân nhà em</h3><p data-en="Tet, family, the meal, getting ready for the new year.">Tết, gia đình, bữa cơm, chuẩn bị năm mới.</p></div>
+    <div class="card rv"><h3 data-en="Spring in my village">Xuân bản em</h3><p data-en="Festivals, customs, costumes, music, the market day.">Lễ hội, phong tục, trang phục, âm nhạc, chợ phiên.</p></div>
+    <div class="card rv"><h3 data-en="Spring of children">Xuân của trẻ</h3><p data-en="What children play, wish for and love.">Trẻ chơi gì, mong gì, thích gì.</p></div>
+  </div>
+  <div class="fmt rv"><h3 data-en="SPRING IN THE LITTLE VILLAGE: one dish, one story">MÙA XUÂN TRÊN BẢN NHỎ: mỗi món một câu chuyện</h3>
+    <div class="toys" id="foods"></div><div class="out" id="foodOut"></div></div>
+</div></section>
+<div class="pagerbar xuan"><div class="pager in"><a class="btn alt" href="index.html" data-en="← Home">← Trang chủ</a><a class="btn" href="ha.html" data-en="Summer →">Hạ →</a></div></div>
+</main>
+<footer class="ft">
+  <div class="ft-in">
+    <div class="ft-brand">
+      <p class="ft-name">Chuyện Trên Non</p>
+      <ul class="ft-contact">
+        <li><b>Hotline:</b> 037 254 9701</li>
+        <li><b>Email:</b> chuyentrennon@gmail.com</li>
+        <li><b>Facebook:</b> Chuyện Trên Non</li>
+        <li><b>TikTok:</b> @chuyentrennon</li>
+        <li><b data-en="Address / implementing unit:">Địa chỉ/đơn vị thực hiện:</b> <span data-en="A student team behind the Chuyen Tren Non website project – Academy of Journalism and Communication, Hanoi.">Nhóm sinh viên thực hiện dự án website Chuyện Trên Non – Học viện Báo chí và Tuyên truyền, Hà Nội.</span></li>
+      </ul>
+    </div>
+    <ul class="ft-links">
+      <li><a href="index.html" data-en="Home">Trang chủ</a></li>
+      <li><a href="xuan.html" data-en="Spring">Mùa Xuân</a></li>
+      <li><a href="ha.html" data-en="Summer">Mùa Hạ</a></li>
+      <li><a href="thu.html" data-en="Autumn">Mùa Thu</a></li>
+      <li><a href="dong.html" data-en="Winter">Mùa Đông</a></li>
+      <li><a href="thuong.html" data-en="Love">Mùa Yêu thương</a></li>
+    </ul>
+    <div class="ft-sub">
+      <p class="ft-lead" data-en="Leave your email to receive updates:">Để lại mail nhận thông tin:</p>
+      <form class="ft-form" onsubmit="return false">
+        <input type="text" name="name" placeholder="Họ tên *" data-ph-en="Full name *" aria-label="Họ tên" autocomplete="name" required>
+        <input type="email" name="email" placeholder="Email *" data-ph-en="Email *" aria-label="Email" autocomplete="email" required>
+        <button type="submit" data-en="Follow now">Theo dõi ngay</button>
+      </form>
+      <p class="ft-follow" data-en="Follow us">Theo dõi chúng tôi</p>
+      <div class="ft-social">
+        <a data-social="zalo" aria-label="Zalo" title="Zalo">Zalo</a>
+        <a data-social="facebook" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8S15.6 3.5 14.3 3.5c-2.8 0-4.4 1.7-4.4 4.6v2.4H7v3.3h2.9V22z"/></svg></a>
+        <a data-social="tiktok" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 3c.3 2.3 1.6 3.7 3.9 3.9v3.1c-1.4.1-2.7-.3-3.9-1.1v6.2c0 3.1-2.2 5.4-5.2 5.4-2.9 0-5.2-2.3-5.2-5.2 0-3.2 2.7-5.5 5.9-5v3.2c-1.5-.4-2.8.5-2.8 1.9 0 1.1.9 2 2 2 1.2 0 2-.8 2-2.1V3z"/></svg></a>
+        <a data-social="email" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v.5l-10 6.2L2 6.5V6a1 1 0 0 1 1-1zm19 3.9V18a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8.9l10 6.2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="ft-legal">
+    <p data-en="Chuyen Tren Non respects children's safety and privacy, prioritises a positive point of view, and only uses information and images with consent.">Chuyện Trên Non tôn trọng sự an toàn và quyền riêng tư của trẻ em, ưu tiên thể hiện góc nhìn tích cực và chỉ sử dụng thông tin, hình ảnh khi có sự đồng thuận.</p>
+    <p data-en="Chuyen Tren Non uses respectful, positive imagery and reserves all content copyright.">Chuyện Trên Non sử dụng hình ảnh tôn trọng, mang năng lượng tích cực và bảo lưu mọi bản quyền nội dung.</p>
+  </div>
+</footer>
+<button class="top-btn" id="topBtn" aria-label="Về đầu trang" data-en-aria="Back to top">↑</button>
+<script src="script.js?v=20261030"></script>
+<script src="footer.js?v=2"></script>
+<script src="config.js"></script>
+<script src="account.js"></script>
+<script src="effects.js"></script>
+</body>
+</html>

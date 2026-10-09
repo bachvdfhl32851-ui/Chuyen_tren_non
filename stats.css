@@ -1,0 +1,14 @@
+/* ---------- effect so lieu ---------- */
+.stats{padding-top:clamp(50px,7vw,90px);padding-bottom:clamp(50px,7vw,90px)}
+.stats-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,40px);text-align:center}
+.stat{background:var(--card);border-radius:28px;padding:clamp(22px,3vw,38px) 18px clamp(24px,3vw,36px);box-shadow:0 8px 0 color-mix(in srgb,var(--ink) 9%,transparent);border:2px solid color-mix(in srgb,var(--ink) 14%,transparent)}
+.stat-ic{width:92px;height:92px;margin:0 auto 14px;border-radius:22px;display:grid;place-items:center;background:color-mix(in srgb,var(--blue) 14%,var(--card))}
+.stat-ic svg{width:46px;height:46px;fill:var(--ink)}
+.stat-num{display:block;font:700 clamp(2.4rem,5vw,3.4rem)/1.15 var(--h);color:var(--green);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.stat-lb{margin:.35rem auto 0;max-width:22ch;font-size:1.02rem;line-height:1.55;opacity:.88}
+@media(max-width:760px){.stats-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}}
+
+/* thu hep khoang trong giua cac phan */
+.intro{padding-bottom:clamp(30px,4vw,56px)}
+.stats{padding-top:clamp(24px,3vw,40px);padding-bottom:clamp(16px,2.5vw,32px)}
+.seasons{padding-top:clamp(24px,3.5vw,48px)}

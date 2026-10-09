@@ -1,0 +1,125 @@
+:root{
+  --gold:#f6bb3c;     
+  --green:#3b9144;    
+  --sage:#7fae4b;      
+  --olive:#b4562d;    
+  --blue:#35509e;     
+  --red:#d9482b;      
+  --chain:#26335f;   
+  --h:'Baloo 2','Itim','Mali',cursive;
+  --b:'Mali','Itim',cursive;
+  --r:30px;         
+}
+:root:not([data-theme=dark]){--paper:#fff8e4;--card:#fffdf4;--ink:#3a2a1c}
+
+/* ---- chu ---- */
+h1,h2,h3,.hand{font-weight:700}
+h2{letter-spacing:.005em}
+h3{font-weight:600}
+nav a{font-size:1.1rem;font-weight:600}
+.btn,.sea,.tag,.res a small{font-weight:600}
+.btn{font-size:1.2rem;border-radius:99px;box-shadow:0 5px 0 rgba(0,0,0,.22)}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.22)}
+.btn.alt{box-shadow:0 5px 0 #c58f1e}
+.btn.blue{box-shadow:0 5px 0 #243875}
+
+/* ---- hoa van tho cam ---- */
+:root{
+  --tho-cam:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Crect width='28' height='14' fill='%2326335f'/%3E%3Cpath d='M14 0l9 7-9 7-9-7z' fill='%23d9482b'/%3E%3Cpath d='M14 4l5 3-5 3-5-3z' fill='%23f6bb3c'/%3E%3Ccircle cx='0' cy='7' r='1.8' fill='%23fff8e4'/%3E%3Ccircle cx='28' cy='7' r='1.8' fill='%23fff8e4'/%3E%3C/svg%3E");
+}
+header::after{height:11px;background:var(--tho-cam) 0 0/28px 11px repeat-x}
+header{box-shadow:0 4px 14px rgba(58,42,28,.12)}
+footer.ft{position:relative;background:var(--chain);padding-top:84px}
+footer.ft::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:var(--tho-cam) 0 0/28px 14px repeat-x}
+.ft-social a{color:var(--chain)}
+.ft-links a:hover{color:var(--gold)}
+
+/* ---- khung / the ---- */
+.card,.dh-card,.intro-text,.fmt,.mc,.dh-photo,.stat{border-radius:var(--r)}
+.card{box-shadow:6px 6px 0 var(--chain)}
+.card:hover{box-shadow:9px 9px 0 var(--chain)}
+.intro-text{box-shadow:8px 8px 0 var(--red)}
+.dh-card{box-shadow:8px 8px 0 var(--green)}
+.dh-card.b{box-shadow:8px 8px 0 var(--blue)}
+.dh-photo{box-shadow:6px 6px 0 var(--chain)}
+.logo{border-radius:20px;box-shadow:0 5px 0 #1f5a2b}
+.collage .ph{border-radius:16px;overflow:hidden}
+.collage .p2,.collage .p3{border-color:var(--chain)}
+
+/* ---- duong cong o day trang chu ---- */
+.wave .w1{fill:var(--gold)}
+
+
+/* ---- nen trang ---- */
+body{background-image:radial-gradient(color-mix(in srgb,var(--gold) 45%,transparent) 2.5px,transparent 3px)}
+
+/* ---- man hinh nho ---- */
+@media(max-width:620px){footer.ft{padding-top:70px}}
+
+/* ----- the 5 mua ------ */
+.mc-sage{--c:#5e9a3c}
+.mc-olive{--c:#b4562d}
+.mc-blue{--c:#35509e}
+.mc-green{--c:#2f8a3c}
+
+
+/* =====================================================================
+   phong cach web
+   ===================================================================== */
+/* day nui + ruong bac thang o chan anh bia */
+.wave{height:clamp(110px,15vw,230px)}
+.wave .w1{fill:var(--gold);opacity:1}
+
+/* dai tho cam chia cac phan */
+.tc-band{height:14px;background:var(--tho-cam) 0 0/28px 14px repeat-x}
+
+/* gach chan tieu de: net rang cua nhu nui */
+h2::after{
+  height:12px;width:min(100%,150px);
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 10L6 2 12 10 18 2 24 10' fill='none' stroke='%23d9482b' stroke-width='3.2' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
+}
+
+/* vien tho cam tren dau cac the */
+.intro-text,.dh-card,.card{
+  background-image:var(--tho-cam);background-size:28px 10px;background-repeat:repeat-x;background-position:0 0;
+}
+.intro-text{padding-top:calc(clamp(22px,3.2vw,42px) + 10px)}
+.dh-card{padding-top:calc(clamp(22px,3vw,36px) + 10px)}
+.card{padding-top:34px}
+
+/* hoa man trang */
+.intro{position:relative}
+.mn-deco{position:absolute;inset:0;z-index:0;pointer-events:none}
+.mn{position:absolute;width:clamp(28px,3.4vw,48px);height:auto;animation:mnSpin 9s ease-in-out infinite alternate}
+.mn.m1{right:4%;top:6%}
+.mn.m2{right:9%;top:13%;width:clamp(20px,2.4vw,32px);animation-delay:-3s}
+.mn.m3{left:46%;top:3%;width:clamp(18px,2vw,28px);animation-delay:-5s}
+.mn.m4{right:2%;bottom:10%;animation-delay:-2s}
+@keyframes mnSpin{from{rotate:-14deg}to{rotate:14deg}}
+.intro .in{position:relative;z-index:1}
+@media(max-width:860px){.mn.m3{display:none}}
+.dh-card.b{background-image:var(--tho-cam);background-size:28px 10px;background-repeat:repeat-x;background-position:0 0}
+
+/* ---- thanh menu rong hon, thoang hon ---- */
+html{scroll-padding-top:110px}
+header{padding:16px clamp(16px,2.2vw,44px) 22px;gap:clamp(10px,1vw,22px)}
+header::after{height:12px}
+.logo{font-size:1.45rem;padding:7px 24px 11px;margin-right:4px}
+nav{gap:4px}
+nav a{font-size:1.15rem;padding:8px clamp(10px,1vw,20px)}
+.ic{min-width:48px;height:48px}
+.hr{gap:10px}
+header .btn{padding:10px 26px;font-size:1.1rem;margin-top:0}
+@media(min-width:1500px){
+  header{padding-inline:clamp(40px,4vw,80px)}
+  nav{gap:10px}
+  nav a{padding-inline:22px}
+}
+@media(max-width:1180px){
+  header{padding-block:12px 18px}
+  .logo{font-size:1.25rem;padding:5px 16px 9px}
+  nav a{font-size:1.02rem;padding:6px 9px}
+  .ic{min-width:44px;height:44px}
+  header .btn{padding:8px 18px;font-size:1rem}
+}
+@media(max-width:620px){header{padding-block:10px 16px}.logo{font-size:1.1rem;padding:4px 14px 7px}}
