@@ -35,13 +35,13 @@ if($("#walk"))$("#walk").oninput=walkUpdate;
 /* ---- theme ---- */
 $("#theme").onclick=function(){var r=document.documentElement,d=r.dataset.theme==="dark"||(!r.dataset.theme&&matchMedia("(prefers-color-scheme:dark)").matches);r.dataset.theme=d?"light":"dark";try{sessionStorage.setItem("ctn-theme",r.dataset.theme)}catch(e){}};
 try{document.documentElement.dataset.theme=sessionStorage.getItem("ctn-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}
-var pp=location.pathname.split("/").pop()||"index.html";$$("nav a").forEach(function(a){if(a.getAttribute("href")===pp)a.classList.add("cur")});
+var pp=location.pathname.split("/").pop()||"index.html";$$("nav a").forEach(function(a){if(a.getAttribute("href").split("/").pop()===pp)a.classList.add("cur")});
 /* ---- hieu ung nay chu + song ngu bo dau ---- */
 var TT={vi:"ĐI QUA BỐN MÙA\nGẶP NHỮNG NGÀY THƠ",en:"THROUGH FOUR SEASONS\nMEETING CHILDHOOD DAYS"};
 function buildTitle(){var t=$("#title");if(!t)return;var n=0;t.setAttribute("aria-label",TT[lang].replace("\n"," "));
  t.innerHTML=TT[lang].split("\n").map(function(line){return line.split(" ").filter(Boolean).map(function(w){return'<span class="w" aria-hidden="true">'+w.split("").map(function(c){return c==="Ố"?'<span class="ac" data-a="´" style="--i:'+(n++)+'">Ô</span>':'<span style="--i:'+(n++)+'">'+c+'</span>'}).join("")+"</span>"}).join("")}).join('<i class="br" aria-hidden="true"></i>')}
 var T0=document.title;
-function buildDocTitle(){var cur=$("nav a.cur"),home=!cur||cur.getAttribute("href")==="index.html",brand=lang==="en"?"Chuyen tren non":"Chuyện trên non";
+function buildDocTitle(){var cur=$("nav a.cur"),home=!cur||cur.getAttribute("href").split("/").pop()==="index.html",brand=lang==="en"?"Chuyen tren non":"Chuyện trên non";
  document.title=home?brand:(lang==="en"?cur.getAttribute("data-en"):cur.getAttribute("data-vi")||cur.textContent)+" · "+brand}
 /* ---- reveal ---- */
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}})},{threshold:.15});$$(".rv").forEach(function(e,i){e.style.transitionDelay=(i%3)*90+"ms";io.observe(e)});

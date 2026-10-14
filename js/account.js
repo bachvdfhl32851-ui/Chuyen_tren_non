@@ -42,7 +42,7 @@
     var src = s ? s.getAttribute("src") : "js/account.js";
     return src.slice(0, src.indexOf("js/account.js"));   // duong len thu muc goc; cac trang nam trong html/
   })();
-  var IDX = RAW.map(function (r) { return { u: BASE + "html/" + F[r[0]] + (r[4] || ""), t: { vi: r[1], en: r[2] }, p: P[r[0]], n: norm(r[1] + " " + r[2] + " " + P[r[0]].vi + " " + P[r[0]].en + " " + r[3]) }; });
+  var IDX = RAW.map(function (r) { return { u: BASE + (r[0] === "home" ? "" : "html/") + F[r[0]] + (r[4] || ""), t: { vi: r[1], en: r[2] }, p: P[r[0]], n: norm(r[1] + " " + r[2] + " " + P[r[0]].vi + " " + P[r[0]].en + " " + r[3]) }; });
   var T = {
     ph: { vi: "Tìm kiếm…", en: "Search…" }, none: { vi: "Không tìm thấy kết quả.", en: "No results found." },
     title: { vi: "Đăng nhập", en: "Log in" }, reg: { vi: "Đăng ký", en: "Sign up" },
