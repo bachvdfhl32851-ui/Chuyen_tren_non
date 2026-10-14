@@ -29,7 +29,7 @@ nav a{white-space:nowrap}
 .um{position:absolute;top:calc(100% + 10px);right:0;background:var(--card);color:var(--ink);border:2px solid var(--ink);border-radius:20px;padding:12px;min-width:200px;z-index:70;text-align:center}
 .um b{display:block;font:1.1rem var(--h);margin-bottom:8px}
 /* man hinh hep */
-@media(max-width:1240px){header{flex-wrap:wrap}nav{order:3;width:100%;overflow-x:auto;padding-bottom:4px}.pg{padding-top:170px}.hero{padding-top:180px}}
+@media(max-width:960px){header{flex-wrap:wrap}nav{order:3;width:100%;overflow-x:auto;padding-bottom:4px}.pg{padding-top:170px}.hero{padding-top:180px}}
 @media(max-width:620px){header{padding-inline:3vw}.hr{flex-wrap:wrap;justify-content:flex-end}.pg{padding-top:230px}.hero{padding-top:240px}}
 /* log in */
 .mod{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:#000a;backdrop-filter:blur(6px);padding:16px;overflow:auto;animation:mi .25s ease}
@@ -73,3 +73,6 @@ nav a{white-space:nowrap}
 
 /* cum nut ben phai */
 @media(min-width:1100px) and (max-width:1300px){.hr{position:absolute;right:4vw;top:calc(50% - 2px);transform:translateY(-50%);z-index:60}}
+
+/* icon sang/toi (thay ky tu ◐ hien thi khong dong deu giua cac may) */
+#theme svg{width:20px;height:20px;display:block}

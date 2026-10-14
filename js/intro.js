@@ -17,7 +17,7 @@
     r.addEventListener("change", function () { if (r.checked) sel = r.value; });
   });
 
-  var audio = new Audio("audio/start_sound_effect.mp3?v=2");
+  var audio = new Audio("../resources/audio/start_sound_effect.mp3?v=2");
   audio.preload = "auto";
 
   var busy = false;

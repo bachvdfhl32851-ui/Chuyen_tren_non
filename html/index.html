@@ -3,23 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23338341'/%3E%3Cpath d='M6 37l13-21 8 12 5-7 10 16z' fill='%23eeb963' stroke='%23fff8e4' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta name="description" content="Chuyện Trên Non – đi qua bốn mùa, gặp những ngày thơ. Câu chuyện, hình ảnh và thanh âm về tuổi thơ của trẻ em vùng cao.">
 <title>Chuyện trên non</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@400;600&family=Pacifico&family=Baloo+2:wght@500;600;700&display=swap" rel="stylesheet">
 <script>try{document.documentElement.dataset.theme=sessionStorage.getItem("ctn-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script>
-<link rel="stylesheet" href="fonts.css?v=1">
-<link rel="stylesheet" href="style.css?v=20261011">
-<link rel="stylesheet" href="effects.css">
-<link rel="stylesheet" href="header.css?v=20261012">
-<link rel="stylesheet" href="fun.css?v=20261102">
-<link rel="stylesheet" href="footer.css?v=3">
-<link rel="stylesheet" href="seasons.css?v=4">
-<link rel="stylesheet" href="stats.css?v=2">
-<link rel="stylesheet" href="donghanh.css?v=20261102">
-<link rel="stylesheet" href="intro.css?v=8">
+<link rel="stylesheet" href="../css/fonts.css?v=2">
+<link rel="stylesheet" href="../css/style.css?v=20261011">
+<link rel="stylesheet" href="../css/effects.css">
+<link rel="stylesheet" href="../css/header.css?v=20261111">
+<link rel="stylesheet" href="../css/fun.css?v=20261111">
+<link rel="stylesheet" href="../css/footer.css?v=4">
+<link rel="stylesheet" href="../css/seasons.css?v=5">
+<link rel="stylesheet" href="../css/stats.css?v=2">
+<link rel="stylesheet" href="../css/donghanh.css?v=20261103">
+<link rel="stylesheet" href="../css/intro.css?v=8">
 <script>(function(){var open=true;try{localStorage.removeItem("ctn-intro-skip");localStorage.removeItem("ctn-intro-never");if(location.search.indexOf("intro=1")>-1)sessionStorage.removeItem("ctn-intro-seen");if(sessionStorage.getItem("ctn-intro-seen")==="1")open=false}catch(e){}if(open)document.documentElement.classList.add("intro-open")})()</script>
-<link rel="stylesheet" href="theme.css?v=5">
+<link rel="stylesheet" href="../css/theme.css?v=9">
 </head>
 <body>
 <div id="intro" role="dialog" aria-modal="true" aria-labelledby="introTitle">
@@ -33,7 +35,7 @@
     </div>
     <button class="horn" id="hornBtn" type="button" aria-label="Thổi tù và để vào trang web / Blow the horn to enter">
       <span class="rings" aria-hidden="true"><i></i><i></i><i></i></span>
-      <img src="images/tu-va.png" width="443" height="297" alt="" draggable="false">
+      <img src="../resources/images/intro/tu-va.png" width="443" height="297" alt="" draggable="false">
     </button>
     <p class="intro-hint">Chạm vào tù và để bước vào<small>Tap the horn to enter</small></p>
   </div>
@@ -43,8 +45,8 @@
   <nav><a href="index.html" data-en="Home">Trang chủ</a><a href="xuan.html" data-en="Spring">Mùa Xuân</a><a href="ha.html" data-en="Summer">Mùa Hạ</a><a href="thu.html" data-en="Autumn">Mùa Thu</a><a href="dong.html" data-en="Winter">Mùa Đông</a><a href="thuong.html" data-en="Love">Mùa Yêu thương</a></nav>
   <div class="hr">
     <div class="srch"><div class="sfield"><input id="q" type="search" placeholder="Tìm kiếm…" autocomplete="off" aria-label="Tìm kiếm" role="combobox" aria-expanded="false" aria-controls="res"></div><button class="ic sbtn" id="sbtn" type="button" aria-label="Tìm kiếm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg></button><div class="res" id="res" role="listbox" hidden></div></div>
-    <button class="ic lang-toggle" id="lang" aria-label="Switch language"><span class="lt">EN</span></button>
-    <button class="ic" id="theme" aria-label="Sáng / tối">◐</button>
+    <button class="ic lang-toggle" id="lang" aria-label="Đổi ngôn ngữ" data-en-aria="Switch language"><span class="lt">EN</span></button>
+    <button class="ic" id="theme" aria-label="Sáng / tối" data-en-aria="Light / dark"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button>
     <button class="ic login" id="login" data-en="Log in">Đăng nhập</button>
     <button class="av" id="av" aria-label="Tài khoản" hidden></button>
   </div>
@@ -57,34 +59,18 @@
     <a class="btn mag" href="xuan.html" data-en="Start with Spring">Bắt đầu từ mùa xuân</a>
     <a class="btn alt mag" href="thuong.html" data-en="Join hands">Cùng đồng hành</a>
   </div>
-  <svg class="wave" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 120L120 60 220 105 360 40 500 100 640 55 780 110 930 35 1080 95 1220 50 1340 90 1440 60V200H0Z" fill="#5b6fa8" opacity=".6"/>
-    <path d="M0 150L180 90 300 135 470 80 640 140 820 95 1000 145 1180 85 1320 130 1440 100V200H0Z" fill="#2f6a46"/>
-    <path d="M0 152C200 122 420 162 700 137S1200 117 1440 147V200H0Z" fill="#8cb94f"/>
-    <path class="w1" d="M0 168C240 140 480 178 760 154S1220 138 1440 164V200H0Z"/>
-    <path d="M0 182C260 160 520 192 800 172S1240 160 1440 180V200H0Z" fill="#5e9a3c"/>
-    <path class="w2" d="M0 194C260 178 520 200 800 188S1240 180 1440 194V200H0Z"/>
-  </svg>
 </div>
-<section id="gioithieu" class="intro">
-  <div class="mn-deco" aria-hidden="true">
-    <svg width="0" height="0" style="position:absolute"><defs><symbol id="hoaMan" viewBox="0 0 40 40"><g fill="#fff" stroke="#26335f" stroke-width="2.2"><circle cx="20" cy="11" r="7.5"/><circle cx="28.6" cy="17.2" r="7.5"/><circle cx="25.3" cy="27.3" r="7.5"/><circle cx="14.7" cy="27.3" r="7.5"/><circle cx="11.4" cy="17.2" r="7.5"/></g><circle cx="20" cy="20" r="4.6" fill="#f6bb3c" stroke="#26335f" stroke-width="2"/></symbol></defs></svg>
-    <svg class="mn m1" viewBox="0 0 40 40"><use href="#hoaMan"/></svg>
-    <svg class="mn m2" viewBox="0 0 40 40"><use href="#hoaMan"/></svg>
-    <svg class="mn m3" viewBox="0 0 40 40"><use href="#hoaMan"/></svg>
-    <svg class="mn m4" viewBox="0 0 40 40"><use href="#hoaMan"/></svg>
-  </div><div class="in intro-grid">
+<section id="gioithieu" class="intro"><div class="in intro-grid">
   <div class="intro-media">
     <div class="intro-head rv">
       <h2 data-en="About us">Giới thiệu</h2>
-      <p class="intro-lead" data-en="A place to keep the small, bright stories of childhood in the highlands.">Nơi giữ lại những câu chuyện nhỏ, rực rỡ của tuổi thơ vùng cao.</p>
     </div>
     <figure class="collage rv" aria-label="Những khoảnh khắc tuổi thơ của trẻ em vùng cao" data-en-aria="Moments from the childhood of highland children">
-      <span class="ph p1"><img src="images/ghep-a1.jpg" width="389" height="565" alt="Các bạn nhỏ vừa nhảy dây vừa cười rạng rỡ" loading="lazy"></span>
-      <span class="ph p2"><img src="images/ghep-a2.jpg" width="595" height="396" alt="Trẻ em dưới rừng hoa mận trắng" loading="lazy"></span>
-      <span class="ph p3"><img src="images/ghep-a3.jpg" width="674" height="490" alt="Những đứa trẻ chơi đu trên cây hoa" loading="lazy"></span>
-      <span class="ph p4"><img src="images/ghep-a4.jpg" width="613" height="432" alt="Các em nhỏ ôm sách Tiếng Việt, cười tươi" loading="lazy"></span>
-      <span class="ph p5"><img src="images/ghep-a5.jpg" width="613" height="391" alt="Các bạn nhỏ cùng thổi sáo, khèn" loading="lazy"></span>
+      <span class="ph p1"><img src="../resources/images/anh_ghep/ghep-a1.jpg" width="389" height="565" alt="Các bạn nhỏ vừa nhảy dây vừa cười rạng rỡ" loading="lazy"></span>
+      <span class="ph p2"><img src="../resources/images/anh_ghep/ghep-a2.jpg" width="595" height="396" alt="Trẻ em dưới rừng hoa mận trắng" loading="lazy"></span>
+      <span class="ph p3"><img src="../resources/images/anh_ghep/ghep-a3.jpg" width="674" height="490" alt="Những đứa trẻ chơi đu trên cây hoa" loading="lazy"></span>
+      <span class="ph p4"><img src="../resources/images/anh_ghep/ghep-a4.jpg" width="613" height="432" alt="Các em nhỏ ôm sách Tiếng Việt, cười tươi" loading="lazy"></span>
+      <span class="ph p5"><img src="../resources/images/anh_ghep/ghep-a5.jpg" width="613" height="391" alt="Các bạn nhỏ cùng thổi sáo, khèn" loading="lazy"></span>
     </figure>
   </div>
 
@@ -113,18 +99,16 @@
     </li>
   </ul>
 </div></section>
-<div class="tc-band" aria-hidden="true"></div>
 <section id="cacmua" class="seasons"><div class="in">
 
   <!-- chon muc -->
   <div class="ss-head rv">
-    <span class="ss-heart" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.600 4.800 6.200 4.800c2.100 0 3.700 1.100 4.600 2.600l1.200 1.800 1.200-1.800c.9-1.500 2.500-2.600 4.600-2.600 3.600 0 5.300 3.600 3.800 7C19.500 16.400 12 21 12 21z"/></svg></span>
     <h2 data-en="Every season a story, every childhood a memory.">Mỗi mùa một câu chuyện, mỗi tuổi thơ một miền nhớ.</h2>
   </div>
   <ul class="ss-grid">
     <li class="rv"><article class="mc mc-sage">
-      <div class="mc-pic"><img src="images/mua-xuan.jpg?v=2" width="640" height="480" alt="" loading="lazy">
-        <a class="mc-go" href="xuan.html" aria-label="Tìm hiểu thêm: Mùa Xuân" data-en-aria="Learn more: Spring" title="Tìm hiểu thêm" data-en-ttl="Learn more"><img src="images/tu-va.png" width="443" height="297" alt="" draggable="false"></a>
+      <div class="mc-pic"><img src="../resources/images/mua/mua-xuan.jpg?v=2" width="640" height="480" alt="" loading="lazy">
+        <a class="mc-go" href="xuan.html" aria-label="Tìm hiểu thêm: Mùa Xuân" data-en-aria="Learn more: Spring" title="Tìm hiểu thêm" data-en-ttl="Learn more"></a>
       </div>
       <div class="mc-body">
         <h3 data-en="🌸 SPRING - THE SEASON OF GROWING UP">🌸 MÙA XUÂN - MÙA EM LỚN</h3>
@@ -133,8 +117,8 @@
       </div>
     </article></li>
     <li class="rv"><article class="mc mc-gold">
-      <div class="mc-pic"><img src="images/mua-ha.jpg?v=2" width="640" height="480" alt="" loading="lazy">
-        <a class="mc-go" href="ha.html" aria-label="Tìm hiểu thêm: Mùa Hạ" data-en-aria="Learn more: Summer" title="Tìm hiểu thêm" data-en-ttl="Learn more"><img src="images/tu-va.png" width="443" height="297" alt="" draggable="false"></a>
+      <div class="mc-pic"><img src="../resources/images/mua/mua-ha.jpg?v=2" width="640" height="480" alt="" loading="lazy">
+        <a class="mc-go" href="ha.html" aria-label="Tìm hiểu thêm: Mùa Hạ" data-en-aria="Learn more: Summer" title="Tìm hiểu thêm" data-en-ttl="Learn more"></a>
       </div>
       <div class="mc-body">
         <h3 data-en="☀️ SUMMER - THE SEASON OF PLAY">☀️ MÙA HẠ - MÙA VUI CHƠI</h3>
@@ -143,8 +127,8 @@
       </div>
     </article></li>
     <li class="rv"><article class="mc mc-olive">
-      <div class="mc-pic"><img src="images/mua-thu.jpg?v=2" width="640" height="480" alt="" loading="lazy">
-        <a class="mc-go" href="thu.html" aria-label="Tìm hiểu thêm: Mùa Thu" data-en-aria="Learn more: Autumn" title="Tìm hiểu thêm" data-en-ttl="Learn more"><img src="images/tu-va.png" width="443" height="297" alt="" draggable="false"></a>
+      <div class="mc-pic"><img src="../resources/images/mua/mua-thu.jpg?v=2" width="640" height="480" alt="" loading="lazy">
+        <a class="mc-go" href="thu.html" aria-label="Tìm hiểu thêm: Mùa Thu" data-en-aria="Learn more: Autumn" title="Tìm hiểu thêm" data-en-ttl="Learn more"></a>
       </div>
       <div class="mc-body">
         <h3 data-en="🍂 AUTUMN - THE SEASON OF SCHOOL">🍂 MÙA THU - MÙA ĐẾN LỚP</h3>
@@ -153,8 +137,8 @@
       </div>
     </article></li>
     <li class="rv"><article class="mc mc-blue">
-      <div class="mc-pic"><img src="images/mua-dong.jpg?v=2" width="640" height="480" alt="" loading="lazy">
-        <a class="mc-go" href="dong.html" aria-label="Tìm hiểu thêm: Mùa Đông" data-en-aria="Learn more: Winter" title="Tìm hiểu thêm" data-en-ttl="Learn more"><img src="images/tu-va.png" width="443" height="297" alt="" draggable="false"></a>
+      <div class="mc-pic"><img src="../resources/images/mua/mua-dong.jpg?v=2" width="640" height="480" alt="" loading="lazy">
+        <a class="mc-go" href="dong.html" aria-label="Tìm hiểu thêm: Mùa Đông" data-en-aria="Learn more: Winter" title="Tìm hiểu thêm" data-en-ttl="Learn more"></a>
       </div>
       <div class="mc-body">
         <h3 data-en="❄️ WINTER - THE SEASON OF STORYTELLING">❄️ MÙA ĐÔNG - MÙA KỂ CHUYỆN</h3>
@@ -163,8 +147,8 @@
       </div>
     </article></li>
     <li class="rv"><article class="mc mc-green">
-      <div class="mc-pic"><img src="images/mua-thuong.jpg?v=2" width="640" height="480" alt="" loading="lazy">
-        <a class="mc-go" href="thuong.html" aria-label="Tìm hiểu thêm: Mùa Yêu thương" data-en-aria="Learn more: Season of Love" title="Tìm hiểu thêm" data-en-ttl="Learn more"><img src="images/tu-va.png" width="443" height="297" alt="" draggable="false"></a>
+      <div class="mc-pic"><img src="../resources/images/mua/mua-thuong.jpg?v=2" width="640" height="480" alt="" loading="lazy">
+        <a class="mc-go" href="thuong.html" aria-label="Tìm hiểu thêm: Mùa Yêu thương" data-en-aria="Learn more: Season of Love" title="Tìm hiểu thêm" data-en-ttl="Learn more"></a>
       </div>
       <div class="mc-body">
         <h3 data-en="❤️ THE SEASON OF LOVE">❤️ MÙA YÊU THƯƠNG</h3>
@@ -174,54 +158,15 @@
     </article></li>
   </ul>
 </div></section>
-
-<div class="tc-band" aria-hidden="true"></div>
 <section id="donghanh" class="dh">
-  <div class="dh-deco" aria-hidden="true">
-    <svg width="0" height="0" style="position:absolute"><defs>
-      <symbol id="dhLeaf" viewBox="0 0 60 64"><path d="M8 62C-2 32 16 6 52 2c8 30-4 54-44 60z"/><path d="M8 62L46 9" fill="none" stroke="rgba(46,42,18,.45)" stroke-width="2.4" stroke-linecap="round"/></symbol>
-    </defs></svg>
-    <svg class="dh-leaf l1" viewBox="0 0 60 64"><use href="#dhLeaf" fill="#728d4f"/></svg>
-    <svg class="dh-leaf l2" viewBox="0 0 60 64"><use href="#dhLeaf" fill="#338341"/></svg>
-    <svg class="dh-leaf l3" viewBox="0 0 60 64"><use href="#dhLeaf" fill="#eeb963"/></svg>
-    <svg class="dh-leaf l4" viewBox="0 0 60 64"><use href="#dhLeaf" fill="#776f33"/></svg>
-    <svg class="dh-leaf l5" viewBox="0 0 60 64"><use href="#dhLeaf" fill="#338341"/></svg>
-    <svg class="dh-leaf l6" viewBox="0 0 60 64"><use href="#dhLeaf" fill="#728d4f"/></svg>
-    <!-- bep lua -->
-    <svg class="dh-fire" viewBox="0 0 170 180">
-      <ellipse cx="85" cy="166" rx="74" ry="9" fill="rgba(46,42,18,.16)"/>
-      <g class="flame"><path d="M85 14C100 40 130 62 124 104c-3 24-20 38-39 38s-36-14-39-38C40 66 70 52 85 14z" fill="#e8832c" stroke="#2e2a12" stroke-width="4" stroke-linejoin="round"/>
-      <path d="M85 56c9 20 28 34 24 62-2 14-11 22-24 22s-22-8-24-22c-4-26 14-40 24-62z" fill="#eeb963"/>
-      <path d="M85 92c6 12 15 19 13 34-1 8-6 12-13 12s-12-4-13-12c-2-15 7-22 13-34z" fill="#fff3c4"/></g>
-      <g stroke="#2e2a12" stroke-width="4" stroke-linecap="round">
-        <rect x="18" y="138" width="104" height="20" rx="10" fill="#8a5a2b" transform="rotate(14 70 148)"/>
-        <rect x="48" y="138" width="104" height="20" rx="10" fill="#6f4520" transform="rotate(-14 100 148)"/>
-      </g>
-      <circle class="sp s1" cx="52" cy="40" r="3.5" fill="#eeb963"/><circle class="sp s2" cx="122" cy="34" r="3" fill="#e8832c"/><circle class="sp s3" cx="98" cy="10" r="2.5" fill="#eeb963"/>
-    </svg>
-    <!-- dong rom -->
-    <svg class="dh-hay" viewBox="0 0 180 200">
-      <ellipse cx="90" cy="186" rx="80" ry="9" fill="rgba(46,42,18,.16)"/>
-      <path d="M14 184C12 112 52 52 90 22c38 30 78 90 76 162z" fill="#eeb963" stroke="#2e2a12" stroke-width="4" stroke-linejoin="round"/>
-      <path d="M90 22c-6-12-4-18 0-22 4 4 6 10 0 22z" fill="#c4903a" stroke="#2e2a12" stroke-width="3" stroke-linejoin="round"/>
-      <g fill="none" stroke="#c4903a" stroke-width="4" stroke-linecap="round">
-        <path d="M44 150C60 138 76 134 90 136s30 4 46 14"/>
-        <path d="M32 118c18-12 36-16 58-16s40 6 58 16"/>
-        <path d="M54 84c12-8 24-10 36-10s24 2 36 10"/>
-        <path d="M70 52c8-4 14-6 20-6s12 2 20 6"/>
-        <path d="M64 176c-4-14-4-26 0-34M116 176c4-14 4-26 0-34M90 170c-2-12-2-22 0-30"/>
-      </g>
-    </svg>
-  </div>
   <div class="in">
   <div class="dh-head rv">
     <h2 data-en="Contact / Join hands">Liên hệ / Đồng hành</h2>
     <p class="dh-lead" data-en="If you are an individual, business, organization, publisher, educational institution or volunteer group who wants to walk alongside highland children.">Nếu bạn là cá nhân, doanh nghiệp, tổ chức, nhà xuất bản, đơn vị giáo dục hoặc nhóm thiện nguyện muốn đồng hành cùng trẻ em vùng cao.</p>
   </div>
   <div class="dh-photos rv" aria-hidden="true">
-    <figure class="dh-photo a"><img src="images/diem-truong-1.jpg" width="784" height="292" alt="" loading="lazy"></figure>
-    <svg class="dh-arrow" viewBox="0 0 120 50" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30 C24 4 50 46 78 32 S96 24 107 24" stroke-dasharray="1 10"/><path d="M95 11 L110 24 L95 37"/></svg>
-    <figure class="dh-photo b"><img src="images/diem-truong-2.jpg" width="568" height="438" alt="" loading="lazy"></figure>
+    <figure class="dh-photo a"><img src="../resources/images/lien_he_dong_hanh/diem-truong-1.jpg" width="784" height="292" alt="" loading="lazy"></figure>
+    <figure class="dh-photo b"><img src="../resources/images/lien_he_dong_hanh/diem-truong-2.jpg" width="568" height="438" alt="" loading="lazy"></figure>
   </div>
   <div class="dh-grid">
     <div class="dh-card a rv">
@@ -288,14 +233,14 @@
   </div>
 </footer>
 <button class="top-btn" id="topBtn" aria-label="Về đầu trang" data-en-aria="Back to top">↑</button>
-<script src="script.js?v=20261030"></script>
-<script src="footer.js?v=2"></script>
-<script src="config.js"></script>
-<script src="account.js"></script>
-<script src="effects.js"></script>
-<script src="seasons.js?v=2"></script>
-<script src="donghanh.js?v=20261008"></script>
-<script src="stats.js?v=1"></script>
-<script src="intro.js?v=8"></script>
+<script src="../js/script.js?v=20261111"></script>
+<script src="../js/footer.js?v=3"></script>
+<script src="../js/config.js?v=2"></script>
+<script src="../js/account.js?v=4"></script>
+<script src="../js/effects.js"></script>
+<script src="../js/seasons.js?v=2"></script>
+<script src="../js/donghanh.js?v=20261008"></script>
+<script src="../js/stats.js?v=1"></script>
+<script src="../js/intro.js?v=9"></script>
 </body>
 </html>

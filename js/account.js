@@ -37,7 +37,12 @@
     ["thuong", "Trao cơ hội", "Give a chance", "học bổng quỹ scholarship fund"],
     ["thuong", "Nối một sợi thương", "Tie a thread of care", "kết nối cá nhân doanh nghiệp điểm trường donate connect business"]
   ];
-  var IDX = RAW.map(function (r) { return { u: F[r[0]] + (r[4] || ""), t: { vi: r[1], en: r[2] }, p: P[r[0]], n: norm(r[1] + " " + r[2] + " " + P[r[0]].vi + " " + P[r[0]].en + " " + r[3]) }; });
+  var BASE = (function () {
+    var s = document.querySelector('script[src*="js/account.js"]');
+    var src = s ? s.getAttribute("src") : "js/account.js";
+    return src.slice(0, src.indexOf("js/account.js"));   // duong len thu muc goc; cac trang nam trong html/
+  })();
+  var IDX = RAW.map(function (r) { return { u: BASE + "html/" + F[r[0]] + (r[4] || ""), t: { vi: r[1], en: r[2] }, p: P[r[0]], n: norm(r[1] + " " + r[2] + " " + P[r[0]].vi + " " + P[r[0]].en + " " + r[3]) }; });
   var T = {
     ph: { vi: "Tìm kiếm…", en: "Search…" }, none: { vi: "Không tìm thấy kết quả.", en: "No results found." },
     title: { vi: "Đăng nhập", en: "Log in" }, reg: { vi: "Đăng ký", en: "Sign up" },
@@ -188,7 +193,10 @@
         callback: function (r) {
           try {
             var b = r.credential.split(".")[1].replace(/-/g, "+").replace(/_/g, "/");
-            var p = JSON.parse(decodeURIComponent(escape(atob(b))));
+            while (b.length % 4) b += "=";
+            var bin = atob(b), bytes = new Uint8Array(bin.length);
+            for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+            var p = JSON.parse(new TextDecoder("utf-8").decode(bytes));
             setUser({ name: p.name, email: p.email, picture: p.picture, provider: "google" });
           } catch (x) { msg("fail"); }
         }
@@ -199,11 +207,14 @@
       setTimeout(function () { var gg = $("#gbtn"); if (gg && !gg.children.length) { f.hidden = false; msg("fail"); } }, 4000);
     }).catch(function () { msg("fail"); });
   }
-  function closeModal() { if (modal) { modal.remove(); modal = null; } }
+  var lastFocus = null;
+  function closeModal() { if (modal) { modal.remove(); modal = null; if (lastFocus && lastFocus.focus && document.contains(lastFocus)) { try { lastFocus.focus(); } catch (e) {} } lastFocus = null; } }
   function openModal() {
     if (modal) return;
     modal = document.createElement("div"); modal.className = "mod";
+    lastFocus = document.activeElement;
     document.body.appendChild(modal); build();
+    setTimeout(function () { var f = $("#em"); if (f) f.focus(); }, 50);
     modal.addEventListener("mousedown", function (e) { if (e.target === modal || e.target.closest(".mx")) closeModal(); });
   }
   $("#login").onclick = openModal;

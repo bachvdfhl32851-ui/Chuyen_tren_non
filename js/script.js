@@ -23,7 +23,7 @@ function buildPick(id,list,out,fixed){var box=$(id),o=$(out);box.innerHTML="";li
  if(box.dataset.sel!=null&&box.dataset.sel!==""){var s=$$(".toy",box)[box.dataset.sel];s&&s.click()}else o.textContent=lang==="vi"?"Chạm vào một hình để bắt đầu.":"Tap a picture to begin."}
 function walkUpdate(){var v=+$("#walk").value,i=Math.round(v),p=$("#road path"),L=p.getTotalLength(),pt=p.getPointAtLength(L*v/5);
  $("#foot").setAttribute("cx",pt.x);$("#foot").setAttribute("cy",pt.y);
- $$("#stops span").forEach(function(s,k){s.classList.toggle("cur",k===i)});$("#walkOut").textContent=D.walk[i][lang]}
+ $$("#stops span").forEach(function(s,k){s.classList.toggle("cur",k===i)});$("#walkOut").textContent=D.walk[i][lang];$("#walk").setAttribute("aria-valuetext",D.stops[i][lang])}
 function dyn(){if($("#foods"))buildPick("#foods",D.foods,"#foodOut");if($("#toys"))buildPick("#toys",D.toys,"#toyOut");if($("#folks"))buildPick("#folks",D.folks,"#folkOut");
  if($("#walk")){$("#stops").innerHTML=D.stops.map(function(s){return"<span>"+s[lang]+"</span>"}).join("");walkUpdate()}}
 function apply(){document.documentElement.lang=lang;
@@ -52,5 +52,6 @@ if($("#snd"))$("#snd").onclick=function(){on=!on;if(on){ac=ac||new(window.AudioC
 apply();
 /* ---- hieu ung chuyen trang muot + nut ve dau trang ---- */
 if(!("startViewTransition" in document)&&!matchMedia("(prefers-reduced-motion:reduce)").matches)$$("a[href$='.html']").forEach(function(l){l.addEventListener("click",function(e){if(l.target==="_blank"||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();document.body.classList.add("page-leaving");setTimeout(function(){location.href=l.getAttribute("href")},280)})});
+addEventListener("pageshow",function(){document.body.classList.remove("page-leaving")});
 var tb=$("#topBtn");if(tb){addEventListener("scroll",function(){tb.classList.toggle("show",scrollY>500)},{passive:true});tb.onclick=function(){scrollTo({top:0,behavior:"smooth"})}}
 })();

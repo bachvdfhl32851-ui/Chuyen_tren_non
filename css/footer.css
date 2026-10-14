@@ -25,3 +25,5 @@ footer.ft{padding:64px 5vw 34px;text-align:left;font:400 1rem/1.65 var(--b);back
 .ft-legal p{margin:0 auto 10px;max-width:none}
 @media(max-width:980px){.ft-in{grid-template-columns:1fr 1fr}.ft-sub{grid-column:1/-1}}
 @media(max-width:620px){.ft-in{grid-template-columns:1fr}}
+
+.ft-msg{margin:.2rem 0 0;font-size:.92rem;line-height:1.5;color:var(--gold)}
