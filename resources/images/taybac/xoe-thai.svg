@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-hidden="true">
+<style>
+.d{animation:bob 1.7s ease-in-out infinite alternate}
+.d1{animation-delay:-.3s}.d2{animation-delay:-.6s}.d3{animation-delay:-.9s}.d4{animation-delay:-1.2s}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){.d{animation:none}}
+</style>
+<defs>
+<symbol id="dn" overflow="visible">
+  <path d="M-12-60 Q-26-30 -27 0 H27 Q26-30 12-60Z" fill="#233352"/>
+  <path d="M-12-60 H12 L13-55 H-13Z" fill="#ff6b7a"/>
+  <path d="M-25-10 H25 L27 0 H-27Z" fill="#ffc93c"/>
+  <g fill="#ff6b7a"><path d="M-17-5 l3-3 3 3 -3 3z"/><path d="M-5-5 l3-3 3 3 -3 3z"/><path d="M7-5 l3-3 3 3 -3 3z"/></g>
+  <path d="M-10-62 Q-13-80 -13-92 H13 Q13-80 10-62Z" fill="currentColor"/>
+  <g fill="#e3f2fd" stroke="#55aae7" stroke-width=".5"><circle cx="0" cy="-86" r="1.500"/><circle cx="0" cy="-80" r="1.500"/><circle cx="0" cy="-74" r="1.500"/><circle cx="0" cy="-68" r="1.500"/></g>
+  <circle cx="0" cy="-103" r="9" fill="#fcc697"/>
+  <path d="M-9.500-104 Q-9-114 0-114 Q9-114 9.500-104 Q4-109 0-109 Q-4-109 -9.500-104Z" fill="#1c2028"/>
+  <circle cx="0" cy="-119" r="6.500" fill="#1c2028"/>
+  <circle cx="5" cy="-120" r="2" fill="#fff8e4"/>
+</symbol>
+</defs>
+<rect width="320" height="240" fill="#ffeb9c"/>
+<circle cx="160" cy="132" r="76" fill="#ffc93c" opacity=".55"/>
+<circle cx="160" cy="132" r="52" fill="#fa9338" opacity=".55"/>
+<path d="M0 150 L50 104 L92 140 L140 90 L200 146 L250 100 L320 150 V240 H0Z" fill="#fa9339" opacity=".55"/>
+<path d="M0 176 Q60 150 120 168 T240 160 T320 170 V240 H0Z" fill="#3aa655"/>
+<path d="M0 206 Q90 190 180 204 T320 198 V240 H0Z" fill="#3aa655"/>
+<g stroke="#fcc697" stroke-width="5.5" stroke-linecap="round" fill="none">
+  <path d="M43 131 Q30 114 31 98"/>
+  <path d="M67 132 Q82 154 96 132"/>
+  <path d="M121 132 Q135 154 147 129"/>
+  <path d="M174 129 Q187 154 200 132"/>
+  <path d="M224 132 Q240 154 254 132"/>
+  <path d="M277 131 Q290 114 289 98"/>
+</g>
+<g transform="translate(55 214) scale(.9)"><g class="d d0"><use href="#dn" style="color:#fff8e4"/></g></g>
+<g transform="translate(108 220) scale(.97)"><g class="d d1"><use href="#dn" style="color:#fc7e8f"/></g></g>
+<g transform="translate(160 224) scale(1.04)"><g class="d d2"><use href="#dn" style="color:#6ece86"/></g></g>
+<g transform="translate(212 220) scale(.97)"><g class="d d3"><use href="#dn" style="color:#68b3e9"/></g></g>
+<g transform="translate(265 214) scale(.9)"><g class="d d4"><use href="#dn" style="color:#f92844"/></g></g>
+</svg>

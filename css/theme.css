@@ -1,16 +1,16 @@
 :root{
-  --gold:#f6bb3c;     
-  --green:#3b9144;    
-  --sage:#7fae4b;      
-  --olive:#b4562d;    
-  --blue:#35509e;     
-  --red:#d9482b;      
-  --chain:#26335f;   
+  --gold:#ffc93c;     
+  --green:#2b7bc0;    
+  --sage:#3aa655;      
+  --olive:#ff8a3d;    
+  --blue:#4da8e8;     
+  --red:#ff6b7a;      
+  --chain:#1f4e8c;   
   --h:'Baloo 2','Itim','Mali',cursive;
   --b:'Mali','Itim',cursive;
   --r:30px;         
 }
-:root:not([data-theme=dark]){--paper:#fff8e4;--card:#fffdf4;--ink:#3a2a1c}
+:root:not([data-theme=dark]){--paper:#fff8e4;--card:#fffdf4;--ink:#1c263a}
 
 /* ---- chu ---- */
 h1,h2,h3,.hand{font-weight:700}
@@ -20,15 +20,15 @@ nav a{font-size:1.1rem;font-weight:600}
 .btn,.sea,.tag,.res a small{font-weight:600}
 .btn{font-size:1.2rem;border-radius:99px;box-shadow:0 5px 0 rgba(0,0,0,.22)}
 .btn:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.22)}
-.btn.alt{box-shadow:0 5px 0 #c58f1e}
-.btn.blue{box-shadow:0 5px 0 #243875}
+.btn.alt{box-shadow:0 5px 0 #e3b600}
+.btn.blue{box-shadow:0 5px 0 #135686}
 
 /* ---- hoa van tho cam ---- */
 :root{
-  --tho-cam:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Crect width='28' height='14' fill='%2326335f'/%3E%3Cpath d='M14 0l9 7-9 7-9-7z' fill='%23d9482b'/%3E%3Cpath d='M14 4l5 3-5 3-5-3z' fill='%23f6bb3c'/%3E%3Ccircle cx='0' cy='7' r='1.8' fill='%23fff8e4'/%3E%3Ccircle cx='28' cy='7' r='1.8' fill='%23fff8e4'/%3E%3C/svg%3E");
+  --tho-cam:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Crect width='28' height='14' fill='%231f4e8c'/%3E%3Cpath d='M14 0l9 7-9 7-9-7z' fill='%23ff6b7a'/%3E%3Cpath d='M14 4l5 3-5 3-5-3z' fill='%23ffc93c'/%3E%3Ccircle cx='0' cy='7' r='1.8' fill='%23fff8e4'/%3E%3Ccircle cx='28' cy='7' r='1.8' fill='%23fff8e4'/%3E%3C/svg%3E");
 }
 header::after{height:11px;background:var(--tho-cam) 0 0/28px 11px repeat-x}
-header{box-shadow:0 4px 14px rgba(58,42,28,.12)}
+header{box-shadow:0 4px 14px rgba(28,38,58,.12)}
 footer.ft{position:relative;background:var(--chain);padding-top:84px}
 footer.ft::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:var(--tho-cam) 0 0/28px 14px repeat-x}
 .ft-social a{color:var(--chain)}
@@ -42,7 +42,7 @@ footer.ft::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;
 .dh-card{box-shadow:8px 8px 0 var(--green)}
 .dh-card.b{box-shadow:8px 8px 0 var(--blue)}
 .dh-photo{box-shadow:6px 6px 0 var(--chain)}
-.logo{border-radius:20px;box-shadow:0 5px 0 #1f5a2b}
+.logo{border-radius:20px;box-shadow:0 5px 0 #1f4e8c}
 .collage .ph{border-radius:16px;overflow:hidden}
 .collage .p2,.collage .p3{border-color:var(--chain)}
 
@@ -57,10 +57,10 @@ body{background-image:radial-gradient(color-mix(in srgb,var(--gold) 45%,transpar
 @media(max-width:620px){footer.ft{padding-top:70px}}
 
 /* ----- the 5 mua ------ */
-.mc-sage{--c:#5e9a3c}
-.mc-olive{--c:#b4562d}
-.mc-blue{--c:#35509e}
-.mc-green{--c:#2f8a3c}
+.mc-sage{--c:#3aa655}
+.mc-olive{--c:#ff8a3d}
+.mc-blue{--c:#4da8e8}
+.mc-green{--c:#2b7bc0}
 
 
 /* =====================================================================
@@ -76,7 +76,7 @@ body{background-image:radial-gradient(color-mix(in srgb,var(--gold) 45%,transpar
 /* gach chan tieu de: net rang cua nhu nui */
 h2::after{
   height:12px;width:min(100%,150px);
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 10L6 2 12 10 18 2 24 10' fill='none' stroke='%23d9482b' stroke-width='3.2' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 10L6 2 12 10 18 2 24 10' fill='none' stroke='%23ff6b7a' stroke-width='3.2' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
 }
 
 /* vien tho cam tren dau cac the */
@@ -163,18 +163,18 @@ section::before,section::after,section:not(.intro)::before,section:not(.intro)::
 .card,.intro-text,.dh-card,.dh-card.b,.fmt,.art-body,.dh-photo{
   border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);
   border-radius:14px;
-  box-shadow:0 6px 20px rgba(58,42,28,.08);
+  box-shadow:0 6px 20px rgba(28,38,58,.08);
 }
-.card:hover{box-shadow:0 10px 26px rgba(58,42,28,.12)}
-#dong .fmt{border-color:color-mix(in srgb,var(--ink) 16%,transparent);box-shadow:0 6px 20px rgba(58,42,28,.08)}
+.card:hover{box-shadow:0 10px 26px rgba(28,38,58,.12)}
+#dong .fmt{border-color:color-mix(in srgb,var(--ink) 16%,transparent);box-shadow:0 6px 20px rgba(28,38,58,.08)}
 .out{border:1px solid color-mix(in srgb,var(--ink) 20%,transparent);border-radius:12px}
-.stat{border-radius:14px;box-shadow:0 6px 20px rgba(58,42,28,.06)}
-.collage .ph{border:0!important;border-radius:12px;box-shadow:0 4px 14px rgba(58,42,28,.15)}
+.stat{border-radius:14px;box-shadow:0 6px 20px rgba(28,38,58,.06)}
+.collage .ph{border:0!important;border-radius:12px;box-shadow:0 4px 14px rgba(28,38,58,.15)}
 .dh-photo{padding:6px;translate:none!important}
 .dh-photo img{border-radius:8px}
 .dh-photo:hover{translate:none}
 .dh-photos{gap:clamp(14px,2.5vw,32px)}
-.ph-fig img{border:0;border-radius:12px;box-shadow:0 4px 14px rgba(58,42,28,.15)}
+.ph-fig img{border:0;border-radius:12px;box-shadow:0 4px 14px rgba(28,38,58,.15)}
 
 /* nút, logo, menu: bỏ bóng cứng */
 .btn,.btn.alt,.btn.blue,.hero .btn,.hero .btn.alt,.ft-form button{box-shadow:none!important}
@@ -198,10 +198,10 @@ header{box-shadow:0 1px 0 color-mix(in srgb,var(--ink) 10%,transparent)}
 
 /* ===== 5 thẻ mùa: bo góc nhỏ, gọn ===== */
 .mc{
-  border:0;border-radius:10px;box-shadow:0 4px 14px rgba(58,42,28,.14);rotate:none!important;
+  border:0;border-radius:10px;box-shadow:0 4px 14px rgba(28,38,58,.14);rotate:none!important;
 }
 .ss-grid>li:nth-child(odd) .mc,.ss-grid>li:nth-child(even) .mc{rotate:none}
-.mc:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(58,42,28,.2)}
+.mc:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(28,38,58,.2)}
 .mc-pic::after{display:none}
 .mc-body{margin-top:0;border-radius:0;padding:clamp(18px,2vw,24px) clamp(14px,1.6vw,20px)}
 .ss-grid{gap:clamp(14px,1.6vw,22px)}

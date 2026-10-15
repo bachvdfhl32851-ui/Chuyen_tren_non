@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-hidden="true">
+<style>.cl{animation:sw 4s ease-in-out infinite alternate;transform-origin:160px 120px}@keyframes sw{from{rotate:-5deg}to{rotate:-2deg}}@media (prefers-reduced-motion:reduce){.cl{animation:none}}</style>
+<defs>
+<pattern id="saw" width="12" height="8" patternUnits="userSpaceOnUse"><rect width="12" height="8" fill="#1f4e8c"/><path d="M0 0H12L6 7Z" fill="#ff6b7a"/></pattern>
+<pattern id="dia" width="16" height="12" patternUnits="userSpaceOnUse"><rect width="16" height="12" fill="#1f4e8c"/><path d="M8 0L15 6 8 12 1 6Z" fill="#ffc93c"/><path d="M8 3L12 6 8 9 4 6Z" fill="#fff8e4"/></pattern>
+<g id="star"><rect x="-6" y="-6" width="12" height="12" fill="#fff8e4"/><rect x="-6" y="-6" width="12" height="12" fill="#fff8e4" transform="rotate(45)"/><rect x="-3.500" y="-3.500" width="7" height="7" fill="#ff6b7a"/><rect x="-3.500" y="-3.500" width="7" height="7" fill="#ff6b7a" transform="rotate(45)"/><circle r="2" fill="#ffc93c"/></g>
+<linearGradient id="fold" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".18"/><stop offset="1" stop-color="#000000" stop-opacity=".1"/></linearGradient>
+</defs>
+<rect width="320" height="240" fill="#fdbec6"/>
+<g fill="#fc8e9d"><path d="M0 200 Q80 170 160 190 T320 180 V240 H0Z"/></g>
+<ellipse cx="160" cy="196" rx="116" ry="9" fill="#000000" opacity=".12"/>
+<g class="cl">
+<g id="fr" stroke-linecap="round" stroke-width="2.600">
+<path d="M38 66H26M38 74H22M38 82H26M38 90H20M38 98H26M38 106H22M38 114H26M38 122H20M38 130H26M38 138H22M38 146H26M38 154H20M38 162H26" stroke="#ff6b7a"/>
+<path d="M38 70H22M38 78H26M38 86H22M38 94H26M38 102H20M38 110H26M38 118H22M38 126H26M38 134H20M38 142H26M38 150H22M38 158H26" stroke="#ffc93c"/>
+</g>
+<use href="#fr" transform="translate(320 0) scale(-1 1)"/>
+<rect x="38" y="62" width="244" height="104" fill="#ff6b7a"/>
+<rect x="38" y="62" width="64" height="104" fill="#1f4e8c"/>
+<rect x="218" y="62" width="64" height="104" fill="#1f4e8c"/>
+<g>
+  <rect x="44" y="66" width="52" height="8" fill="url(#saw)"/><rect x="44" y="154" width="52" height="8" fill="url(#saw)" transform="translate(0 316) scale(1 -1)" opacity="0"/>
+  <rect x="44" y="82" width="52" height="12" fill="url(#dia)"/>
+  <use href="#star" x="70" y="114"/>
+  <rect x="44" y="134" width="52" height="12" fill="url(#dia)"/>
+  <rect x="44" y="152" width="52" height="8" fill="url(#saw)" transform="translate(0 312) scale(1 -1)" />
+</g>
+<use href="#star" x="0" y="0" transform="translate(70 114)" opacity="0"/>
+<g transform="translate(174 0)">
+  <rect x="44" y="66" width="52" height="8" fill="url(#saw)"/>
+  <rect x="44" y="82" width="52" height="12" fill="url(#dia)"/>
+  <use href="#star" x="70" y="114"/>
+  <rect x="44" y="134" width="52" height="12" fill="url(#dia)"/>
+  <rect x="44" y="152" width="52" height="8" fill="url(#saw)" transform="translate(0 312) scale(1 -1)"/>
+</g>
+<rect x="102" y="62" width="4" height="104" fill="#fff8e4"/><rect x="214" y="62" width="4" height="104" fill="#fff8e4"/>
+<g fill="#fff8e4" opacity=".85"><circle cx="124" cy="92" r="2"/><circle cx="144" cy="92" r="2"/><circle cx="164" cy="92" r="2"/><circle cx="184" cy="92" r="2"/><circle cx="204" cy="92" r="2"/><circle cx="124" cy="136" r="2"/><circle cx="144" cy="136" r="2"/><circle cx="164" cy="136" r="2"/><circle cx="184" cy="136" r="2"/><circle cx="204" cy="136" r="2"/></g>
+<g fill="#ffc93c"><path d="M160 104l12 10-12 10-12-10z"/></g><path d="M160 108l7 6-7 6-7-6z" fill="#fff8e4"/><circle cx="160" cy="114" r="2.500" fill="#ff6b7a"/>
+<rect x="38" y="62" width="244" height="104" fill="url(#fold)"/>
+</g>
+<g transform="translate(262 206)">
+  <rect x="-14" y="-12" width="28" height="22" rx="4" fill="#1f4e8c"/><rect x="-18" y="-14" width="36" height="5" rx="2" fill="#ffc93c"/><rect x="-18" y="8" width="36" height="5" rx="2" fill="#ffc93c"/>
+  <path d="M-10-6H10M-10-1H10M-10 4H10" stroke="#ff6b7a" stroke-width="2.500"/>
+</g>
+<g transform="translate(60 208)">
+  <rect x="-12" y="-11" width="24" height="20" rx="4" fill="#ff6b7a"/><rect x="-16" y="-13" width="32" height="5" rx="2" fill="#fff8e4"/><rect x="-16" y="7" width="32" height="5" rx="2" fill="#fff8e4"/>
+  <path d="M-8-5H8M-8 0H8M-8 4H8" stroke="#ffc93c" stroke-width="2.200"/>
+</g>
+<path d="M82 214 L120 202" stroke="#55aae7" stroke-width="2" stroke-linecap="round"/><path d="M120 202 Q140 196 148 206 T170 208" fill="none" stroke="#ffc93c" stroke-width="1.600"/>
+</svg>

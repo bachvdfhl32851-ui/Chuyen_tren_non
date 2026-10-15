@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-hidden="true">
+<style>
+.n{animation:fl 3.4s ease-in-out infinite;transform-box:fill-box}
+.n2{animation-delay:-1.1s}.n3{animation-delay:-2.2s}
+@keyframes fl{0%,100%{transform:translateY(4px);opacity:.55}50%{transform:translateY(-8px);opacity:1}}
+.k{animation:kh 3.4s ease-in-out infinite;transform-origin:160px 150px}
+@keyframes kh{0%,100%{rotate:0deg}50%{rotate:-2deg}}
+@media (prefers-reduced-motion:reduce){.n,.k{animation:none}}
+</style>
+<defs>
+<linearGradient id="bam" x1="0" x2="1"><stop offset="0" stop-color="#ffea97"/><stop offset=".55" stop-color="#ffd739"/><stop offset="1" stop-color="#ea7006"/></linearGradient>
+<linearGradient id="wd" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#da6906"/><stop offset="1" stop-color="#924604"/></linearGradient>
+</defs>
+<rect width="320" height="240" fill="#c4ebce"/>
+<circle cx="258" cy="52" r="26" fill="#fff6d4" opacity=".9"/>
+<path d="M0 170 Q50 120 100 150 T200 138 T320 150 V240 H0Z" fill="#95dca7"/>
+<path d="M0 195 Q70 160 140 184 T320 176 V240 H0Z" fill="#5ec979"/>
+<path d="M0 218 Q80 200 160 214 T320 208 V240 H0Z" fill="#3bb058"/>
+<g class="k">
+<g transform="rotate(-9 160 130)">
+  <g id="pipes">
+    <rect x="108" y="22" width="12" height="130" rx="3" fill="url(#bam)" stroke="#c35e05" stroke-width="1.2"/>
+    <rect x="126" y="36" width="12" height="116" rx="3" fill="url(#bam)" stroke="#c35e05" stroke-width="1.2"/>
+    <rect x="144" y="54" width="12" height="98" rx="3" fill="url(#bam)" stroke="#c35e05" stroke-width="1.2"/>
+    <rect x="162" y="72" width="12" height="80" rx="3" fill="url(#bam)" stroke="#c35e05" stroke-width="1.2"/>
+    <rect x="180" y="92" width="12" height="60" rx="3" fill="url(#bam)" stroke="#c35e05" stroke-width="1.2"/>
+    <rect x="198" y="112" width="12" height="40" rx="3" fill="url(#bam)" stroke="#c35e05" stroke-width="1.2"/>
+  </g>
+  <g fill="#a65004">
+    <ellipse cx="114" cy="23" rx="5" ry="2.2"/><ellipse cx="132" cy="37" rx="5" ry="2.2"/><ellipse cx="150" cy="55" rx="5" ry="2.2"/>
+    <ellipse cx="168" cy="73" rx="5" ry="2.2"/><ellipse cx="186" cy="93" rx="5" ry="2.2"/><ellipse cx="204" cy="113" rx="5" ry="2.2"/>
+  </g>
+  <g fill="#e2b500">
+    <rect x="107" y="62" width="14" height="3" rx="1"/><rect x="107" y="98" width="14" height="3" rx="1"/>
+    <rect x="125" y="74" width="14" height="3" rx="1"/><rect x="125" y="108" width="14" height="3" rx="1"/>
+    <rect x="143" y="92" width="14" height="3" rx="1"/><rect x="143" y="120" width="14" height="3" rx="1"/>
+    <rect x="161" y="108" width="14" height="3" rx="1"/>
+    <rect x="179" y="122" width="14" height="3" rx="1"/>
+  </g>
+  <rect x="102" y="126" width="114" height="12" rx="3" fill="#ff6b7a"/>
+  <g fill="#ffc93c"><circle cx="114" cy="132" r="2.2"/><circle cx="132" cy="132" r="2.2"/><circle cx="150" cy="132" r="2.2"/><circle cx="168" cy="132" r="2.2"/><circle cx="186" cy="132" r="2.2"/><circle cx="204" cy="132" r="2.2"/></g>
+  <rect x="98" y="148" width="124" height="24" rx="9" fill="url(#wd)"/>
+  <rect x="104" y="151" width="112" height="5" rx="2.5" fill="#f9841d" opacity=".6"/>
+  <rect x="94" y="152" width="8" height="16" rx="3" fill="#1f4e8c"/>
+  <path d="M100 156 L64 176 Q56 181 61 188 Q68 192 76 186 L104 168Z" fill="#924604"/>
+  <ellipse cx="62" cy="185" rx="5.5" ry="4" transform="rotate(-30 62 185)" fill="#192439"/>
+  <rect x="206" y="152" width="6" height="16" rx="3" fill="#ffc93c"/>
+</g>
+</g>
+<g fill="#1f4e8c" stroke="#1f4e8c">
+  <g class="n"><ellipse cx="256" cy="108" rx="6" ry="4.4" transform="rotate(-20 256 108)" stroke="none"/><path d="M261 106 V84 q9 3 10 12" fill="none" stroke-width="2.4" stroke-linecap="round"/></g>
+  <g class="n n2"><ellipse cx="280" cy="140" rx="5" ry="3.6" transform="rotate(-20 280 140)" stroke="none"/><path d="M284.500 138.500 V120 q8 3 9 11" fill="none" stroke-width="2.2" stroke-linecap="round"/></g>
+  <g class="n n3"><ellipse cx="236" cy="62" rx="4.600" ry="3.400" transform="rotate(-20 236 62)" stroke="none"/><path d="M240.500 60.500 V44 q8 3 9 10" fill="none" stroke-width="2" stroke-linecap="round"/></g>
+</g>
+</svg>

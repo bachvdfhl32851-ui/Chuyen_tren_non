@@ -1,0 +1,81 @@
+/* =====================================================================
+   SAC MAU TAY BAC: hoa van tho cam, canh dong ruong bac thang + nha san,
+   canh hoa ban roi, muc "Sac mau Tay Bac". Nap SAU theme.css.
+   ===================================================================== */
+:root{--tb-band:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2224%22%20viewBox%3D%220%200%2048%2024%22%3E%3Crect%20width%3D%2248%22%20height%3D%2224%22%20fill%3D%22%231f4e8c%22%2F%3E%3Crect%20width%3D%2248%22%20height%3D%222%22%20fill%3D%22%23ffc93c%22%2F%3E%3Crect%20y%3D%2222%22%20width%3D%2248%22%20height%3D%222%22%20fill%3D%22%23ffc93c%22%2F%3E%3Cpath%20d%3D%22M0%202h6l-3%204z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M6%202h6l-3%204z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M12%202h6l-3%204z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M18%202h6l-3%204z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M24%202h6l-3%204z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M30%202h6l-3%204z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M36%202h6l-3%204z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M42%202h6l-3%204z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M0%2022h6l-3%20-4z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M6%2022h6l-3%20-4z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M12%2022h6l-3%20-4z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M18%2022h6l-3%20-4z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M24%2022h6l-3%20-4z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M30%2022h6l-3%20-4z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M36%2022h6l-3%20-4z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cpath%20d%3D%22M42%2022h6l-3%20-4z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Cg%20transform%3D%22translate%2824%2012%29%22%3E%3Crect%20x%3D%22-4.2%22%20y%3D%22-4.2%22%20width%3D%228.4%22%20height%3D%228.4%22%20fill%3D%22%23fff8e4%22%2F%3E%3Crect%20x%3D%22-4.2%22%20y%3D%22-4.2%22%20width%3D%228.4%22%20height%3D%228.4%22%20fill%3D%22%23fff8e4%22%20transform%3D%22rotate%2845%29%22%2F%3E%3Crect%20x%3D%22-2.4%22%20y%3D%22-2.4%22%20width%3D%224.8%22%20height%3D%224.8%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Crect%20x%3D%22-2.4%22%20y%3D%22-2.4%22%20width%3D%224.8%22%20height%3D%224.8%22%20fill%3D%22%23ff6b7a%22%20transform%3D%22rotate%2845%29%22%2F%3E%3Ccircle%20r%3D%221.3%22%20fill%3D%22%23ffc93c%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M0%207.5L4.5%2012%200%2016.5-4.5%2012z%20M48%207.5L52.5%2012%2048%2016.5%2043.5%2012z%22%20fill%3D%22%23ffc93c%22%2F%3E%3Cpath%20d%3D%22M0%2010L2%2012%200%2014-2%2012z%20M48%2010L50%2012%2048%2014%2046%2012z%22%20fill%3D%22%23ff6b7a%22%2F%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%221.5%22%20fill%3D%22%23fff8e4%22%2F%3E%3Ccircle%20cx%3D%2236%22%20cy%3D%2212%22%20r%3D%221.5%22%20fill%3D%22%23fff8e4%22%2F%3E%3C%2Fsvg%3E")}
+
+/* ---- dai tho cam duoi menu va tren chan trang (moi trang) ---- */
+header::after{content:""!important;display:block!important;position:absolute;left:0;right:0;bottom:0;height:9px;background:var(--tb-band) 0 0/auto 100% repeat-x}
+footer.ft::before{content:""!important;display:block!important;position:absolute;left:0;right:0;top:0;height:16px;background:var(--tb-band) 0 0/auto 100% repeat-x}
+
+/* ---- canh nui o chan hero ---- */
+.hero{isolation:isolate}
+.tb-petals{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+.tb-petal{position:absolute;top:0;left:var(--x);width:var(--s);height:var(--s);background:var(--img) center/contain no-repeat;opacity:var(--o);animation:tbFall var(--d) linear var(--dl) infinite;will-change:transform}
+.tb-petals.paused .tb-petal{animation-play-state:paused}
+@keyframes tbFall{
+  0%{transform:translate3d(0,-8vh,0) rotate(0)}
+  33%{transform:translate3d(calc(var(--dx)*.7),36vh,0) rotate(130deg)}
+  66%{transform:translate3d(calc(var(--dx)*-.5),72vh,0) rotate(250deg)}
+  100%{transform:translate3d(var(--dx),112vh,0) rotate(390deg)}
+}
+@media (prefers-reduced-motion:reduce){.tb-petals{display:none}}
+
+/* =====================================================================
+   TRANG TRI: trong dong Dong Son, goc tho cam, sao tam canh,
+   hoa ban, bong lua, tre
+   ===================================================================== */
+:root{--tb-goc:url("../resources/images/taybac/goc-tho-cam.svg");--tb-sao:url("../resources/images/taybac/sao-8-canh.svg")}
+
+/* trong dong mo sau tieu de hero */
+@keyframes tbSpin{to{rotate:360deg}}
+@media (prefers-reduced-motion:reduce){.tb-div img{animation:none}}
+
+/* goc tho cam tren the */
+.intro-text,.stat,.dh-card,.card,.fmt,.art-body{background-image:var(--tb-goc);background-repeat:no-repeat;background-position:right top;background-size:46px 46px}
+.mc-pic::before,.tb-pic::before{content:"";position:absolute;top:0;right:0;width:44px;height:44px;background:var(--tb-goc) top right/contain no-repeat;z-index:2;pointer-events:none}
+.mc-pic::before{left:0;right:auto;transform:scaleX(-1)}
+
+/* sao tam canh canh tieu de */
+.intro-head h2::before,.ss-head h2::before,.dh-head h2::before,.tb-head h2::before,.ss-head h2::after,.tb-head h2::after,.pg .in>h2::before{
+  content:"";display:inline-block;width:.6em;height:.6em;background:var(--tb-sao) center/contain no-repeat;vertical-align:.04em}
+.intro-head h2::before,.dh-head h2::before,.pg .in>h2::before{margin-right:.4em}
+.ss-head h2::before,.tb-head h2::before{margin-right:.45em}
+.ss-head h2::after,.tb-head h2::after{display:inline-block!important;content:""!important;margin-left:.45em;height:.6em!important;width:.6em!important;background:var(--tb-sao) center/contain no-repeat!important}
+
+/* day phan cach: tho cam + trong dong */
+.tb-div{display:flex;align-items:center;gap:clamp(10px,2vw,24px);max-width:1180px;margin:clamp(6px,2vw,24px) auto;padding:0 5vw}
+.tb-div i{flex:1;height:12px;background:var(--tb-band) 0 0/auto 100% repeat-x;border-radius:2px}
+.tb-div img{flex:none;width:clamp(58px,7vw,88px);height:auto;animation:tbSpin 90s linear infinite;filter:drop-shadow(0 3px 4px rgba(27,39,63,.3))}
+
+/* hinh trang tri o goc muc */
+.tb-deco{position:absolute;z-index:0;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.tb-deco.d-tr{top:clamp(30px,5vw,80px);right:0;width:clamp(130px,15vw,215px)}
+.tb-deco.d-tl{top:clamp(30px,5vw,80px);left:0;width:clamp(130px,15vw,215px);transform:scaleX(-1)}
+.tb-deco.d-bl{bottom:0;left:0;width:clamp(80px,8vw,125px)}
+.tb-deco.d-br{bottom:0;right:0;width:clamp(80px,8vw,120px)}
+.tb-deco.drum{opacity:.35}
+.dh>.in,.intro .in,.pg>.in{position:relative;z-index:1}
+.dh,.pg,.seasons{position:relative}
+@media(max-width:1100px){.tb-deco{display:none}}
+#gioithieu>.tb-deco{top:-30px;right:2vw;width:clamp(120px,13vw,175px)}
+.intro-text,.stat,.dh-card,.card,.fmt,.art-body{background-size:54px 54px}
+
+/* ===== tach cac muc trang chu: nen xen ke + vien tho cam + trong dong o ranh gioi ===== */
+#gioithieu,#sonoibat,#cacmua,#donghanh{
+  position:relative;
+  padding-block:clamp(64px,8vw,110px);
+  background-image:var(--tb-band);
+  background-repeat:repeat-x;
+  background-position:top left;
+  background-size:auto 12px
+}
+#gioithieu{background-color:var(--paper)}
+#sonoibat{background-color:color-mix(in srgb,#ffc93c 26%,var(--paper))}
+#cacmua{background-color:color-mix(in srgb,#4da8e8 16%,var(--paper))}
+#donghanh{background-color:color-mix(in srgb,#ff6b7a 11%,var(--paper))}
+#gioithieu,#sonoibat,#cacmua{box-shadow:inset 0 -1px 0 color-mix(in srgb,var(--green) 25%,transparent)}
+.tb-div.tb-sec{height:0;max-width:none;margin:0;padding:0;justify-content:center;position:relative;z-index:5;overflow:visible}
+.tb-div.tb-sec i{display:none}
+.tb-div.tb-sec img{width:clamp(64px,7.5vw,96px);background:var(--card);border-radius:50%;padding:4px;box-shadow:0 0 0 4px var(--green),0 6px 14px rgba(31,78,140,.35)}
+#gioithieu>.tb-deco{top:24px}

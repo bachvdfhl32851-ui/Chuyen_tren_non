@@ -1,4 +1,4 @@
-:root{--fx-glow:238,185,99}
+:root{--fx-glow:255,201,60}
 /* ---------------------------------------------------------------------
    2. Tilt / Magnetic + Glow theo chuot
 --------------------------------------------------------------------- */
@@ -52,7 +52,7 @@
 .fx-ripple {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(255,255,255, 0.55);
     transform: scale(0);
     animation: fx-ripple-anim 620ms ease-out forwards;
     pointer-events: none;
@@ -60,7 +60,7 @@
 }
 
 [data-theme="dark"] .fx-ripple {
-    background: rgba(238, 185, 99, 0.45);
+    background: rgba(255,201,60, 0.45);
 }
 
 @keyframes fx-ripple-anim {
@@ -112,9 +112,9 @@
 
 .fx-glass{background:rgba(255,255,255,.4)!important;backdrop-filter:blur(14px) saturate(160%);-webkit-backdrop-filter:blur(14px) saturate(160%);border:1px solid rgba(255,255,255,.55)}
 [data-theme="dark"] .fx-glass{background:rgba(255,255,255,.07)!important;border-color:rgba(255,255,255,.14)}
-.top-btn{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:60;width:52px;height:52px;border-radius:50%;border:3px solid var(--ink);background:var(--gold);color:#2e2a12;font:1.6rem var(--h);cursor:pointer;opacity:0;transform:translateY(20px) scale(.8);pointer-events:none;transition:.3s}
+.top-btn{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:60;width:52px;height:52px;border-radius:50%;border:3px solid var(--ink);background:var(--gold);color:#131c2d;font:1.6rem var(--h);cursor:pointer;opacity:0;transform:translateY(20px) scale(.8);pointer-events:none;transition:.3s}
 .top-btn.show{opacity:1;transform:none;pointer-events:auto}
-.top-btn:hover{background:var(--green);color:#fff}
+.top-btn:hover{background:var(--green);color:#ffffff}
 @media (prefers-reduced-motion:reduce){.fx-reveal,.kinetic-word{opacity:1!important;transform:none!important}}
 
 /* ---------------------------------------------------------------------
@@ -179,7 +179,7 @@
 
 @media (pointer: fine){html.fx-native,html.fx-native *{cursor:auto!important}html.fx-native a,html.fx-native button{cursor:pointer!important}}
 
-.card.gold .tag{background:#2e2a12;color:var(--gold)}
+.card.gold .tag{background:#131c2d;color:var(--gold)}
 
 @media (pointer: fine){
   html.fx-has-cursor:not(.fx-native):not(.fx-iframe),
