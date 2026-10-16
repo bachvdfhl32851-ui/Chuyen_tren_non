@@ -1,0 +1,100 @@
+/* ===== MÙA YÊU THƯƠNG · ĐIỀU ƯỚC CỦA EM ===== */
+.du{position:relative;padding:clamp(56px,7vw,100px) 20px clamp(64px,8vw,110px);background-color:color-mix(in srgb,var(--sage) 13%,var(--paper));color:var(--ink)}
+.du .in{max-width:1080px}
+.du h2{font:clamp(1.9rem,4.2vw,2.8rem)/1.15 var(--h);margin:.1em 0 .35em;color:var(--green)}
+.du h3{font:clamp(1.35rem,2.6vw,1.8rem)/1.2 var(--h);margin:0 0 .5em}
+.du p{line-height:1.7;margin:.55em 0}
+.du-lead{font-size:clamp(1.05rem,1.8vw,1.25rem);max-width:760px}
+.du-block{margin-top:clamp(40px,5vw,64px)}
+.du-box{background:var(--card);border:1px solid color-mix(in srgb,var(--ink) 22%,transparent);border-radius:22px;padding:clamp(20px,3vw,34px);box-shadow:0 8px 24px rgba(46,42,18,.08)}
+
+/* giới thiệu + ảnh */
+.du-about{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(20px,3.5vw,44px);align-items:start}
+.du-photo{margin:0;border-radius:22px;overflow:hidden;border:6px solid var(--card);box-shadow:0 10px 28px rgba(46,42,18,.18);rotate:1.5deg}
+.du-photo img{display:block;width:100%;height:auto}
+.du-accept{list-style:none;margin:.8em 0;padding:0;display:grid;gap:10px}
+.du-accept li{display:flex;gap:12px;align-items:flex-start;line-height:1.55;padding:10px 14px;border-radius:14px;background:color-mix(in srgb,var(--gold) 20%,var(--card))}
+.du-accept li::before{content:"";flex:none;width:12px;height:12px;margin-top:.45em;border-radius:50%;background:var(--green)}
+
+/* 3 bước */
+.du-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.du-step{background:var(--card);border:1px solid color-mix(in srgb,var(--ink) 22%,transparent);border-radius:20px;padding:22px 22px 24px;position:relative}
+.du-step b.n{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--green);color:#fff;font:1.25rem var(--h);margin-bottom:10px}
+.du-step h4{margin:0 0 6px;font:1.2rem var(--h)}
+.du-step p{margin:0;font-size:.97rem}
+
+/* form */
+.du-form{display:grid;gap:16px;margin-top:10px}
+.du-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.du-field{display:grid;gap:6px}
+.du-field>span,.du-fs legend{font-weight:600;font-size:.95rem}
+.du-field>span i,.du-fs legend i{color:var(--red);font-style:normal}
+.du input[type=text],.du input[type=tel],.du input[type=email],.du select,.du textarea,.du-dlg input[type=text],.du-dlg input[type=tel],.du-dlg input[type=email],.du-dlg input[type=date],.du-dlg select,.du-dlg textarea{width:100%;box-sizing:border-box;padding:11px 14px;border:1.5px solid color-mix(in srgb,var(--ink) 32%,transparent);border-radius:12px;background:var(--paper);color:var(--ink);font:400 1rem var(--b)}
+.du textarea,.du-dlg textarea{min-height:120px;resize:vertical}
+.du input:focus-visible,.du select:focus-visible,.du textarea:focus-visible,.du-dlg :is(input,select,textarea):focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.du-note{font-size:.9rem;opacity:.8;margin:0}
+.du-btn{display:inline-block;padding:12px 28px;border-radius:99px;background:var(--green);color:#fff;border:0;cursor:pointer;font:1.15rem var(--h);text-decoration:none;transition:transform .15s,filter .15s}
+.du-btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.du-btn.alt{background:var(--gold);color:#2e2a12}
+.du-btn.ghost{background:transparent;color:var(--ink);border:1.5px solid color-mix(in srgb,var(--ink) 40%,transparent)}
+.du-btn.sm{padding:9px 20px;font-size:1rem}
+.du-thanks{display:none;margin-top:18px;padding:20px 22px;border-radius:18px;background:color-mix(in srgb,var(--green) 16%,var(--card));border:1.5px solid var(--green);font-size:1.08rem;line-height:1.65}
+.du-thanks.on{display:block;animation:duIn .4s ease}
+.du-err{display:none;margin:0;color:var(--red);font-weight:600}
+.du-err.on{display:block}
+@keyframes duIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* đã thành hiện thực */
+.du-done{background:color-mix(in srgb,var(--gold) 24%,var(--paper));border:1px solid color-mix(in srgb,var(--ink) 18%,transparent);border-radius:22px;padding:clamp(22px,3.2vw,38px)}
+.du-kick{font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;opacity:.75;margin:0 0 .5em}
+.du-check{display:flex;gap:10px;align-items:center;font-size:.97rem;margin:.9em 0 1.1em}
+.du-check svg{flex:none;width:20px;height:20px;color:var(--green)}
+.du-journey{display:none;margin-top:26px;padding-top:24px;border-top:1.5px dashed color-mix(in srgb,var(--ink) 30%,transparent)}
+.du-journey.on{display:block;animation:duIn .4s ease}
+.du-journey h4{font:1.25rem var(--h);margin:0 0 10px}
+.du-two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,36px)}
+.du-list{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:s}
+.du-list li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;line-height:1.5}
+.du-list li::before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--green);color:#fff;font:1rem var(--h)}
+.du-list b{display:block}
+.du-list span{font-size:.95rem;opacity:.88}
+.du-empty{margin-top:18px;padding:14px 18px;border-radius:14px;background:var(--card);border:1px dashed color-mix(in srgb,var(--ink) 35%,transparent)}
+
+/* bộ lọc + hồ sơ */
+.du-filters{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0 8px;padding:18px;border-radius:18px;background:var(--card);border:1px solid color-mix(in srgb,var(--ink) 22%,transparent)}
+.du-count{margin:8px 2px 14px;font-size:.95rem;opacity:.85}
+.du-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.du-card{display:flex;flex-direction:column;background:var(--card);border:1px solid color-mix(in srgb,var(--ink) 22%,transparent);border-radius:20px;padding:22px;box-shadow:0 8px 22px rgba(46,42,18,.08)}
+.du-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.du-tag{display:inline-flex;align-items:center;gap:6px;padding:3px 12px;border-radius:99px;font-size:.82rem;font-weight:600;background:color-mix(in srgb,var(--ink) 10%,var(--card))}
+.du-tag i{width:9px;height:9px;border-radius:50%;background:currentColor}
+.p-gap{color:#b3261e}.p-can{color:#9a6b00}.p-bosung{color:#2f6f3a}
+.s-tim{color:#b3261e}.s-ketnoi{color:#9a6b00}.s-thongnhat{color:#2f56a8}.s-xong{color:#2f6f3a}
+.du-card h4{font:1.25rem/1.3 var(--h);margin:0 0 12px}
+.du-card dl{margin:0 0 12px;display:grid;gap:10px}
+.du-card dt{font-weight:600;font-size:.92rem}
+.du-card dd{margin:2px 0 0;font-size:.95rem;line-height:1.55;opacity:.9}
+.du-more{display:none;margin:0 0 12px;padding:12px 14px;border-radius:12px;background:color-mix(in srgb,var(--gold) 18%,var(--card));font-size:.93rem;line-height:1.55}
+.du-more.on{display:block}
+.du-more ul{margin:.4em 0 0;padding-left:1.1em}
+.du-state{margin:auto 0 14px;padding-top:12px;border-top:1px solid color-mix(in srgb,var(--ink) 15%,transparent);font-size:.9rem}
+.du-acts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.du-none{grid-column:1/-1;padding:22px;text-align:center;border-radius:16px;background:var(--card);border:1px dashed color-mix(in srgb,var(--ink) 35%,transparent)}
+
+/* hộp thoại "Tôi muốn hỗ trợ" */
+.du-dlg{width:min(600px,calc(100vw - 28px));max-height:calc(100vh - 28px);padding:0;border:0;border-radius:22px;background:var(--card);color:var(--ink);box-shadow:0 24px 70px rgba(0,0,0,.4)}
+.du-dlg::backdrop{background:rgba(20,22,12,.55)}
+.du-dlg form{display:grid;gap:14px;padding:clamp(20px,3vw,32px)}
+.du-dlg h3{margin:0;font:1.5rem var(--h);color:var(--green)}
+.du-dlg .x{position:absolute;right:12px;top:10px;width:38px;height:38px;border:0;border-radius:50%;background:transparent;color:var(--ink);font-size:1.6rem;cursor:pointer}
+.du-fs{border:0;padding:0;margin:0;display:grid;gap:8px}
+.du-fs label{display:flex;gap:10px;align-items:center}
+.du-chk{display:flex;gap:10px;align-items:flex-start;font-size:.93rem;line-height:1.5}
+.du-chk input{margin-top:.25em}
+
+@media(max-width:900px){.du-filters{grid-template-columns:1fr 1fr}.du-steps{grid-template-columns:1fr}.du-two{grid-template-columns:1fr}.du-about{grid-template-columns:1fr}.du-photo{max-width:420px;rotate:none}}
+@media(max-width:560px){.du-row,.du-filters,.du-acts{grid-template-columns:1fr}}
+.du p{max-width:none}.du-note{max-width:640px}.du-lead{max-width:760px}
+.du-empty{margin-top:28px}
+.du{padding-top:clamp(150px,13vw,190px)}
+.du .sea{background:var(--green);color:#fff;margin-bottom:.6rem}

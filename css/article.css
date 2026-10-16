@@ -2,14 +2,14 @@
 .art{max-width:820px;margin:0 auto}
 .art-top{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:.6rem}
 .art-top .sea{margin-bottom:0}
-.art-top .kick{display:inline-block;padding:2px 16px;border-radius:99px;font:600 1.05rem var(--h);background:var(--gold);color:#131c2d}
+.art-top .kick{display:inline-block;padding:2px 16px;border-radius:99px;font:600 1.05rem var(--h);background:var(--gold);color:#2e2a12}
 .art-title{font-family:var(--h);font-weight:700;font-size:clamp(2.1rem,5.6vw,3.6rem);line-height:1.12;color:var(--green);margin:.2rem 0 .5rem;text-wrap:balance}
 :root[data-theme=dark] .art-title{color:var(--gold)}
 .art-sub{margin:0 0 1.2rem;max-width:none;font:600 1.25rem var(--h);color:var(--chain,var(--ink));opacity:.85}
 :root[data-theme=dark] .art-sub{color:var(--ink)}
 
 /* khung noi dung */
-.art-body{margin-top:1.4rem;padding:clamp(22px,4.5vw,46px);background:var(--card);color:var(--ink);border:3px solid var(--ink);border-radius:var(--r,30px);box-shadow:8px 8px 0 var(--chain,#1f4e8c)}
+.art-body{margin-top:1.4rem;padding:clamp(22px,4.5vw,46px);background:var(--card);color:var(--ink);border:3px solid var(--ink);border-radius:var(--r,30px);box-shadow:8px 8px 0 var(--chain,#26335f)}
 .art-body p{max-width:none;font-size:1.08rem;line-height:1.9;margin:.9em 0}
 .art-body>:first-child{margin-top:0}
 .art-body>:last-child{margin-bottom:0}
@@ -22,32 +22,32 @@
 .art-body h2{font-family:var(--h);font-weight:700;font-size:clamp(1.5rem,3.4vw,2rem);line-height:1.2;color:var(--green);margin:2.2rem 0 .3rem}
 :root[data-theme=dark] .art-body h2{color:var(--gold)}
 .art-body h2::after{content:"";display:block;width:64px;height:6px;margin-top:.4em;border-radius:99px;background:var(--gold)}
-.art-body h3{font-family:var(--h);font-weight:600;font-size:1.28rem;line-height:1.3;margin:1.6rem 0 .1rem;color:var(--red,#ff6b7a)}
-:root[data-theme=dark] .art-body h3{color:#fc8192}
+.art-body h3{font-family:var(--h);font-weight:600;font-size:1.28rem;line-height:1.3;margin:1.6rem 0 .1rem;color:var(--red,#d9482b)}
+:root[data-theme=dark] .art-body h3{color:#ff9a7e}
 
 /* tieu de danh so (photo story) */
 .art-body h2.numh{display:flex;align-items:center;gap:14px;margin-top:2.8rem;padding-top:1.6rem;border-top:3px dashed color-mix(in srgb,var(--ink) 35%,transparent)}
 .art-body h2.numh::after{display:none}
-.numh .n{display:inline-grid;place-items:center;min-width:54px;height:54px;padding:0 10px;border-radius:50%;background:var(--green);color:#ffffff;font:700 1.4rem var(--h);box-shadow:0 4px 0 var(--chain,#1f4e8c)}
+.numh .n{display:inline-grid;place-items:center;min-width:54px;height:54px;padding:0 10px;border-radius:50%;background:var(--green);color:#fff;font:700 1.4rem var(--h);box-shadow:0 4px 0 var(--chain,#26335f)}
 
 /* cau trich */
-.art-body .pull{margin:1.8rem 0;padding:14px 10px;text-align:center;font:700 clamp(1.25rem,3vw,1.6rem)/1.45 var(--h);color:var(--red,#ff6b7a);border-top:3px solid var(--gold);border-bottom:3px solid var(--gold)}
+.art-body .pull{margin:1.8rem 0;padding:14px 10px;text-align:center;font:700 clamp(1.25rem,3vw,1.6rem)/1.45 var(--h);color:var(--red,#d9482b);border-top:3px solid var(--gold);border-bottom:3px solid var(--gold)}
 :root[data-theme=dark] .art-body .pull{color:var(--gold)}
-.art-body blockquote{margin:1.4rem 0;padding:14px 22px;border-left:8px solid var(--red,#ff6b7a);border-radius:6px 22px 22px 6px;background:color-mix(in srgb,var(--red,#ff6b7a) 10%,var(--card))}
+.art-body blockquote{margin:1.4rem 0;padding:14px 22px;border-left:8px solid var(--red,#d9482b);border-radius:6px 22px 22px 6px;background:color-mix(in srgb,var(--red,#d9482b) 10%,var(--card))}
 .art-body blockquote p{margin:.3em 0;font:600 1.2rem/1.6 var(--h)}
 
 /* anh */
 .ph-fig{margin:1.8rem auto;max-width:560px}
-.ph-fig img{display:block;width:100%;height:auto;border:3px solid var(--ink);border-radius:20px;box-shadow:6px 6px 0 var(--chain,#1f4e8c)}
+.ph-fig img{display:block;width:100%;height:auto;border:3px solid var(--ink);border-radius:20px;box-shadow:6px 6px 0 var(--chain,#26335f)}
 .ph-fig.has-img{max-width:420px}
 .ph-box{display:grid;place-items:center;align-content:center;gap:8px;aspect-ratio:4/3;border:3px dashed color-mix(in srgb,var(--ink) 55%,transparent);border-radius:20px;background:color-mix(in srgb,var(--gold) 14%,var(--card));color:color-mix(in srgb,var(--ink) 65%,transparent);font:600 1rem var(--h)}
 .ph-box svg{width:56px;height:56px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .ph-fig figcaption{margin-top:.7rem;text-align:center;font:italic .98rem/1.55 var(--b);opacity:.85}
 
 /* video */
-.video-ph{position:relative;display:grid;place-items:center;align-content:center;gap:10px;aspect-ratio:16/9;border-radius:22px;border:3px solid var(--ink);background:linear-gradient(135deg,var(--chain,#1f4e8c),#141d2f);color:#ffffff;font:600 1.1rem var(--h);box-shadow:6px 6px 0 var(--gold)}
+.video-ph{position:relative;display:grid;place-items:center;align-content:center;gap:10px;aspect-ratio:16/9;border-radius:22px;border:3px solid var(--ink);background:linear-gradient(135deg,var(--chain,#26335f),#101733);color:#fff;font:600 1.1rem var(--h);box-shadow:6px 6px 0 var(--gold)}
 .video-ph .play{display:grid;place-items:center;width:84px;height:84px;border-radius:50%;background:var(--gold);box-shadow:0 6px 0 rgba(0,0,0,.3)}
-.video-ph .play svg{width:42px;height:42px;fill:#131c2d;margin-left:5px}
+.video-ph .play svg{width:42px;height:42px;fill:#2e2a12;margin-left:5px}
 .vid-cap{margin:.8rem 0 1.6rem!important;text-align:center;font:italic .98rem var(--b);opacity:.8}
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:1.6rem 0}
 .facts div{padding:14px 18px;border:3px solid var(--ink);border-radius:18px 6px 18px 6px;background:color-mix(in srgb,var(--sage) 16%,var(--card))}
@@ -55,6 +55,6 @@
 .facts dd{margin:.2rem 0 0;font:700 1.15rem var(--h)}
 
 @media(max-width:620px){
-  .art-body{box-shadow:5px 5px 0 var(--chain,#1f4e8c);border-radius:22px}
+  .art-body{box-shadow:5px 5px 0 var(--chain,#26335f);border-radius:22px}
   .numh .n{min-width:46px;height:46px;font-size:1.2rem}
 }

@@ -15,7 +15,7 @@
   gap:clamp(6px,2.5vw,36px);margin:clamp(30px,5vw,60px) auto clamp(34px,5vw,64px);
 }
 .dh-photo{
-  margin:0;background:#ffffff;border:3px solid var(--ink);
+  margin:0;background:#fff;border:3px solid var(--ink);
   border-radius:28px 10px 28px 10px;padding:10px;box-shadow:7px 7px 0 var(--ink);
   overflow:hidden;transition:rotate .45s cubic-bezier(.3,1.6,.5,1),translate .45s cubic-bezier(.3,1.6,.5,1);
 }
@@ -47,10 +47,10 @@
 .dh-close{font:600 clamp(1.15rem,2vw,1.5rem)/1.65 'Mali','Itim',cursive;max-width:none;margin:0;font-variant-ligatures:none;text-rendering:optimizeLegibility}
 .dh-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:1.4rem}
 .dh-actions .btn{margin:0;font-size:1.1rem;padding:11px 24px}
-.btn.blue{background:var(--blue);color:#ffffff}
+.btn.blue{background:var(--blue);color:#fff}
 .dh-note{
   margin:1rem 0 0;padding:.6em 1em;border-radius:16px;max-width:none;
-  background:#ffffff;color:#a20419;border:2px dashed #ed0625;font-size:.98rem;line-height:1.5;
+  background:#fff;color:#8a2a1c;border:2px dashed #c4472f;font-size:.98rem;line-height:1.5;
 }
 
 @media(max-width:860px){
@@ -63,7 +63,7 @@
 /* ==== trang tri nen ==== */
 .dh-deco{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .dh-leaf{position:absolute;width:clamp(30px,3.6vw,54px);height:auto;opacity:.85;transform-origin:20% 90%;animation:dhSway 5s ease-in-out infinite alternate}
-.dh-leaf use{stroke:#131c2d;stroke-width:3;stroke-linejoin:round}
+.dh-leaf use{stroke:#2e2a12;stroke-width:3;stroke-linejoin:round}
 .dh-leaf.l1{left:3%;top:5%;rotate:-25deg}
 .dh-leaf.l2{left:8%;top:12%;rotate:20deg;width:clamp(22px,2.6vw,38px);animation-delay:-1.5s}
 .dh-leaf.l3{right:4%;top:7%;rotate:35deg;animation-delay:-2.5s}
@@ -72,7 +72,7 @@
 .dh-leaf.l6{right:2%;top:50%;rotate:-40deg;animation-delay:-2s}
 @keyframes dhSway{to{transform:rotate(9deg)}}
 .dh-fire{position:absolute;left:3%;bottom:14px;width:clamp(90px,11vw,160px);height:auto;overflow:visible}
-.dh-hay{position:absolute;right:3%;bottom:12px;width:clamp(120px,14vw,200px);height:auto;filter:drop-shadow(0 8px 6px rgba(19,28,45,.22))}
+.dh-hay{position:absolute;right:3%;bottom:12px;width:clamp(120px,14vw,200px);height:auto;filter:drop-shadow(0 8px 6px rgba(46,42,18,.22))}
 .dh-fire .flame{transform-box:fill-box;transform-origin:50% 100%;animation:dhFlame 1.1s ease-in-out infinite alternate}
 @keyframes dhFlame{to{transform:scale(1.06,1.12) rotate(1.5deg)}}
 .dh-fire .sp{animation:dhSpark 2.6s ease-out infinite;opacity:0}

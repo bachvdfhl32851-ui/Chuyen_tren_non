@@ -169,7 +169,7 @@
     var r = mode === "reg", keep = {};
     if (modal) ["nm", "em", "pw"].forEach(function (i) { var e = $("#" + i); if (e) keep[i] = e.value; });
     modal.innerHTML = '<div class="mbox" role="dialog" aria-modal="true" aria-labelledby="mt"><button class="mx" aria-label="Close">×</button>' +
-      '<div class="mlogo"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#ffc93c" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4 38l13-22 8 12 6-8 13 18z"/></svg></div><h3 id="mt">' + (r ? T.reg[L()] : T.title[L()]) + "</h3><p>" + (r ? T.subr[L()] : T.sub[L()]) + "</p>" +
+      '<div class="mlogo"><svg viewBox="0 0 48 48" width="34" height="34" fill="none" stroke="#eeb963" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><path d="M4 38l13-22 8 12 6-8 13 18z"/></svg></div><h3 id="mt">' + (r ? T.reg[L()] : T.title[L()]) + "</h3><p>" + (r ? T.subr[L()] : T.sub[L()]) + "</p>" +
       '<div id="gbtn"></div><button class="sb" id="gfake" type="button">' + IC.g + "<span>" + T.g[L()] + '</span></button>' +
       '<div class="dv">' + T.or[L()] + "</div>" +
       '<form class="mf" id="mform" novalidate>' +

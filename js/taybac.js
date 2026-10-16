@@ -4,11 +4,11 @@
   var box = document.getElementById("tbPetals");
   if (!box || matchMedia("(prefers-reduced-motion:reduce)").matches) return;
   function uri(s) { return 'url("data:image/svg+xml,' + encodeURIComponent(s) + '")'; }
-  var petalPath = '<ellipse cx="12" cy="7.5" rx="4.6" ry="7" fill="#fffdf8" stroke="#fdd6b4" stroke-width=".6"/>';
+  var petalPath = '<ellipse cx="12" cy="7.5" rx="4.6" ry="7" fill="#fffdf8" stroke="#e6dfcc" stroke-width=".6"/>';
   var flower = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">' +
     [0, 72, 144, 216, 288].map(function (a) { return '<g transform="rotate(' + a + ' 12 12)">' + petalPath + '</g>'; }).join("") +
-    '<circle cx="12" cy="12" r="2.4" fill="#ffc93c"/><circle cx="12" cy="12" r="1" fill="#fa2e49"/></svg>';
-  var single = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="5.5" ry="9" fill="#fffdf8" stroke="#fec7cf" stroke-width=".7" transform="rotate(25 12 12)"/><path d="M12 19 Q11 12 14 5" stroke="#fdbdc5" stroke-width="1.2" fill="none"/></svg>';
+    '<circle cx="12" cy="12" r="2.4" fill="#d9bb3c"/><circle cx="12" cy="12" r="1" fill="#b64a77"/></svg>';
+  var single = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="5.5" ry="9" fill="#fffdf8" stroke="#e6dfcc" stroke-width=".7" transform="rotate(25 12 12)"/><path d="M12 19 Q11 12 14 5" stroke="#d9cdb8" stroke-width="1.2" fill="none"/></svg>';
   var imgs = [uri(flower), uri(single)];
   var n = innerWidth < 700 ? 11 : 20, r = Math.random;
   for (var i = 0; i < n; i++) {

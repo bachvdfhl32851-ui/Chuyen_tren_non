@@ -1,16 +1,16 @@
 :root{
-  --gold:#ffc93c;     
-  --green:#2b7bc0;    
-  --sage:#3aa655;      
-  --olive:#ff8a3d;    
-  --blue:#4da8e8;     
-  --red:#ff6b7a;      
-  --chain:#1f4e8c;   
+  --gold:#f6bb3c;     
+  --green:#3b9144;    
+  --sage:#7fae4b;      
+  --olive:#b4562d;    
+  --blue:#35509e;     
+  --red:#d9482b;      
+  --chain:#26335f;   
   --h:'Baloo 2','Itim','Mali',cursive;
   --b:'Mali','Itim',cursive;
   --r:30px;         
 }
-:root:not([data-theme=dark]){--paper:#fff8e4;--card:#fffdf4;--ink:#1c263a}
+:root:not([data-theme=dark]){--paper:#fff8e4;--card:#fffdf4;--ink:#3a2a1c}
 
 /* ---- chu ---- */
 h1,h2,h3,.hand{font-weight:700}
@@ -20,15 +20,15 @@ nav a{font-size:1.1rem;font-weight:600}
 .btn,.sea,.tag,.res a small{font-weight:600}
 .btn{font-size:1.2rem;border-radius:99px;box-shadow:0 5px 0 rgba(0,0,0,.22)}
 .btn:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.22)}
-.btn.alt{box-shadow:0 5px 0 #e3b600}
-.btn.blue{box-shadow:0 5px 0 #135686}
+.btn.alt{box-shadow:0 5px 0 #c58f1e}
+.btn.blue{box-shadow:0 5px 0 #243875}
 
 /* ---- hoa van tho cam ---- */
 :root{
-  --tho-cam:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Crect width='28' height='14' fill='%231f4e8c'/%3E%3Cpath d='M14 0l9 7-9 7-9-7z' fill='%23ff6b7a'/%3E%3Cpath d='M14 4l5 3-5 3-5-3z' fill='%23ffc93c'/%3E%3Ccircle cx='0' cy='7' r='1.8' fill='%23fff8e4'/%3E%3Ccircle cx='28' cy='7' r='1.8' fill='%23fff8e4'/%3E%3C/svg%3E");
+  --tho-cam:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'%3E%3Crect width='28' height='14' fill='%2326335f'/%3E%3Cpath d='M14 0l9 7-9 7-9-7z' fill='%23d9482b'/%3E%3Cpath d='M14 4l5 3-5 3-5-3z' fill='%23f6bb3c'/%3E%3Ccircle cx='0' cy='7' r='1.8' fill='%23fff8e4'/%3E%3Ccircle cx='28' cy='7' r='1.8' fill='%23fff8e4'/%3E%3C/svg%3E");
 }
 header::after{height:11px;background:var(--tho-cam) 0 0/28px 11px repeat-x}
-header{box-shadow:0 4px 14px rgba(28,38,58,.12)}
+header{box-shadow:0 4px 14px rgba(58,42,28,.12)}
 footer.ft{position:relative;background:var(--chain);padding-top:84px}
 footer.ft::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:var(--tho-cam) 0 0/28px 14px repeat-x}
 .ft-social a{color:var(--chain)}
@@ -42,7 +42,7 @@ footer.ft::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;
 .dh-card{box-shadow:8px 8px 0 var(--green)}
 .dh-card.b{box-shadow:8px 8px 0 var(--blue)}
 .dh-photo{box-shadow:6px 6px 0 var(--chain)}
-.logo{border-radius:20px;box-shadow:0 5px 0 #1f4e8c}
+.logo{border-radius:20px;box-shadow:0 5px 0 #1f5a2b}
 .collage .ph{border-radius:16px;overflow:hidden}
 .collage .p2,.collage .p3{border-color:var(--chain)}
 
@@ -57,10 +57,10 @@ body{background-image:radial-gradient(color-mix(in srgb,var(--gold) 45%,transpar
 @media(max-width:620px){footer.ft{padding-top:70px}}
 
 /* ----- the 5 mua ------ */
-.mc-sage{--c:#3aa655}
-.mc-olive{--c:#ff8a3d}
-.mc-blue{--c:#4da8e8}
-.mc-green{--c:#2b7bc0}
+.mc-sage{--c:#5e9a3c}
+.mc-olive{--c:#b4562d}
+.mc-blue{--c:#35509e}
+.mc-green{--c:#2f8a3c}
 
 
 /* =====================================================================
@@ -76,7 +76,7 @@ body{background-image:radial-gradient(color-mix(in srgb,var(--gold) 45%,transpar
 /* gach chan tieu de: net rang cua nhu nui */
 h2::after{
   height:12px;width:min(100%,150px);
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 10L6 2 12 10 18 2 24 10' fill='none' stroke='%23ff6b7a' stroke-width='3.2' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 10L6 2 12 10 18 2 24 10' fill='none' stroke='%23d9482b' stroke-width='3.2' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
 }
 
 /* vien tho cam tren dau cac the */
@@ -151,7 +151,7 @@ h2::after,.art-body h2::after,.art-body h2.numh::after{display:none!important;co
 header::after,footer.ft::before,footer::before{display:none!important;content:none!important}
 section::before,section::after,section:not(.intro)::before,section:not(.intro)::after{display:none!important;content:none!important}
 .collage::before,.collage::after{display:none!important;content:none!important}
-.wave,.hills,.tc-band,.mn-deco,.dh-deco,.dh-arrow,.ss-heart{display:none!important}
+.wave,.hills,.tc-band,.mn-deco,.dh-deco,.ss-heart{display:none!important}
 
 /* hero: không còn sóng núi nên bớt khoảng đệm đáy */
 .hero,:root[data-theme=dark] .hero{padding-bottom:110px}
@@ -163,18 +163,18 @@ section::before,section::after,section:not(.intro)::before,section:not(.intro)::
 .card,.intro-text,.dh-card,.dh-card.b,.fmt,.art-body,.dh-photo{
   border:1px solid color-mix(in srgb,var(--ink) 16%,transparent);
   border-radius:14px;
-  box-shadow:0 6px 20px rgba(28,38,58,.08);
+  box-shadow:0 6px 20px rgba(58,42,28,.08);
 }
-.card:hover{box-shadow:0 10px 26px rgba(28,38,58,.12)}
-#dong .fmt{border-color:color-mix(in srgb,var(--ink) 16%,transparent);box-shadow:0 6px 20px rgba(28,38,58,.08)}
+.card:hover{box-shadow:0 10px 26px rgba(58,42,28,.12)}
+#dong .fmt{border-color:color-mix(in srgb,var(--ink) 16%,transparent);box-shadow:0 6px 20px rgba(58,42,28,.08)}
 .out{border:1px solid color-mix(in srgb,var(--ink) 20%,transparent);border-radius:12px}
-.stat{border-radius:14px;box-shadow:0 6px 20px rgba(28,38,58,.06)}
-.collage .ph{border:0!important;border-radius:12px;box-shadow:0 4px 14px rgba(28,38,58,.15)}
+.stat{border-radius:14px;box-shadow:0 6px 20px rgba(58,42,28,.06)}
+.collage .ph{border:0!important;border-radius:12px;box-shadow:0 4px 14px rgba(58,42,28,.15)}
 .dh-photo{padding:6px;translate:none!important}
 .dh-photo img{border-radius:8px}
 .dh-photo:hover{translate:none}
 .dh-photos{gap:clamp(14px,2.5vw,32px)}
-.ph-fig img{border:0;border-radius:12px;box-shadow:0 4px 14px rgba(28,38,58,.15)}
+.ph-fig img{border:0;border-radius:12px;box-shadow:0 4px 14px rgba(58,42,28,.15)}
 
 /* nút, logo, menu: bỏ bóng cứng */
 .btn,.btn.alt,.btn.blue,.hero .btn,.hero .btn.alt,.ft-form button{box-shadow:none!important}
@@ -198,10 +198,57 @@ header{box-shadow:0 1px 0 color-mix(in srgb,var(--ink) 10%,transparent)}
 
 /* ===== 5 thẻ mùa: bo góc nhỏ, gọn ===== */
 .mc{
-  border:0;border-radius:10px;box-shadow:0 4px 14px rgba(28,38,58,.14);rotate:none!important;
+  border:0;border-radius:10px;box-shadow:0 4px 14px rgba(58,42,28,.14);rotate:none!important;
 }
 .ss-grid>li:nth-child(odd) .mc,.ss-grid>li:nth-child(even) .mc{rotate:none}
-.mc:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(28,38,58,.2)}
+.mc:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(58,42,28,.2)}
 .mc-pic::after{display:none}
 .mc-body{margin-top:0;border-radius:0;padding:clamp(18px,2vw,24px) clamp(14px,1.6vw,20px)}
 .ss-grid{gap:clamp(14px,1.6vw,22px)}
+
+
+/* =====================================================================
+   LOGO (hình ảnh) thay cho chữ "Chuyện trên non" ở thanh menu
+   ===================================================================== */
+.logo,.logo:hover{background:none;box-shadow:none;rotate:none;padding:0;margin-right:clamp(2px,.8vw,12px);display:inline-flex;align-items:center;line-height:0;border-radius:12px;transform:none}
+.logo img{display:block;width:auto;height:clamp(44px,4.3vw,58px)}
+:root[data-theme=dark] .logo{background:#fffddf;padding:3px 10px;border-radius:12px}
+:root[data-theme=dark] .logo img{height:clamp(38px,3.8vw,50px)}
+@media(max-width:620px){.logo img{height:40px}:root[data-theme=dark] .logo img{height:34px}}
+
+/* =====================================================================
+   MŨI TÊN GIỮA HAI ẢNH ĐIỂM TRƯỜNG (trước -> sau)
+   ===================================================================== */
+.dh-arrow{display:block;width:clamp(56px,8vw,110px);height:auto;color:var(--green);flex:none}
+
+/* =====================================================================
+   PHẦN CHUYỂN TIẾP: đường đất uốn lượn, rừng cây và núi
+   (nằm giữa ảnh bìa và mục Giới thiệu)
+   ===================================================================== */
+.road-scene{--rs-sky-top:#cfe0dc;--rs-sky-bot:#f4ecd3;--rs-far:#a8bfc9;--rs-far2:#8fb0b4;--rs-mid:#6f9886;--rs-hill:#5b8a49;--rs-grass:#7ba444;--rs-shoulder:#8fae52;--rs-road:#c29a66;--rs-hi:#d6b787;--rs-rut:#a07547;--rs-peb:#9a7a52;--rs-tuft:#5f8a35;--rs-trunk:#5a3d26;--t0a:#4f7f5a;--t0b:#5d8c52;--t0c:#477552;--t1a:#386a3a;--t1b:#447a3d;--t1c:#2f5f35;--t2a:#2b5a30;--t2b:#35703a;--t2c:#234c2a;position:relative;z-index:4;margin-top:-100px;pointer-events:none;background:linear-gradient(var(--rs-sky-top),var(--rs-sky-bot));-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 100px);mask-image:linear-gradient(to bottom,transparent 0,#000 100px)}
+:root[data-theme=dark] .road-scene{--rs-sky-top:#141c28;--rs-sky-bot:#2a2b22;--rs-far:#33465a;--rs-far2:#2c4452;--rs-mid:#2a4538;--rs-hill:#2a4a2a;--rs-grass:#3a5a26;--rs-shoulder:#46602b;--rs-road:#6e5337;--rs-hi:#7f6240;--rs-rut:#503a24;--rs-peb:#5a4430;--rs-tuft:#3f6428;--rs-trunk:#3a281a;--t0a:#27443a;--t0b:#2d4a35;--t0c:#244037;--t1a:#1f3d26;--t1b:#264a2a;--t1c:#1a3522;--t2a:#17301c;--t2b:#1e3d22;--t2c:#12281a}
+.road-scene svg{display:block;width:100%;height:max(240px,34.7vw)}
+.road-scene .rs-far{fill:var(--rs-far)}.road-scene .rs-far2{fill:var(--rs-far2)}.road-scene .rs-mid{fill:var(--rs-mid)}.road-scene .rs-hill{fill:var(--rs-hill)}.road-scene .rs-grass{fill:var(--rs-grass)}
+.road-scene .rs-shoulder{fill:var(--rs-shoulder)}.road-scene .rs-road{fill:var(--rs-road)}
+.road-scene .rs-hi{fill:none;stroke:var(--rs-hi);stroke-width:7;stroke-linecap:round;opacity:.55}
+.road-scene .rs-rut{fill:none;stroke:var(--rs-rut);stroke-width:5;stroke-linecap:round;opacity:.55}
+.road-scene .peb{fill:var(--rs-peb);opacity:.7}.road-scene .tuft{fill:var(--rs-tuft)}
+.road-scene .trunk{fill:var(--rs-trunk)}
+.road-scene .t0a>:not(.trunk){fill:var(--t0a)}.road-scene .t0b>:not(.trunk){fill:var(--t0b)}.road-scene .t0c>:not(.trunk){fill:var(--t0c)}
+.road-scene .t1a>:not(.trunk){fill:var(--t1a)}.road-scene .t1b>:not(.trunk){fill:var(--t1b)}.road-scene .t1c>:not(.trunk){fill:var(--t1c)}
+.road-scene .t2a>:not(.trunk){fill:var(--t2a)}.road-scene .t2b>:not(.trunk){fill:var(--t2b)}.road-scene .t2c>:not(.trunk){fill:var(--t2c)}
+
+@media(max-width:860px){.hero,:root[data-theme=dark] .hero{padding-bottom:110px}}
+
+/* mũi tên giữa hai ảnh: trên điện thoại xếp dọc, mũi tên chỉ xuống và nằm giữa */
+@media(max-width:860px){
+  .dh-photos{flex-direction:column;gap:6px}
+  .dh-arrow{margin:22px 0}
+}
+
+/* nối tự nhiên: đáy cảnh tan dần vào nền mục Giới thiệu, bỏ đường viền cứng */
+.road-scene::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:13%;background:linear-gradient(to bottom,transparent,var(--paper));pointer-events:none}
+#gioithieu{background-image:none!important}
+
+/* thanh menu đặc (không trong suốt) để chữ nội dung không lộ xuyên qua khi cuộn */
+header{background:var(--paper);-webkit-backdrop-filter:none;backdrop-filter:none}

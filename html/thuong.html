@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%232b7bc0'/%3E%3Cpath d='M6 37l13-21 8 12 5-7 10 16z' fill='%23ffc93c' stroke='%23fff8e4' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23338341'/%3E%3Cpath d='M6 37l13-21 8 12 5-7 10 16z' fill='%23eeb963' stroke='%23fff8e4' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
 <meta name="description" content="Mùa yêu thương: kết nối, sách, học bổng và những cách đồng hành cùng trẻ em vùng cao.">
 <title>Yêu thương · Chuyện trên non</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +17,11 @@
 <link rel="stylesheet" href="../css/footer.css?v=4">
 <link rel="stylesheet" href="../css/theme.css?v=9">
 <link rel="stylesheet" href="../css/taybac.css?v=1">
+<link rel="stylesheet" href="../css/dieu-uoc.css?v=1">
 </head>
 <body>
 <header>
-  <a class="logo" href="../index.html" data-en="Chuyen tren non">Chuyện trên non</a>
+  <a class="logo" href="../index.html" aria-label="Chuyện trên non – về trang chủ" data-en-aria="Chuyen tren non – back to home"><img src="../resources/images/logo.png" width="900" height="540" alt="Chuyện trên non"></a>
   <nav><a href="../index.html" data-en="Home">Trang chủ</a><a href="xuan.html" data-en="Spring">Mùa Xuân</a><a href="ha.html" data-en="Summer">Mùa Hạ</a><a href="thu.html" data-en="Autumn">Mùa Thu</a><a href="dong.html" data-en="Winter">Mùa Đông</a><a href="thuong.html" data-en="Love">Mùa Yêu thương</a></nav>
   <div class="hr">
     <div class="srch"><div class="sfield"><input id="q" type="search" placeholder="Tìm kiếm…" autocomplete="off" aria-label="Tìm kiếm" role="combobox" aria-expanded="false" aria-controls="res"></div><button class="ic sbtn" id="sbtn" type="button" aria-label="Tìm kiếm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg></button><div class="res" id="res" role="listbox" hidden></div></div>
@@ -31,17 +32,139 @@
   </div>
 </header>
 <main id="top">
-<section id="thuong" class="pg">
+<section id="dieu-uoc" class="du" aria-labelledby="duTitle">
   <img class="tb-deco d-tr" src="../resources/images/taybac/hoa-ban.svg" alt="" aria-hidden="true" loading="lazy"><div class="in">
-  <span class="sea" data-en="5 · The season of love">5 · Mùa yêu thương</span>
-  <h2 data-en="Every story is the start of an action">Mỗi câu chuyện là điểm khởi đầu của một hành động</h2>
-  <div class="grid">
-    <div class="card rv"><h3 data-en="What they need">Em đang cần</h3><p data-en="Real needs of children and school points.">Những nhu cầu thực tế của các em và điểm trường.</p></div>
-    <div class="card rv"><h3 data-en="Plant a green seed">Gieo một mầm xanh</h3><p data-en="Knowledge bookshelves and the journey of reading.">Tủ sách tri thức và hành trình đọc.</p></div>
-    <div class="card rv"><h3 data-en="Give a chance">Trao cơ hội</h3><p data-en="The scholarship fund.">Quỹ học bổng.</p></div>
-    <div class="card rv cta"><h3 data-en="Tie a thread of care">Nối một sợi thương</h3><p data-en="Connect individuals and businesses with a school point.">Kết nối cá nhân, doanh nghiệp với điểm trường.</p><a class="btn alt mag" href="../index.html#donghanh" data-en="Connect with us">Liên hệ đồng hành</a></div>
+  <div class="du-head rv">
+    <span class="sea" data-en="5 · The season of love">5 · Mùa yêu thương</span>
+    <h2 id="duTitle" data-en="The wishes of the children">Điều ước của em</h2>
+    <p class="du-lead" data-en="Some things seem very small to us, yet they can open a great chance for a child in the highlands.">Có những điều tưởng chừng rất nhỏ với chúng ta, nhưng lại mở ra một cơ hội lớn đối với một đứa trẻ vùng cao.</p>
+  </div>
+
+  <div class="du-block du-about">
+    <div class="rv">
+      <p data-en="Out there, many families still live in hardship and lack almost everything. Chuyen tren non is here with a mission: to do our small part so that life in difficult areas becomes a little less heavy. We believe every small hand that reaches out to one situation is a small step that helps the country develop and raises public knowledge.">Ngoài kia vẫn còn rất nhiều hoàn cảnh khó khăn, thiếu thốn đủ bề. Chuyện trên non ở đây với sứ mệnh góp một phần nhỏ để cuộc sống nơi những vùng khó khăn bớt nhọc nhằn hơn. Chúng mình tin rằng mỗi bàn tay nhỏ chạm đến một hoàn cảnh cũng là một bước nhỏ giúp đất nước phát triển và dân trí được nâng cao.</p>
+      <p data-en="If you know a student, a class, a school point or a situation that needs help, please send it to Chuyen tren non. We accept proposals about:">Nếu bạn biết một em học sinh, một lớp học, một điểm trường hoặc một hoàn cảnh đang cần được giúp đỡ, hãy gửi cho Chuyện trên non. Chúng mình tiếp nhận đề xuất về:</p>
+      <ul class="du-accept">
+        <li data-en="Books and school supplies">Sách và đồ dùng học tập</li>
+        <li data-en="Scholarships">Học bổng</li>
+        <li data-en="Learning equipment and conditions">Thiết bị và điều kiện học tập</li>
+        <li data-en="Daily necessities (clothes, warm blankets, food, shelter, transport to school...)">Nhu yếu phẩm trong đời sống (quần áo, chăn ấm, thực phẩm, nơi ở, phương tiện đến trường...)</li>
+        <li data-en="Other wishes of the children">Những ước mơ khác của các em</li>
+      </ul>
+      <p data-en="A wish can be for one person, a class, a community or a school point. We will read every wish carefully and get back to you.">Điều ước có thể dành cho một cá nhân, một lớp, một cộng đồng hoặc một điểm trường. Mỗi điều ước chúng mình sẽ đọc thật kỹ và liên hệ lại.</p>
+    </div>
+    <figure class="du-photo rv"><img src="../resources/images/mua/mua-thuong.jpg" width="720" height="540" alt="Các em nhỏ vùng cao" loading="lazy"></figure>
+  </div>
+
+  <div class="du-block rv">
+    <h3 data-en="How is a wish fulfilled?">Điều ước được thực hiện như thế nào?</h3>
+    <div class="du-steps">
+      <div class="du-step"><b class="n">1</b><h4 data-en="Send your wish">Gửi điều ước</h4><p data-en="Fill in the form below: tell us who needs help, where, and what they wish for.">Điền form bên dưới: cho chúng mình biết ai đang cần hỗ trợ, ở đâu và mong ước điều gì.</p></div>
+      <div class="du-step"><b class="n">2</b><h4 data-en="Wait for us to contact you">Chờ chúng mình liên hệ</h4><p data-en="Within 1–3 days, Chuyen tren non will contact you to talk further and confirm the information.">Trong vòng 1-3 ngày, Chuyện trên non sẽ liên hệ lại để trao đổi thêm và xác nhận thông tin với bạn.</p></div>
+      <div class="du-step"><b class="n">3</b><h4 data-en="Call together, fulfil together">Cùng kêu gọi, cùng thực hiện ước mơ</h4><p data-en="Once Chuyen tren non confirms it can be done, we will try to call on the community and kind-hearted donors so every wish comes true. All fundraising is public and transparent on the website and the Chuyen Tren Non fanpage.">Sau khi Chuyện trên non xác nhận có thể thực hiện hóa, chúng mình sẽ cố gắng kêu gọi sự chung tay của cộng đồng và các nhà hảo tâm để từng điều ước được thực hiện. Mọi hoạt động kêu gọi đều được công khai minh bạch trên website và fanpage Chuyện Trên Non.</p></div>
+    </div>
+  </div>
+
+  <div class="du-block rv" id="gui-dieu-uoc">
+    <div class="du-box">
+      <h3 data-en="Wish reception area">Khu vực tiếp nhận điều ước</h3>
+      <p class="du-note" data-en="Please leave your contact details so we can reach you. Do not enter a child's personal contact details.">Hãy để lại thông tin để chúng mình liên hệ với bạn. Vui lòng không nhập thông tin liên hệ riêng của trẻ.</p>
+      <form class="du-form" id="duForm" novalidate>
+        <div class="du-row">
+          <label class="du-field"><span data-en='Full name <i>*</i>'>Họ và tên <i>*</i></span><input type="text" name="name" autocomplete="name" required></label>
+          <label class="du-field"><span data-en='Phone number <i>*</i>'>Số điện thoại <i>*</i></span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" required></label>
+        </div>
+        <label class="du-field"><span data-en="Email">Email</span><input type="email" name="email" autocomplete="email"></label>
+        <label class="du-field"><span data-en='Your wish <i>*</i>'>Điều ước của bạn <i>*</i></span><textarea name="wish" required data-ph-en="Who needs help, where, and what do they wish for?" placeholder="Ai đang cần hỗ trợ, ở đâu và mong ước điều gì?"></textarea></label>
+        <p class="du-err" id="duErr" role="alert"></p>
+        <div><button class="du-btn" type="submit" data-en="Complete the wish">Hoàn thành điều ước</button></div>
+      </form>
+      <div class="du-thanks" id="duThanks" role="status" tabindex="-1" data-en="“Thank you for sending your wish to Chuyen tren non. We will contact you within the next 1–3 days to turn this wish into reality.”">“Cảm ơn bạn đã gửi điều ước đến Chuyện trên non. Chúng mình sẽ liên hệ với bạn trong vòng 1-3 ngày tới để biến điều ước này thành hiện thực nhé.”</div>
+    </div>
+  </div>
+
+  <div class="du-block rv">
+    <div class="du-done">
+      <p class="du-kick" data-en="Chuyen tren non · Season of love">Chuyện trên non · Mùa yêu thương</p>
+      <h3 data-en="Wishes that came true">Những điều ước đã thành hiện thực</h3>
+      <p data-en="We update the results of each support with information and photos cleared for publication, stating clearly which items are done and which needs are still being connected.">Cập nhật kết quả hỗ trợ bằng thông tin, hình ảnh được phép công bố; nêu rõ hạng mục đã hoàn thành và những nhu cầu còn tiếp tục kết nối.</p>
+      <p class="du-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6.4 5.3 5.3 0 0 1 21.3 12C19 16.6 12 21 12 21z"/><path d="m8.5 12 2.4 2.4 4.6-4.8"/></svg><span data-en="From a specific need to a result that can be verified.">Từ nhu cầu cụ thể đến kết quả có thể kiểm chứng.</span></p>
+      <button class="du-btn" type="button" id="duJourneyBtn" aria-expanded="false" aria-controls="duJourney"><span data-en="See the wish journey">Xem hành trình điều ước</span> →</button>
+      <div class="du-journey" id="duJourney">
+        <div class="du-two">
+          <div>
+            <h4 data-en="The journey of a wish">Hành trình của một điều ước</h4>
+            <ol class="du-list">
+              <li><div><b data-en="Received">Đã tiếp nhận</b><span data-en="The wish has been received and given a lookup code. The file is waiting to be reviewed.">Chuyện trên non đã nhận đề xuất và cấp mã tra cứu. Hồ sơ đang chờ được xem xét.</span></div></li>
+              <li><div><b data-en="Being verified">Đang xác minh</b><span data-en="Editors contact the representative or the school to verify the need and related information.">Biên tập viên đang liên hệ người đại diện hoặc nhà trường để kiểm tra nhu cầu và thông tin liên quan.</span></div></li>
+              <li><div><b data-en="More information needed">Cần bổ sung thông tin</b><span data-en="The file lacks some necessary content; the lookup page shows what to add and how.">Hồ sơ còn thiếu nội dung cần thiết. Trang tra cứu hiển thị rõ thông tin cần bổ sung và cách gửi lại.</span></div></li>
+              <li><div><b data-en="Connecting resources">Đang kết nối nguồn lực</b><span data-en="The need has been verified and we are looking for individuals, businesses or organisations to accompany it.">Nhu cầu đã được xác minh và đang tìm cá nhân, doanh nghiệp hoặc tổ chức phù hợp đồng hành.</span></div></li>
+              <li><div><b data-en="Support secured">Đã có nguồn lực hỗ trợ</b><span data-en="A party has confirmed support. Chuyen tren non keeps coordinating the plan and follows the implementation.">Đã có bên xác nhận hỗ trợ. Chuyện Trên Non tiếp tục phối hợp để thống nhất phương án và theo dõi việc thực hiện.</span></div></li>
+              <li><div><b data-en="Completed">Đã hoàn thành</b><span data-en="The support has been delivered and the results are confirmed, ready to be shared with the sender.">Hạng mục hỗ trợ đã được thực hiện và có thông tin xác nhận kết quả phù hợp để cập nhật cho người gửi.</span></div></li>
+            </ol>
+          </div>
+          <div>
+            <h4 data-en="How Chuyen tren non handles each wish">Quy trình xử lý của Chuyện trên non</h4>
+            <ol class="du-list">
+              <li><div><b data-en="Receive">Tiếp nhận</b><span data-en="The system records the proposal and issues a code so the sender can look it up.">Hệ thống ghi nhận đề xuất và cấp mã tiếp nhận để người gửi tra cứu.</span></div></li>
+              <li><div><b data-en="Verify">Xác minh</b><span data-en="Editors contact the representative, confirm the need with the school and check related information.">Biên tập viên liên hệ người đại diện, xác nhận nhu cầu với nhà trường và kiểm tra thông tin liên quan.</span></div></li>
+              <li><div><b data-en="Classify and prioritise">Phân loại và ưu tiên</b><span data-en="We assess urgency, number of beneficiaries, resources needed and feasibility.">Đánh giá tính cấp thiết, số người hưởng lợi, nguồn lực cần thiết và khả năng triển khai.</span></div></li>
+              <li><div><b data-en="Connect resources">Kết nối nguồn lực</b><span data-en="Only verified proposals with consent are made public; they are connected with individuals, businesses or organisations able to help.">Chỉ công khai những đề xuất đã được xác minh và có sự đồng ý phù hợp; kết nối với cá nhân, doanh nghiệp hoặc tổ chức có khả năng hỗ trợ.</span></div></li>
+              <li><div><b data-en="Update results">Cập nhật kết quả</b><span data-en="We inform the sender of progress, keep a record of the result and publish suitable information once the support is delivered.">Thông báo tiến độ cho người gửi, lưu lại kết quả tiếp nhận và công khai thông tin phù hợp sau khi hỗ trợ được thực hiện.</span></div></li>
+            </ol>
+          </div>
+        </div>
+        <p class="du-empty" data-en="The first wishes are still being connected. Results will appear here once information and photos are cleared for publication.">Những điều ước đầu tiên đang được kết nối. Kết quả sẽ được cập nhật tại đây khi có thông tin và hình ảnh được phép công bố.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="du-block" id="dieu-uoc-ket-noi">
+    <div class="rv">
+      <h3 data-en="Wishes being connected">Điều ước đang được kết nối</h3>
+      <p data-en="Each school point has its own needs. Some places need more books to widen a reading corner, some classes need supplies for learning, some students need more conditions to keep going to school.">Mỗi điểm trường có những nhu cầu riêng. Có nơi cần thêm sách để mở rộng góc đọc, có lớp học cần đồ dùng phục vụ việc học, có học sinh cần thêm điều kiện để tiếp tục đến trường.</p>
+      <p data-en="Chuyen Tren Non gathers needs verified by schools and representatives so the community can learn, choose and help in a suitable way. Every wish has specific information about what is needed, the priority level and the connection status, so companions can follow its journey.">Chuyện Trên Non tổng hợp những nhu cầu đã được xác minh từ nhà trường và người đại diện, giúp cộng đồng tìm hiểu, lựa chọn và chung tay hỗ trợ phù hợp. Mỗi điều ước đều có thông tin cụ thể về nội dung cần hỗ trợ, mức độ ưu tiên và tình trạng kết nối để người đồng hành có thể theo dõi hành trình thực hiện.</p>
+    </div>
+    <div class="du-filters" role="group" aria-label="Bộ lọc hồ sơ" data-en-aria="Profile filters">
+      <label class="du-field"><span data-en="By type of support">Theo loại hỗ trợ</span>
+        <select id="fType"><option value="" data-en="All">Tất cả</option><option value="sach" data-en="Books">Sách</option><option value="dodung" data-en="School supplies">Đồ dùng học tập</option><option value="csvc" data-en="Facilities and equipment">Cơ sở vật chất</option><option value="hoctap" data-en="Learning and scholarships">Học tập</option><option value="thietyeu" data-en="Daily necessities">Đồ dùng thiết yếu</option></select></label>
+      <label class="du-field"><span data-en="By area">Theo địa phương</span>
+        <select id="fRegion"><option value="" data-en="All">Tất cả</option></select></label>
+      <label class="du-field"><span data-en="By priority">Theo mức độ ưu tiên</span>
+        <select id="fPrio"><option value="" data-en="All">Tất cả</option><option value="gap" data-en="Urgent">Cần gấp</option><option value="can" data-en="Needed">Đang cần</option><option value="bosung" data-en="Can be added">Có thể bổ sung</option></select></label>
+      <label class="du-field"><span data-en="By connection status">Theo trạng thái kết nối</span>
+        <select id="fStatus"><option value="" data-en="All">Tất cả</option><option value="tim" data-en="Looking for resources">Đang tìm nguồn lực</option><option value="ketnoi" data-en="Connecting">Đang kết nối</option><option value="thongnhat" data-en="Agreed">Đã thống nhất</option><option value="xong" data-en="Completed">Đã hoàn thành</option></select></label>
+    </div>
+    <p class="du-count" id="duCount" aria-live="polite"></p>
+    <div class="du-cards" id="duCards"></div>
   </div>
 </div></section>
+
+<dialog class="du-dlg" id="duHelp" aria-labelledby="duHelpTitle">
+  <form id="duHelpForm" method="dialog" novalidate>
+    <button class="x" type="button" id="duHelpX" aria-label="Đóng" data-en-aria="Close">×</button>
+    <h3 id="duHelpTitle" data-en="I want to help">Tôi muốn hỗ trợ</h3>
+    <div id="duHelpBody" style="display:grid;gap:14px">
+      <label class="du-field"><span data-en="Need profile you want to support">Hồ sơ nhu cầu muốn hỗ trợ</span><input type="text" name="profile" id="hProfile" readonly></label>
+      <div class="du-row">
+        <label class="du-field"><span data-en='Individual / organisation name <i>*</i>'>Tên cá nhân / đơn vị <i>*</i></span><input type="text" name="name" required autocomplete="organization"></label>
+        <label class="du-field"><span data-en='Contact (phone or email) <i>*</i>'>Thông tin liên hệ (SĐT hoặc email) <i>*</i></span><input type="text" name="contact" required autocomplete="email"></label>
+      </div>
+      <fieldset class="du-fs"><legend data-en='Form of support <i>*</i>'>Hình thức hỗ trợ <i>*</i></legend>
+        <label><input type="radio" name="kind" value="hien-vat" checked> <span data-en="In-kind (goods)">Hiện vật</span></label>
+        <label><input type="radio" name="kind" value="kinh-phi"> <span data-en="Funding">Kinh phí</span></label>
+        <label><input type="radio" name="kind" value="chuyen-mon"> <span data-en="Professional resources">Nguồn lực chuyên môn</span></label>
+      </fieldset>
+      <label class="du-field"><span data-en="Quantity, value or expected contribution">Số lượng, giá trị hoặc khả năng đóng góp dự kiến</span><input type="text" name="amount"></label>
+      <label class="du-field"><span data-en="When can you do it?">Thời gian có thể thực hiện</span><input type="text" name="time" data-ph-en="e.g. within November" placeholder="Ví dụ: trong tháng 11"></label>
+      <label class="du-field"><span data-en="Notes">Ghi chú</span><textarea name="note" style="min-height:80px"></textarea></label>
+      <label class="du-chk"><input type="checkbox" name="ok" required><span data-en="I confirm the information is correct and agree that Chuyen tren non may contact me to confirm the support.">Tôi xác nhận thông tin trên là chính xác và đồng ý để Chuyện trên non liên hệ nhằm xác nhận việc hỗ trợ.</span></label>
+      <p class="du-err" id="duHelpErr" role="alert"></p>
+      <div><button class="du-btn" type="submit" data-en="Send support registration">Gửi đăng ký hỗ trợ</button></div>
+    </div>
+    <div class="du-thanks" id="duHelpThanks" role="status" tabindex="-1" data-en="Thank you for wanting to accompany this need. Chuyen tren non will contact you to confirm the details and connect you with the school.">Cảm ơn bạn đã muốn đồng hành cùng nhu cầu này. Chuyện trên non sẽ liên hệ để xác nhận thông tin và kết nối bạn với nhà trường.</div>
+  </form>
+</dialog>
 <div class="tb-div" aria-hidden="true"><i></i><img src="../resources/images/taybac/trong_dong.png" alt=""><i></i></div>
 <div class="pagerbar thuong"><div class="pager in"><a class="btn alt" href="dong.html" data-en="← Winter">← Đông</a><a class="btn" href="../index.html" data-en="Home →">Trang chủ →</a></div></div>
 </main>
@@ -92,5 +215,6 @@
 <script src="../js/config.js?v=2"></script>
 <script src="../js/account.js?v=4"></script>
 <script src="../js/effects.js"></script>
+<script src="../js/dieu-uoc.js?v=1"></script>
 </body>
 </html>
