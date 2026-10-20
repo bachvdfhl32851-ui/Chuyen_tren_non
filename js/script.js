@@ -13,17 +13,24 @@ toys:[[{vi:"Hòn đá",en:"Stones"},{vi:"Ô ăn quan trên nền đất: vài h�
 [{vi:"Con quay",en:"Spinning top"},{vi:"Con quay gỗ do ông chẻ cho, quay thắng bạn là nhất. (Nội dung mẫu)",en:"A wooden top carved by grandpa; longest spin wins. (Sample text)"}],
 [{vi:"Sợi dây",en:"Rope"},{vi:"Nhảy dây, kéo co: cả bản cùng chơi. (Nội dung mẫu)",en:"Jump rope and tug of war: the whole village joins in. (Sample text)"}],
 [{vi:"Con suối",en:"The stream"},{vi:"Tắm suối, bắt cá nhỏ, nghịch nước đến chiều. (Nội dung mẫu)",en:"Splashing, catching tiny fish, playing till evening. (Sample text)"}]],
-stops:[{vi:"Nhà",en:"Home"},{vi:"Đường",en:"Road"},{vi:"Cầu",en:"Bridge"},{vi:"Trường",en:"School"},{vi:"Lớp",en:"Class"},{vi:"Sân chơi",en:"Yard"}],
-walk:[{vi:"Sáng sớm, em cõng cặp ra khỏi nhà.",en:"Early morning, I carry my bag out of the house."},{vi:"Con đường đất dốc, sương còn ướt chân.",en:"A steep dirt road, dew still on my feet."},{vi:"Qua cây cầu tre là gần đến rồi.",en:"Across the bamboo bridge, almost there."},{vi:"Cổng trường mở. Cô đã đứng đợi.",en:"The school gate is open. Teacher is waiting."},{vi:"Tiếng đọc bài vang cả lớp.",en:"The class fills with reading aloud."},{vi:"Ra chơi! Sân trường là của em.",en:"Recess! The yard is mine."}],
+stops:[{vi:"Nhà",en:"Home"},{vi:"Đường",en:"Road"},{vi:"Trường",en:"School"},{vi:"Lớp",en:"Class"},{vi:"Sân chơi",en:"Yard"}],
+walk:[
+[{h:"tin_bai/mua_thu/tin_bai_1_mua_thu.html",vi:"Chiếc cặp sách mới và niềm vui ngày khai trường",en:"The new school bag and the joy of the first day"}],
+[{h:"tin_bai/mua_thu/tin_bai_3_mua_thu.html",vi:"Hành trình tìm chữ: những bước chân của trẻ em vùng cao",en:"The journey to letters: small feet on highland slopes"}],
+[{h:"tin_bai/mua_thu/tin_bai_2_mua_thu.html",vi:"Mái trường giữa núi rừng Phong Nha: nơi chúng em coi là nhà",en:"A school in the Phong Nha forest: the place we call home"}],
+[{h:"tin_bai/mua_thu/tin_bai_4_mua_thu.html",vi:"Bữa cơm dưới chân núi Cà Đam (photo story)",en:"Lunch at the foot of Ca Dam mountain (photo story)"}],
+[{h:"tin_bai/mua_thu/tin_bai_5_mua_thu.html",vi:"Cánh cửa mở ra thế giới từ chiếc thư viện thân thiện",en:"A door to the world: the friendly library"},{h:"tin_bai/mua_thu/tin_bai_6_mua_thu.html",vi:"Thế giới sau trang sách (video)",en:"The world behind the pages (video)"}]],
 folks:[[{vi:"Bà",en:"Grandma"},{vi:"Bà kể về ngày xưa khi núi còn đầy sương. (Nội dung mẫu)",en:"Grandma tells of the old days when mist filled the mountain. (Sample text)"}],
 [{vi:"Mẹ",en:"Mom"},{vi:"Mẹ dệt vải bên bếp, vừa hát vừa dệt. (Nội dung mẫu)",en:"Mom weaves by the fire, singing as she works. (Sample text)"}],
 [{vi:"Ông",en:"Grandpa"},{vi:"Ông đan gùi và kể truyện dân gian. (Nội dung mẫu)",en:"Grandpa weaves baskets and tells folk tales. (Sample text)"}],
 [{vi:"Em",en:"Me"},{vi:"Em ngồi nghe, và mơ có một cuốn sách của riêng mình. (Nội dung mẫu)",en:"I sit and listen, dreaming of a book of my own. (Sample text)"}]]};
 function buildPick(id,list,out,fixed){var box=$(id),o=$(out);box.innerHTML="";list.forEach(function(it,i){var b=document.createElement("button");b.className="toy chip";b.textContent=it[0][lang];b.onclick=function(){$$(".toy",box).forEach(function(x){x.classList.remove("on")});b.classList.add("on");b.dataset.i=i;o.innerHTML="<b class='hand' style='font-size:1.3rem'>"+it[0][lang]+"</b><br>"+it[1][lang];box.dataset.sel=i};box.appendChild(b)});
  if(box.dataset.sel!=null&&box.dataset.sel!==""){var s=$$(".toy",box)[box.dataset.sel];s&&s.click()}else o.textContent=lang==="vi"?"Chạm vào một hình để bắt đầu.":"Tap a picture to begin."}
-function walkUpdate(){var v=+$("#walk").value,i=Math.round(v),p=$("#road path"),L=p.getTotalLength(),pt=p.getPointAtLength(L*v/5);
+function walkUpdate(){var w=$("#walk"),n=D.stops.length-1,v=+w.value,i=Math.round(v),p=$("#road path"),L=p.getTotalLength(),pt=p.getPointAtLength(L*v/n);
  $("#foot").setAttribute("cx",pt.x);$("#foot").setAttribute("cy",pt.y);
- $$("#stops span").forEach(function(s,k){s.classList.toggle("cur",k===i)});$("#walkOut").textContent=D.walk[i][lang];$("#walk").setAttribute("aria-valuetext",D.stops[i][lang])}
+ $$("#stops span").forEach(function(s,k){s.classList.toggle("cur",k===i)});
+ var o=$("#walkOut"),key=i+lang;if(o.dataset.k!==key){o.dataset.k=key;o.innerHTML=D.walk[i].map(function(l){return'<a class="wl" href="'+l.h+'"><span class="wl-t">'+l[lang]+'</span><span class="wl-go" aria-hidden="true">→</span></a>'}).join("")}
+ w.setAttribute("aria-valuetext",D.stops[i][lang])}
 function dyn(){if($("#foods"))buildPick("#foods",D.foods,"#foodOut");if($("#toys"))buildPick("#toys",D.toys,"#toyOut");if($("#folks"))buildPick("#folks",D.folks,"#folkOut");
  if($("#walk")){$("#stops").innerHTML=D.stops.map(function(s){return"<span>"+s[lang]+"</span>"}).join("");walkUpdate()}}
 function apply(){document.documentElement.lang=lang;

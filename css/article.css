@@ -58,3 +58,13 @@
   .art-body{box-shadow:5px 5px 0 var(--chain,#26335f);border-radius:22px}
   .numh .n{min-width:46px;height:46px;font-size:1.2rem}
 }
+
+/* anh ngang rong hon + nguon anh */
+.ph-fig.wide{max-width:720px}
+.ph-fig figcaption .src{display:block;margin-top:.15rem;font-size:.88rem;font-style:normal;opacity:.75}
+
+/* dong tac gia + ngay dang */
+.byline{margin:.2rem 0 0;max-width:none;font:600 1.02rem var(--h);color:var(--ink);opacity:.75}
+.byline time{font-variant-numeric:tabular-nums}
+.byline .by{color:var(--green);opacity:1}
+:root[data-theme=dark] .byline .by{color:var(--gold)}

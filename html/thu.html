@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="../css/footer.css?v=4">
 <link rel="stylesheet" href="../css/theme.css?v=9">
 <link rel="stylesheet" href="../css/taybac.css?v=1">
+<link rel="stylesheet" href="../css/thu.css?v=1">
 </head>
 <body>
 <header>
@@ -31,15 +32,22 @@
   </div>
 </header>
 <main id="top">
-<section id="thu" class="pg">
+<section id="thu" class="pg thu-head">
   <img class="tb-deco d-tr" src="../resources/images/taybac/bong-lua.svg" alt="" aria-hidden="true" loading="lazy"><div class="in">
   <span class="sea" data-en="3 · Autumn: the season of school">3 · Mùa thu: mùa đến lớp</span>
   <h2 data-en="Bag, road, classroom, pages">Cặp em có gì, đường em đi, lớp học của em, chuyện từ trang sách</h2>
+  </div>
+</section>
+<section class="thu-walk">
+  <div class="in">
   <div class="fmt rv"><h3 data-en="WALK TO SCHOOL WITH ME: drag the footprints">ĐI CÙNG EM ĐẾN LỚP: kéo theo dấu chân</h3>
     <svg class="road" id="road" viewBox="0 0 600 120" aria-hidden="true"><path d="M20 90 Q100 10 180 70 T340 60 T480 70 T580 40" fill="none" stroke="#776f33" stroke-width="5" stroke-dasharray="2 14" stroke-linecap="round"/><circle id="foot" r="11" fill="#338341" stroke="#eeb963" stroke-width="4" cx="20" cy="90"/></svg>
-    <input type="range" id="walk" min="0" max="5" step="0.01" value="0" aria-label="Hành trình đến trường">
-    <div class="stops" id="stops"></div><div class="out" id="walkOut"></div></div>
-</div></section>
+    <input type="range" id="walk" min="0" max="4" step="0.01" value="0" aria-label="Hành trình đến trường" data-en-aria="The journey to school">
+    <div class="stops" id="stops"></div>
+    <p class="wl-h" data-en="Related stories">Bài viết liên quan</p>
+    <div class="out walk-links" id="walkOut" aria-live="polite"><a class="wl" href="tin_bai/mua_thu/tin_bai_1_mua_thu.html"><span class="wl-t">Chiếc cặp sách mới và niềm vui ngày khai trường</span><span class="wl-go" aria-hidden="true">→</span></a></div></div>
+  </div>
+</section>
 <div class="tb-div" aria-hidden="true"><i></i><img src="../resources/images/taybac/trong_dong.png" alt=""><i></i></div>
 <div class="pagerbar thu"><div class="pager in"><a class="btn alt" href="ha.html" data-en="← Summer">← Hạ</a><a class="btn" href="dong.html" data-en="Winter →">Đông →</a></div></div>
 </main>
@@ -90,5 +98,6 @@
 <script src="../js/config.js?v=2"></script>
 <script src="../js/account.js?v=4"></script>
 <script src="../js/effects.js"></script>
+<script src="../js/thu.js?v=1"></script>
 </body>
 </html>

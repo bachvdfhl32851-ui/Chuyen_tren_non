@@ -26,7 +26,7 @@
     ["thu", "Đường em đi", "The road I walk", "hành trình đến trường cầu journey bridge"],
     ["thu", "Lớp học của em", "My classroom", "thầy cô bạn bè giờ ra chơi teacher friends recess"],
     ["thu", "Chuyện từ trang sách", "Stories from the pages", "văn hoá đọc sách thư viện reading library"],
-    ["thu", "Đi cùng em đến lớp", "Walk to school with me", "dấu chân nhà đường cầu trường lớp sân chơi footprints"],
+    ["thu", "Đi cùng em đến lớp", "Walk to school with me", "dấu chân nhà đường trường lớp sân chơi footprints bài viết liên quan"],
     ["dong", "Mùa đông: mùa kể chuyện", "Winter: season of storytelling", "bếp lửa bà mẹ tiếng hát làng nghề fire grandma mother songs"],
     ["dong", "Ngồi bên bếp lửa", "Sitting by the fire", "bà mẹ ông tiếng củi cháy câu chuyện stories grandma mom grandpa"],
     ["dong", "Chuyện bên bếp", "Fireside tales", "gia đình món ăn sinh hoạt family food"],

@@ -1,0 +1,53 @@
+/* GHÉ NHÀ EM – nền trang = bg mùa xuân */
+body.xp{background:#3a2c14 url(../resources/images/xuan/bg_xuan.jpg) center top/cover fixed!important}
+body.xp::before{content:"";position:fixed;inset:0;background:rgba(255,246,227,.18);pointer-events:none;z-index:0}
+.xz{--c0:#2f5d3a;--red:#d9384a;--hand:'Itim','Mali',cursive;position:relative;z-index:1;padding:92px 0 60px}
+.xz *{box-sizing:border-box}
+.xz a{text-decoration:none;color:inherit}
+.xz .xh{position:relative;width:min(1160px,94vw);margin:0 auto;aspect-ratio:1.36;overflow:hidden;border-radius:24px;box-shadow:0 14px 50px rgba(40,25,5,.4);border:4px solid #fff6e3;background:#3a2c14}
+.xz .xh>img{position:absolute;left:0;width:100%;height:122%;top:-9.76%;max-width:none}
+.xz .xh::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,246,227,.96) 0,rgba(255,246,227,.9) 28%,rgba(255,246,227,.45) 42%,rgba(255,246,227,0) 56%);pointer-events:none}
+.xz .xi{position:absolute;z-index:6;left:3%;top:4%;width:30%;display:flex;flex-direction:column;align-items:flex-start;color:#2d3a2a}
+.xz .xcrumb{font:1.05rem var(--hand);color:var(--red)}
+.xz .xcrumb u{text-decoration:none;color:#2d3a2a;border-bottom:2px solid var(--red)}
+.xz .xi h1{font:400 clamp(2.1rem,5.4vw,4.2rem)/1.15 'Pacifico',cursive;color:var(--c0);margin:6px 0 8px}
+.xz .xi p{font:400 clamp(.78rem,1.25vw,1rem)/1.5 'Mali',sans-serif;margin:0}
+.xz .xnote{margin:4% 0 0 6%;max-width:78%;padding:12px 18px;border-radius:50%/60%;background:rgba(255,250,240,.95);font:clamp(.78rem,1.3vw,1.05rem)/1.35 var(--hand);text-align:center;transform:rotate(-4deg);box-shadow:0 4px 14px rgba(0,0,0,.15)}
+/* điểm chạm */
+.xz .hsp{position:absolute;z-index:8;width:0;height:0}
+.xz .dot{position:absolute;left:-13px;top:-13px;width:26px;height:26px;border-radius:50%;background:#fff;border:6px solid var(--c);animation:xpl 2s infinite}
+@keyframes xpl{0%{box-shadow:0 0 0 0 var(--c)}70%{box-shadow:0 0 0 14px transparent}}
+.xz .pill{position:absolute;bottom:26px;left:0;transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:8px 16px 8px 10px;border-radius:14px;background:var(--c);color:#fff;white-space:nowrap;box-shadow:0 8px 20px rgba(0,0,0,.28);transition:.2s}
+.xz .pill::after{content:"";position:absolute;left:50%;top:100%;margin-left:-7px;border:7px solid transparent;border-top-color:var(--c)}
+.xz .hsp.r .pill{transform:translateX(-82%)}.xz .hsp.r .pill::after{left:82%}
+.xz .hsp.l .pill{transform:translateX(-18%)}.xz .hsp.l .pill::after{left:18%}
+.xz .pill em{font-style:normal;font-size:1.5rem;width:38px;height:38px;border-radius:9px;background:rgba(255,255,255,.25);display:grid;place-items:center}
+.xz .pill b{display:block;font:700 1.02rem/1.15 'Baloo 2',sans-serif}
+.xz .pill small{display:block;font:.8rem/1.2 var(--hand)}
+.xz .hsp:hover,.xz .hsp.hi{z-index:12}
+.xz .hsp:hover .pill,.xz .hsp.hi .pill{transform:translateX(-50%) translateY(-6px) scale(1.07)}
+.xz .hsp.r:hover .pill,.xz .hsp.r.hi .pill{transform:translateX(-82%) translateY(-6px) scale(1.07)}
+.xz .hsp.l:hover .pill,.xz .hsp.l.hi .pill{transform:translateX(-18%) translateY(-6px) scale(1.07)}
+.xz .hsp>a{position:absolute;left:-60px;top:-85px;width:120px;height:115px;z-index:3}
+/* bài nổi bật – nằm dưới ảnh, không che nền */
+.xz .xf{position:relative;width:min(1160px,94vw);margin:26px auto 0;background:rgba(255,246,227,.94);backdrop-filter:blur(6px);border-radius:24px;padding:16px 18px 14px;box-shadow:0 8px 28px rgba(40,25,5,.3)}
+.xz .xf h2{font:700 1.3rem 'Baloo 2',sans-serif;color:var(--c0);margin:0 0 10px}
+.xz .xrow{display:flex;gap:14px;overflow-x:auto;scroll-behavior:smooth;padding:4px 4px 10px;scrollbar-width:thin}
+.xz .xcd{flex:0 0 calc((100% - 70px)/6);min-width:160px;background:#fff;border-radius:16px;padding:7px;box-shadow:0 3px 10px rgba(80,50,10,.15);border:3px solid transparent;transition:.2s;position:relative;color:#2d3a2a}
+.xz .xcd:hover,.xz .xcd.hi{border-color:var(--red);transform:translateY(-3px)}
+.xz .xth{aspect-ratio:1.45;border-radius:10px;background:url(../resources/images/xuan/bg_xuan.jpg) var(--p)/360% no-repeat}
+.xz .xcd h3{font:.86rem/1.3 var(--hand);margin:8px 34px 4px 4px;min-height:2.6em;color:#2d3a2a}
+.xz .xcd s{position:absolute;right:10px;bottom:10px;width:26px;height:26px;border-radius:50%;border:2px solid var(--red);color:var(--red);display:grid;place-items:center;text-decoration:none;font-size:.9rem}
+.xz .xsc{position:absolute;right:18px;top:-30px;border:0;border-radius:99px;background:#f5b72d;color:#fff;padding:8px 18px;font:1rem var(--hand);cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.xz .xbc{width:min(1160px,94vw);margin:14px auto 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;padding:10px 22px;border-radius:99px;background:rgba(255,246,227,.94);font:.95rem var(--hand);color:#2d3a2a}
+.xz .xbc b{font-weight:400;background:#f3e2b8;border-radius:99px;padding:1px 12px}
+.xz .xbc span:last-child{font:1.05rem 'Pacifico',cursive;color:#e8618c}
+@media(max-width:960px){.xz{padding-top:172px}}
+@media(max-width:620px){.xz{padding-top:232px}.xz .xh{aspect-ratio:1.1}.xz .xi{width:90%}.xz .xh::after{background:linear-gradient(180deg,rgba(255,246,227,.92),rgba(255,246,227,0) 55%)}.xz .pill small,.xz .pill em{display:none}.xz .pill{padding:5px 10px}.xz .pill b{font-size:.78rem}.xz .xnote{display:none}.xz .xcd{flex-basis:70%}.xz .xsc{display:none}}
+@media(min-width:621px) and (max-width:960px){.xz .pill small{display:none}.xz .pill{padding:5px 9px 5px 6px}.xz .pill em{width:28px;height:28px;font-size:1.1rem}.xz .pill b{font-size:.8rem}.xz .xcd{flex-basis:30%}}
+@media(prefers-reduced-motion:reduce){.xz .dot{animation:none}}
+
+/* nen mo sau khoi chu de chu noi hon (giong mau thiet ke) */
+.xz .xi::before{content:"";position:absolute;z-index:-1;inset:-7% -16% -12% -14%;pointer-events:none;border-radius:40px;background:radial-gradient(ellipse at 42% 48%,rgba(255,246,227,.92) 0,rgba(255,246,227,.82) 55%,rgba(255,246,227,0) 100%);-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);-webkit-mask-image:radial-gradient(ellipse at 42% 48%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse at 42% 48%,#000 58%,transparent 100%)}
+.xz .xi h1,.xz .xi p,.xz .xcrumb{text-shadow:0 0 8px rgba(255,246,227,.85),0 0 2px rgba(255,246,227,.9)}
+@media(max-width:620px){.xz .xi::before{inset:-5% -6% -8% -6%}}

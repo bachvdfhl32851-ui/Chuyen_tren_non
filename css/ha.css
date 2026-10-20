@@ -1,0 +1,58 @@
+/* ===== Trang Mua Ha: phong cach trai he (xanh duong - vang - xanh la) ===== */
+#ha.ha-pg{padding:112px 0 0;background:var(--paper);overflow:hidden;--ha-blue:#4a74c0;--ha-green:#2f8a46;--ha-gold:#f0b323;--ha-link:#1d5fa8}
+:root[data-theme=dark] .ha-pg{--ha-link:#9cc4f2}
+.ha-kick{display:inline-block;font:700 .95rem var(--h);letter-spacing:.16em;text-transform:uppercase}
+.ha-top{text-align:center;padding:2rem 5vw 0}
+.ha-top h2,.ha-head h2{font-family:'Pacifico',var(--h);font-weight:400;color:var(--green);font-size:clamp(1.8rem,4.4vw,2.9rem);margin:.35rem 0 .2rem;line-height:1.3}
+:root[data-theme=dark] .ha-top h2,:root[data-theme=dark] .ha-head h2{color:var(--gold)}
+.ha-top p{margin:.4rem auto;opacity:.85}
+.ha-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 1rem;margin-top:1rem}
+.ha-tabs a{display:inline-block;padding:7px 22px;border-radius:99px;background:transparent;font:700 1rem/1.2 var(--h);letter-spacing:.07em;text-transform:uppercase;text-decoration:none;color:var(--ink);opacity:.8;white-space:nowrap;transition:background .2s,color .2s,opacity .2s}
+.ha-tabs a:first-child{color:#8a6200}
+:root[data-theme=dark] .ha-tabs a:first-child{color:var(--gold)}
+.ha-tabs a:hover,.ha-tabs a:focus-visible{opacity:1;background:var(--ha-gold);color:#2e2a12;transform:none;box-shadow:none}
+.ha-tabs a::before,.ha-tabs a::after{content:none!important}
+/* the nghieng */
+.ha-tiles{position:relative;z-index:3;display:flex;justify-content:center;align-items:flex-start;gap:clamp(6px,1.4vw,16px);padding:2.4rem 4vw 0}
+.ha-tile{position:relative;display:block;width:clamp(130px,21vw,250px);aspect-ratio:1/1.12;border-radius:34px;overflow:hidden;border:5px solid #fff;background:#fff;box-shadow:0 10px 24px rgba(0,0,0,.2);transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.ha-tile img{width:100%;height:100%;object-fit:cover;display:block}
+.ha-tile span{position:absolute;inset:auto 0 0 0;padding:34px 8px 14px;text-align:center;background:var(--ha-gold);color:#2e2a12;font:700 clamp(.85rem,1.4vw,1.05rem)/1.2 var(--h);text-transform:uppercase;letter-spacing:.05em;clip-path:polygon(0.0% 5.2%,3.8% 12.0%,7.7% 8.1%,11.5% 13.3%,15.4% 13.8%,19.2% 1.4%,23.1% 0.3%,26.9% 18.4%,30.8% 5.7%,34.6% 5.2%,38.5% 21.9%,42.3% 10.3%,46.2% 18.4%,50.0% 10.5%,53.8% 14.1%,57.7% 3.3%,61.5% 14.0%,65.4% 19.1%,69.2% 11.5%,73.1% 16.3%,76.9% 14.8%,80.8% 1.4%,84.6% 16.7%,88.5% 13.0%,92.3% 6.6%,96.2% 0.7%,100.0% 19.0%,100% 100%,0% 100%)}
+.ha-tile:nth-child(1){rotate:-2deg;margin-top:20px}
+.ha-tile:nth-child(2){rotate:5deg;margin-top:-6px;width:clamp(140px,23vw,272px)}
+.ha-tile:nth-child(3){rotate:-3deg;margin-top:10px}
+.ha-tile:nth-child(4){rotate:2deg;margin-top:24px}
+.ha-tile:hover,.ha-tile:focus-visible{transform:translateY(-8px) scale(1.04)}
+/* dai xanh duong */
+.ha-about{position:relative;margin-top:-95px;padding:170px 5vw 90px;color:#fff;background:linear-gradient(rgba(74,116,192,.9),rgba(60,100,180,.92)),url(../resources/images/anh-bia.jpg) center/cover}
+.ha-torn{position:absolute;left:0;top:-1px;width:100%;height:60px;fill:var(--paper);display:block}
+.ha-ab-in{display:grid;grid-template-columns:minmax(220px,.8fr) 1.2fr;gap:clamp(24px,5vw,70px);align-items:center;max-width:1080px}
+.ha-logo{position:relative;width:min(100%,310px);aspect-ratio:1;margin:0 auto;display:grid;place-items:center}
+.ha-logo i{position:absolute;inset:0;border:4px solid var(--ha-gold);border-radius:34px;rotate:-7deg}
+.ha-logo i+i{rotate:5deg;inset:8px}
+.ha-logo div{position:relative;text-align:center;line-height:1}
+.ha-logo b{display:block;padding-bottom:.28em;font:400 clamp(5rem,12vw,7.5rem)/1 'Pacifico',var(--h);text-shadow:0 4px 0 rgba(0,0,0,.2)}
+.ha-logo span{display:block;margin-top:.9rem;font:700 1.15rem var(--h);letter-spacing:.2em;text-transform:uppercase}
+.ha-logo small{display:block;margin-top:.45rem;font:600 .95rem var(--h);color:var(--ha-gold)}
+.ha-ab-txt h3{font:400 clamp(1.5rem,3vw,2.1rem)/1.3 'Pacifico',var(--h);margin:.3rem 0 .5rem}
+.ha-ab-txt p{max-width:54ch;text-shadow:0 1px 3px rgba(0,0,0,.25)}
+.ha-link{display:inline-block;margin-top:.8rem;font:700 1.05rem var(--h);color:#fff;text-underline-offset:5px}
+.ha-link:hover{color:var(--ha-gold)}
+/* the vom */
+.ha-news{position:relative;padding:3.4rem 5vw 70px}
+.ha-news::after{content:"";position:absolute;left:0;right:0;bottom:0;height:260px;background:var(--ha-green);clip-path:polygon(0.0% 4.1%,2.5% 5.0%,5.0% 8.3%,7.5% 4.2%,10.0% 4.6%,12.5% 5.3%,15.0% 1.7%,17.5% 4.6%,20.0% 5.7%,22.5% 7.1%,25.0% 0.8%,27.5% 2.7%,30.0% 0.8%,32.5% 7.3%,35.0% 6.2%,37.5% 0.4%,40.0% 8.8%,42.5% 8.7%,45.0% 5.9%,47.5% 5.5%,50.0% 1.4%,52.5% 0.1%,55.0% 4.8%,57.5% 0.5%,60.0% 1.7%,62.5% 2.2%,65.0% 0.3%,67.5% 4.2%,70.0% 4.0%,72.5% 7.6%,75.0% 4.7%,77.5% 5.8%,80.0% 4.5%,82.5% 6.0%,85.0% 4.1%,87.5% 2.5%,90.0% 9.0%,92.5% 9.0%,95.0% 7.6%,97.5% 6.4%,100.0% 2.8%,100% 100%,0% 100%);z-index:0}
+.ha-head{position:relative;z-index:1;text-align:center;margin-bottom:1.6rem}
+.ha-arches{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,minmax(0,300px));justify-content:center;gap:clamp(18px,3vw,36px);max-width:1080px;margin:0 auto}
+.ha-arch{display:flex;flex-direction:column;background:var(--card);color:var(--ink);border:5px solid var(--ha-gold);border-radius:150px;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.14);text-align:center}
+.ha-arch>img{width:100%;height:200px;object-fit:cover;display:block}
+.ha-ab{flex:1;padding:16px 22px 44px;display:flex;flex-direction:column;align-items:center}
+.ha-arch{text-decoration:none;transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.ha-arch:hover,.ha-arch:focus-visible{transform:translateY(-8px)}
+.ha-tag{padding:2px 14px;border-radius:99px;background:var(--ha-gold);color:#2e2a12;font:700 .78rem var(--h);letter-spacing:.08em;text-transform:uppercase}
+.ha-ab h3{margin:.55rem 0 .1rem;font:700 1.18rem/1.3 var(--h)}
+.ha-ab p{margin:.3rem 0 .6rem;font-size:.95rem;line-height:1.55}
+.ha-more{margin-top:auto;font:700 .95rem var(--h);color:var(--ha-link)}
+.ha-arch:hover .ha-more{text-decoration:underline;text-underline-offset:3px}
+.ha-news{padding-bottom:90px}
+@media(max-width:900px){.ha-arches{grid-template-columns:minmax(0,320px)}.ha-news::after{height:150px}.ha-ab-in{grid-template-columns:1fr;text-align:center}.ha-ab-txt p{margin-inline:auto}.ha-logo{width:min(70%,240px)}}
+@media(max-width:720px){#ha.ha-pg{padding-top:150px}.ha-tiles{flex-wrap:wrap;max-width:460px;margin:0 auto;gap:14px}.ha-tile,.ha-tile:nth-child(2){width:calc(50% - 10px);margin-top:0}.ha-about{margin-top:-40px;padding-top:110px}}
+@media(prefers-reduced-motion:reduce){.ha-tile{transition:none}}

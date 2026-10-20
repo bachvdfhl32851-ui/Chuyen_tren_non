@@ -1,0 +1,45 @@
+/* =====================================================================
+   MUA THU: video chay duoi khung nen (canh duong dat) + o "Di cung em den lop"
+   ===================================================================== */
+.thu-head{padding-bottom:clamp(12px,2vw,24px)}
+.thu-head,.thu-stage{--thu-bg:color-mix(in srgb,var(--olive) 26%,var(--paper))}
+
+/* video nam duoi, canh duong dat (.road-scene) de len phan duoi video */
+.thu-stage{position:relative;background:var(--thu-bg);overflow:hidden}
+.thu-video{position:relative;aspect-ratio:16/9;min-height:280px;max-height:82vh;width:100%;overflow:hidden;background:#3b4a3a}
+.thu-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.thu-video::before{content:"";position:absolute;inset:0 0 auto 0;height:clamp(40px,6vw,80px);z-index:2;pointer-events:none;background:linear-gradient(to bottom,var(--thu-bg),transparent)}
+.thu-stage .road-scene{margin-top:-100px}
+
+/* nut bat/tat tieng */
+.thu-snd{position:absolute;z-index:6;right:max(14px,3vw);bottom:130px;display:grid;place-items:center;width:46px;height:46px;padding:0;
+  border:3px solid var(--ink);border-radius:50%;background:var(--card);color:var(--ink);cursor:pointer;box-shadow:0 4px 0 rgba(0,0,0,.28);transition:transform .25s cubic-bezier(.3,1.8,.5,1)}
+.thu-snd:hover{transform:scale(1.1) rotate(-6deg)}
+.thu-snd:focus-visible{outline:3px dashed var(--gold);outline-offset:3px}
+.thu-snd svg{width:26px;height:26px}
+.thu-snd .sp{fill:currentColor}
+.thu-snd .on{display:none}
+.thu-snd[aria-pressed=true] .on{display:inline}
+.thu-snd[aria-pressed=true] .off{display:none}
+.thu-stage.no-video .thu-snd{display:none}
+
+/* o dau chan ben duoi video */
+.thu-walk{background:var(--paper);padding-top:clamp(8px,2vw,24px);padding-bottom:clamp(50px,8vw,90px)}
+.thu-walk .fmt{margin-top:0}
+.wl-h{margin:1rem 0 .2rem;font:600 .95rem var(--h);letter-spacing:.06em;text-transform:uppercase;opacity:.7}
+.walk-links{display:grid;gap:10px;align-content:start;margin-top:.4rem}
+.wl{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 18px;text-decoration:none;color:var(--ink);
+  border:2px solid color-mix(in srgb,var(--ink) 22%,transparent);border-radius:14px;background:var(--card);font:600 1.1rem/1.35 var(--h);
+  transition:transform .25s cubic-bezier(.3,1.6,.5,1),background .2s,border-color .2s}
+.wl:hover,.wl:focus-visible{transform:translateX(4px);background:color-mix(in srgb,var(--gold) 28%,var(--card));border-color:var(--ink)}
+.wl:focus-visible{outline:3px dashed var(--green);outline-offset:3px}
+.wl-go{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;font-size:1.2rem;transition:transform .25s}
+.wl:hover .wl-go{transform:translateX(3px)}
+.stops span{cursor:default}
+
+@media(max-width:620px){
+  .thu-video{aspect-ratio:4/3;min-height:240px}
+  .thu-snd{bottom:112px;width:42px;height:42px}
+  .wl{font-size:1rem;padding:10px 14px}
+}
+@media(prefers-reduced-motion:reduce){.wl,.wl-go,.thu-snd{transition:none}}
