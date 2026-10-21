@@ -23,6 +23,7 @@
 <script>(function(){var open=true;try{localStorage.removeItem("ctn-intro-skip");localStorage.removeItem("ctn-intro-never");if(location.search.indexOf("intro=1")>-1)sessionStorage.removeItem("ctn-intro-seen");if(sessionStorage.getItem("ctn-intro-seen")==="1")open=false}catch(e){}if(open)document.documentElement.classList.add("intro-open")})()</script>
 <link rel="stylesheet" href="css/theme.css?v=9">
 <link rel="stylesheet" href="css/taybac.css?v=1">
+<link rel="stylesheet" href="css/v24.css?v=4">
 </head>
 <body>
 <div id="intro" role="dialog" aria-modal="true" aria-labelledby="introTitle">
@@ -70,6 +71,9 @@
     <div class="intro-head rv">
       <h2 data-en="About us">Giới thiệu</h2>
     </div>
+    <figure class="intro-video rv" aria-label="Video giới thiệu Chuyện Trên Non" data-en-aria="Chuyen Tren Non introduction video">
+      <video controls playsinline preload="metadata" poster="resources/mp4/intro.mp4" data-add="resources/mp4/trang_chu.mp4"><source src="resources/mp4/intro.mp4"><span data-en="Your browser does not support video.">Trình duyệt của bạn không hỗ trợ phát video.</span></video>
+    </figure>
     <figure class="collage rv" aria-label="Những khoảnh khắc tuổi thơ của trẻ em vùng cao" data-en-aria="Moments from the childhood of highland children">
       <span class="ph p1"><img src="resources/images/anh_ghep/ghep-a1.jpg" width="389" height="565" alt="Các bạn nhỏ vừa nhảy dây vừa cười rạng rỡ" loading="lazy"></span>
       <span class="ph p2"><img src="resources/images/anh_ghep/ghep-a2.jpg" width="595" height="396" alt="Trẻ em dưới rừng hoa mận trắng" loading="lazy"></span>
@@ -203,9 +207,28 @@
 </div></section>
 </main>
 <footer class="ft">
+  <section class="ft-team" aria-labelledby="ftTeamH">
+    <h3 id="ftTeamH" data-en="Our team">Đội ngũ thực hiện</h3>
+    <div class="ft-team-grid">
+      <figure class="tm">
+        <div class="tm-ph" data-init="T"><img data-add="resources/images/doi_ngu/hoang-phuong-thao.jpg" src="resources/images/doi_ngu/hoang-phuong-thao.jpg" alt="Hoàng Phương Thảo" loading="lazy"></div>
+        <figcaption><b class="tm-name">Hoàng Phương Thảo</b>
+          <blockquote data-en="“Every trip to the highlands leaves us with unforgettable moments: the eager eyes of children receiving a new gift, laughter ringing across the schoolyard, and the waves goodbye. Those moments make every hardship on the road worthwhile, strengthening our resolve to keep walking alongside the children and to carry those beautiful memories with us.”">“Mỗi chuyến đi lên vùng cao đều để lại trong chúng em những điều khó quên. Đó là ánh mắt háo hức khi các em đón nhận món quà mới, là tiếng cười vang giữa sân trường và những cái vẫy tay lúc chia xa. Những khoảnh khắc ấy khiến mọi nhọc nhằn trên đường đi trở nên xứng đáng, để chúng em thêm vững lòng trên hành trình góp sức, đồng hành cùng các em và đem theo những ký ức đẹp đẽ.”</blockquote></figcaption>
+      </figure>
+      <figure class="tm">
+        <div class="tm-ph" data-init="N"><img data-add="resources/images/doi_ngu/nguyen-yen-nhi.jpg" src="resources/images/doi_ngu/nguyen-yen-nhi.jpg" alt="Nguyễn Yến Nhi" loading="lazy"></div>
+        <figcaption><b class="tm-name">Nguyễn Yến Nhi</b>
+          <blockquote data-en="“The clear, bright smiles of the children up in the mountains are what drive us to cross mountains and forests, bringing more opportunities to them. And on that journey, we also bring home joy, beautiful memories and the love of the highlands.”">“Những nụ cười trong veo của các em nhỏ trên non là động lực để chúng em vượt núi, băng rừng, mang thêm những cơ hội đến với các em. Và trên hành trình ấy, chúng em cũng mang theo niềm vui, những kỷ niệm đẹp cùng tình yêu thương từ miền non cao trở về.”</blockquote></figcaption>
+      </figure>
+      <figure class="tm">
+        <div class="tm-ph" data-init="B"><img data-add="resources/images/doi_ngu/vu-duy-bach.jpg" src="resources/images/doi_ngu/vu-duy-bach.jpg" alt="Vũ Duy Bách" loading="lazy"></div>
+        <figcaption><b class="tm-name">Vũ Duy Bách</b><span class="tm-role" data-en="Technical advisor">Cố vấn kỹ thuật</span></figcaption>
+      </figure>
+    </div>
+  </section>
   <div class="ft-in">
     <div class="ft-brand">
-      <p class="ft-name">Chuyện Trên Non</p>
+      <a class="ft-name" href="index.html" aria-label="Chuyện Trên Non"><img src="resources/images/logo.png" width="900" height="540" alt="Chuyện Trên Non"></a>
       <ul class="ft-contact">
         <li><b>Hotline:</b> 037 254 9701</li>
         <li><b>Email:</b> chuyentrennon@gmail.com</li>
@@ -254,5 +277,6 @@
 <script src="js/stats.js?v=1"></script>
 <script src="js/taybac.js?v=1"></script>
 <script src="js/intro.js?v=9"></script>
+<script src="js/placeholder.js?v=1"></script>
 </body>
 </html>

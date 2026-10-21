@@ -1,0 +1,97 @@
+/* =====================================================================
+   V24 - chinh sua theo "Noi dung muon sua doi"
+   (can le 2 ben, tin lien quan, y kien, chan trang, trang chu, 4 mua)
+   ===================================================================== */
+
+/* ---------- 1. Can le hai ben cho noi dung bai viet ---------- */
+.art-body p,.lead p,.na-body p,.na-lead,.na-body li,.nw-feature p,.nw-card p{text-align:justify;text-justify:inter-word;hyphens:manual}
+.art-body p.pull,.art-body .vid-cap,.na-body .na-cap,.na-body p.na-end,.na-end{text-align:center}
+.art-body .byline,.na-fig figcaption{text-align:center}
+
+/* ---------- 2. O trong de ban tu them anh / video ---------- */
+.ph-missing{position:relative!important;background:repeating-linear-gradient(45deg,rgba(80,60,20,.05) 0 12px,rgba(80,60,20,.10) 12px 24px),color-mix(in srgb,var(--gold,#eeb963) 22%,var(--card,#fff))!important}
+.ph-missing>img,.ph-missing>video{opacity:0;visibility:hidden}
+.ph-missing::after{content:attr(data-ph);position:absolute;inset:6px;display:grid;place-items:center;padding:8px;text-align:center;border:2px dashed color-mix(in srgb,var(--ink,#333) 40%,transparent);border-radius:inherit;font:600 .78rem/1.35 var(--b,sans-serif);color:var(--ink,#333);overflow:hidden;word-break:break-all}
+.nw-thumb.ph-missing::after,.wl-th.ph-missing::after{font-size:.66rem;padding:4px}
+.wl-th.ph-missing::after{font-size:.55rem}
+
+/* ---------- 3. Trang chu: video gioi thieu ---------- */
+.intro-grid{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr)}
+.intro-video{position:relative;margin:0;width:100%;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#1d2440;box-shadow:0 10px 28px rgba(58,42,28,.25)}
+.intro-video video{display:block;width:100%;height:100%;object-fit:contain;background:#000}
+.intro-video.ph-missing::after{font-size:.95rem;inset:12px}
+
+/* Gioi thieu: thu nho video + anh ghep, gian cach, de vua doc loi gioi thieu vua xem media */
+.intro-grid{grid-template-columns:minmax(0,.68fr) minmax(0,1.32fr);gap:clamp(24px,4vw,56px)}
+.intro-media{display:flex;flex-direction:column;gap:clamp(22px,3vw,36px);width:100%;max-width:440px}
+.intro-media .intro-head{margin:0}
+.intro-video{border-radius:14px}
+.intro-media .collage{width:88%;margin:0 auto}
+@media(max-width:860px){
+  .intro-grid{grid-template-columns:1fr}
+  .intro-media{max-width:420px;margin:0 auto}
+}
+
+/* ---------- 4. Chan trang: nen anh, logo, doi ngu ---------- */
+footer.ft{background:linear-gradient(rgba(38,51,95,.86),rgba(24,32,66,.94)),url(../resources/images/footer/DSCF2118.jpg) center/cover no-repeat;background-color:var(--chain,#26335f)}
+.ft-name{display:inline-block;margin:0 0 18px;padding:6px 18px;border-radius:16px;background:#fff8e4;line-height:0;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.ft-name img{display:block;height:64px;width:auto}
+.ft-team{max-width:1180px;margin:0 auto 46px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.28)}
+.ft-team>h3{margin:0 0 26px;text-align:center;font:700 clamp(1.5rem,2.8vw,2rem) var(--h)}
+.ft-team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,38px);align-items:stretch}
+.tm{margin:0;display:flex;flex-direction:column;overflow:hidden;border-radius:22px;background:rgba(255,248,228,.10);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(3px)}
+.tm-ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:rgba(255,255,255,.12)}
+.tm-ph img{display:block;width:100%;height:100%;object-fit:cover}
+.tm-ph.ph-missing::after{content:attr(data-init);inset:0;border:0;font:400 4.5rem var(--h);color:rgba(255,255,255,.75)}
+.tm-ph.ph-missing{background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.04))!important}
+.tm figcaption{padding:16px 20px 22px}
+.tm-name{display:block;font:700 1.3rem var(--h);color:#fff}
+.tm-role{display:block;margin-top:2px;font:600 1.02rem var(--h);color:var(--gold,#eeb963)}
+.tm blockquote{margin:.7rem 0 0;padding:0;border:0;background:none;font-size:.94rem;line-height:1.75;font-style:italic;text-align:justify;opacity:.95}
+@media(max-width:860px){.ft-team-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}.tm-ph{aspect-ratio:4/3}}
+
+/* ---------- 5. Mua Xuan: anh moi, banner thap, luoi 2 hang ---------- */
+.xz .xh{aspect-ratio:2.35}
+.xz .xh>img{height:100%;top:0;object-fit:cover;object-position:50% 60%}
+.xz .xi{width:41%;top:5%}
+.xz .xi h1{font-size:clamp(2rem,4.6vw,3.5rem)}
+.xz .xi p{font-size:clamp(.74rem,1.1vw,.95rem);line-height:1.55}
+.xz .xf{margin-top:22px;padding:20px 24px 26px}
+.xz .xf h2{margin:0 0 14px}
+.xz .nw-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.6vw,22px)}
+.xz .nw-card{padding:10px 10px 16px;border-radius:18px}
+.xz .nw-card h4{margin:.7rem 4px 0;font-size:1.05rem;line-height:1.4}
+@media(max-width:980px){.xz .nw-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.xz .xh{aspect-ratio:1.1}.xz .xh>img{object-position:70% 60%}.xz .xf{padding:16px 14px 20px}}
+
+/* ---------- 6. Mua Ha: the anh that (khong chu), du tin bai ---------- */
+.ha-tile{background:#fff}
+.ha-tile.ph-missing::after{font-size:.7rem}
+.ha-arches{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(18px,3vw,32px);max-width:1180px}
+.ha-arch{flex:0 0 min(100%,262px)}
+.ha-pic{position:relative;display:block;width:100%;height:210px;overflow:hidden;background:color-mix(in srgb,var(--gold,#eeb963) 25%,var(--card,#fff))}
+.ha-pic img{display:block;width:100%;height:100%;object-fit:cover}
+.ha-ab h3{font-size:1.1rem}
+.ha-ab p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+@media(max-width:900px){.ha-arches{display:flex}}
+
+/* ---------- 7. Mua Thu: the nho khi keo dau chan + luoi tin bai ---------- */
+.wl{justify-content:flex-start;padding:10px 14px 10px 10px}
+.wl .nw-thumb{flex:none;width:clamp(84px,24%,132px);border-radius:10px}
+.wl .wl-t{flex:1;min-width:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.wl .wl-go{margin-left:auto}
+.thu-news{padding-top:clamp(10px,2vw,24px)}
+
+/* ---------- 8. Tin lien quan + Y kien nam gon trong trang bai ---------- */
+.art .na-sec{margin-top:clamp(34px,5vw,56px)}
+.art .rel b{font-size:1rem}
+.art .cm{max-width:none}
+@media(max-width:620px){.art .rel{grid-template-columns:repeat(2,1fr)}}
+
+/* Anh trang Mua Ha: giu hieu ung khi re chuot du khong con la lien ket */
+div.ha-tile:hover{transform:translateY(-8px) scale(1.04)}
+
+/* Tin bai: dong tac gia + thoi gian, video trong bai */
+.art-by{margin:.2rem 0 1.2rem;font-size:.98rem;opacity:.8}
+.art-by b{font-weight:700}
+.art-video{margin:1.4rem auto;max-width:720px}

@@ -1,6 +1,7 @@
 (function(){
 "use strict";
 var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return[].slice.call((r||document).querySelectorAll(s))};
+var IMG={thu1:"thu-1.jpg",thu2:"thu-2.jpg",thu3:"thu-3.jpg",thu4:"thu-4.jpg",thu5:"thu-5.jpg",thu6:"thu-6.jpg",thu7:"thu-7.jpg"};
 var KEY="ctn-lang",lang="vi";
 try{lang=localStorage.getItem(KEY)==="en"?"en":"vi"}catch(e){}
 /* ---- song ngu ---- */
@@ -17,7 +18,7 @@ stops:[{vi:"Nhà",en:"Home"},{vi:"Đường",en:"Road"},{vi:"Trường",en:"Scho
 walk:[
 [{h:"tin_bai/mua_thu/tin_bai_1_mua_thu.html",vi:"Chiếc cặp sách mới và niềm vui ngày khai trường",en:"The new school bag and the joy of the first day"}],
 [{h:"tin_bai/mua_thu/tin_bai_3_mua_thu.html",vi:"Hành trình tìm chữ: những bước chân của trẻ em vùng cao",en:"The journey to letters: small feet on highland slopes"}],
-[{h:"tin_bai/mua_thu/tin_bai_2_mua_thu.html",vi:"Mái trường giữa núi rừng Phong Nha: nơi chúng em coi là nhà",en:"A school in the Phong Nha forest: the place we call home"}],
+[{h:"tin_bai/mua_thu/tin_bai_2_mua_thu.html",vi:"Mái trường giữa núi rừng Phong Nha: nơi chúng em coi là nhà",en:"A school in the Phong Nha forest: the place we call home"},{h:"tin_bai/mua_thu/tin_bai_7_mua_thu.html",vi:"Để mỗi ngày đến trường của trẻ em thêm an toàn",en:"Making every school day safer for children"}],
 [{h:"tin_bai/mua_thu/tin_bai_4_mua_thu.html",vi:"Bữa cơm dưới chân núi Cà Đam (photo story)",en:"Lunch at the foot of Ca Dam mountain (photo story)"}],
 [{h:"tin_bai/mua_thu/tin_bai_5_mua_thu.html",vi:"Cánh cửa mở ra thế giới từ chiếc thư viện thân thiện",en:"A door to the world: the friendly library"},{h:"tin_bai/mua_thu/tin_bai_6_mua_thu.html",vi:"Thế giới sau trang sách (video)",en:"The world behind the pages (video)"}]],
 folks:[[{vi:"Bà",en:"Grandma"},{vi:"Bà kể về ngày xưa khi núi còn đầy sương. (Nội dung mẫu)",en:"Grandma tells of the old days when mist filled the mountain. (Sample text)"}],
@@ -29,7 +30,7 @@ function buildPick(id,list,out,fixed){var box=$(id),o=$(out);box.innerHTML="";li
 function walkUpdate(){var w=$("#walk"),n=D.stops.length-1,v=+w.value,i=Math.round(v),p=$("#road path"),L=p.getTotalLength(),pt=p.getPointAtLength(L*v/n);
  $("#foot").setAttribute("cx",pt.x);$("#foot").setAttribute("cy",pt.y);
  $$("#stops span").forEach(function(s,k){s.classList.toggle("cur",k===i)});
- var o=$("#walkOut"),key=i+lang;if(o.dataset.k!==key){o.dataset.k=key;o.innerHTML=D.walk[i].map(function(l){return'<a class="wl" href="'+l.h+'"><span class="wl-t">'+l[lang]+'</span><span class="wl-go" aria-hidden="true">→</span></a>'}).join("")}
+ var o=$("#walkOut"),key=i+lang;if(o.dataset.k!==key){o.dataset.k=key;o.innerHTML=D.walk[i].map(function(l){var im=l.h.replace(/^.*tin_bai_(\d)_mua_thu\.html$/,function(a,n){return"resources/images/tin-bai/"+(IMG["thu"+n]||"thu-"+n+".jpg")});return'<a class="wl" href="'+l.h+'"><span class="nw-thumb wl-th"><img class="ph" data-add="'+im+'" src="../'+im+'" alt="" loading="lazy"></span><span class="wl-t">'+l[lang]+'</span><span class="wl-go" aria-hidden="true">→</span></a>'}).join("");if(window.CTN_FB)window.CTN_FB(o)}
  w.setAttribute("aria-valuetext",D.stops[i][lang])}
 function dyn(){if($("#foods"))buildPick("#foods",D.foods,"#foodOut");if($("#toys"))buildPick("#toys",D.toys,"#toyOut");if($("#folks"))buildPick("#folks",D.folks,"#folkOut");
  if($("#walk")){$("#stops").innerHTML=D.stops.map(function(s){return"<span>"+s[lang]+"</span>"}).join("");walkUpdate()}}

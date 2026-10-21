@@ -68,3 +68,8 @@
 .byline time{font-variant-numeric:tabular-nums}
 .byline .by{color:var(--green);opacity:1}
 :root[data-theme=dark] .byline .by{color:var(--gold)}
+
+/* V26: can le hai ben cho noi dung tin bai (thu + dong), tru chu thich/cau trich */
+.art-body p:not(.vid-cap):not(.pull):not(.art-by),
+.na-body p:not(.na-cap):not(.vid-cap):not(.pull){text-align:justify;text-justify:inter-word;hyphens:auto}
+.art-body .lead p{text-align:justify}

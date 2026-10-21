@@ -1,5 +1,5 @@
 /* GHÉ NHÀ EM – nền trang = bg mùa xuân */
-body.xp{background:#3a2c14 url(../resources/images/xuan/bg_xuan.jpg) center top/cover fixed!important}
+body.xp{background:#3a2c14 url(../resources/images/xuan/xuan-tren-ban.jpg) center top/cover fixed!important}
 body.xp::before{content:"";position:fixed;inset:0;background:rgba(255,246,227,.18);pointer-events:none;z-index:0}
 .xz{--c0:#2f5d3a;--red:#d9384a;--hand:'Itim','Mali',cursive;position:relative;z-index:1;padding:92px 0 60px}
 .xz *{box-sizing:border-box}
@@ -35,7 +35,7 @@ body.xp::before{content:"";position:fixed;inset:0;background:rgba(255,246,227,.1
 .xz .xrow{display:flex;gap:14px;overflow-x:auto;scroll-behavior:smooth;padding:4px 4px 10px;scrollbar-width:thin}
 .xz .xcd{flex:0 0 calc((100% - 70px)/6);min-width:160px;background:#fff;border-radius:16px;padding:7px;box-shadow:0 3px 10px rgba(80,50,10,.15);border:3px solid transparent;transition:.2s;position:relative;color:#2d3a2a}
 .xz .xcd:hover,.xz .xcd.hi{border-color:var(--red);transform:translateY(-3px)}
-.xz .xth{aspect-ratio:1.45;border-radius:10px;background:url(../resources/images/xuan/bg_xuan.jpg) var(--p)/360% no-repeat}
+.xz .xth{aspect-ratio:1.45;border-radius:10px;background:url(../resources/images/xuan/xuan-tren-ban.jpg) var(--p)/360% no-repeat}
 .xz .xcd h3{font:.86rem/1.3 var(--hand);margin:8px 34px 4px 4px;min-height:2.6em;color:#2d3a2a}
 .xz .xcd s{position:absolute;right:10px;bottom:10px;width:26px;height:26px;border-radius:50%;border:2px solid var(--red);color:var(--red);display:grid;place-items:center;text-decoration:none;font-size:.9rem}
 .xz .xsc{position:absolute;right:18px;top:-30px;border:0;border-radius:99px;background:#f5b72d;color:#fff;padding:8px 18px;font:1rem var(--hand);cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}

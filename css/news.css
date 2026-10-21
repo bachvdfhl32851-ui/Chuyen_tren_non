@@ -142,3 +142,7 @@
   .rel a:nth-child(5){grid-column:1/-1}
   .na-body p{font-size:1.06rem}
 }
+
+/* V26: can le hai ben cho noi dung tin bai (thu + dong), tru chu thich/cau trich */
+.art-body p:not(.vid-cap):not(.pull):not(.art-by),
+.na-body p:not(.na-cap):not(.vid-cap):not(.pull){text-align:justify;text-justify:inter-word;hyphens:auto}
