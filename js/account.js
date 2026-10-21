@@ -9,7 +9,8 @@
   var norm = function (s) { return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").toLowerCase(); };
   var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
   var P = { home: { vi: "Trang chủ", en: "Home" }, xuan: { vi: "Mùa xuân", en: "Spring" }, ha: { vi: "Mùa hạ", en: "Summer" }, thu: { vi: "Mùa thu", en: "Autumn" }, dong: { vi: "Mùa đông", en: "Winter" }, thuong: { vi: "Mùa yêu thương", en: "Love" } };
-  var F = { home: "index.html", xuan: "xuan.html", ha: "ha.html", thu: "thu.html", dong: "dong.html", thuong: "thuong.html" };
+  P.dieuuoc = P.noi = P.thuong;
+  var F = { home: "index.html", xuan: "xuan.html", ha: "ha.html", thu: "thu.html", dong: "dong.html", thuong: "thuong.html", dieuuoc: "dieu_uoc_cua_em.html", noi: "noi_mot_soi_thuong.html" };
   var RAW = [
     ["home", "Chuyện trên non", "Chuyen tren non", "tuổi thơ trẻ em vùng cao childhood highland children"],
     ["home", "Liên hệ / Đồng hành", "Contact / Join hands", "gửi nhu cầu điểm trường sách học bổng doanh nghiệp tổ chức nhà xuất bản email send needs scholarship donate partner volunteer", "#donghanh"],
@@ -31,11 +32,12 @@
     ["dong", "Ngồi bên bếp lửa", "Sitting by the fire", "bà mẹ ông tiếng củi cháy câu chuyện stories grandma mom grandpa"],
     ["dong", "Chuyện bên bếp", "Fireside tales", "gia đình món ăn sinh hoạt family food"],
     ["dong", "Chuyện người lớn kể", "Stories elders tell", "ký ức truyền thống dân gian memory tradition folk"],
-    ["thuong", "Mùa yêu thương", "The season of love", "hành động đồng hành action support"],
-    ["thuong", "Em đang cần", "What they need", "nhu cầu thực tế needs"],
-    ["thuong", "Gieo một mầm xanh", "Plant a green seed", "tủ sách tri thức hành trình đọc bookshelf reading"],
-    ["thuong", "Trao cơ hội", "Give a chance", "học bổng quỹ scholarship fund"],
-    ["thuong", "Nối một sợi thương", "Tie a thread of care", "kết nối cá nhân doanh nghiệp điểm trường donate connect business"]
+    ["thuong", "Mùa yêu thương", "The season of love", "kết nối sách học bổng hành động đồng hành connection books scholarship action support"],
+    ["thuong", "Câu chuyện trên non", "Stories from the mountains", "tin bài phóng sự phản ánh chân dung tin hoạt động thư viện news reportage reflection portrait library", "#cau-chuyen"],
+    ["dieuuoc", "Điều ước của em", "The children's wishes", "gửi điều ước mong ước nhu cầu thực tế lời nhắn send a wish needs message"],
+    ["noi", "Nối một sợi thương", "Tie a thread of care", "kết nối cá nhân doanh nghiệp điểm trường nhà hảo tâm đăng ký đồng hành donate connect business register"],
+    ["noi", "Quỹ học bổng Chuyện Trên Non", "Chuyen Tren Non Scholarship Fund", "học bổng quỹ trao cơ hội scholarship fund", "#nhung-dieu-muon-trao"],
+    ["noi", "Tủ sách Chuyện Trên Non", "Chuyen Tren Non Bookshelf", "tủ sách góc đọc tri thức gieo mầm bookshelf reading corner", "#nhung-dieu-muon-trao"]
   ];
   var BASE = (function () {
     var s = document.querySelector('script[src*="js/account.js"]');
