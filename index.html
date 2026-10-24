@@ -23,7 +23,7 @@
 <script>(function(){var open=true;try{localStorage.removeItem("ctn-intro-skip");localStorage.removeItem("ctn-intro-never");if(location.search.indexOf("intro=1")>-1)sessionStorage.removeItem("ctn-intro-seen");if(sessionStorage.getItem("ctn-intro-seen")==="1")open=false}catch(e){}if(open)document.documentElement.classList.add("intro-open")})()</script>
 <link rel="stylesheet" href="css/theme.css?v=9">
 <link rel="stylesheet" href="css/taybac.css?v=1">
-<link rel="stylesheet" href="css/v24.css?v=4">
+<link rel="stylesheet" href="css/v24.css?v=20261124">
 </head>
 <body>
 <div id="intro" role="dialog" aria-modal="true" aria-labelledby="introTitle">
@@ -43,7 +43,7 @@
   </div>
 </div>
 <header>
-  <a class="logo" href="index.html" aria-label="Chuyện trên non – về trang chủ" data-en-aria="Chuyen tren non – back to home"><img src="resources/images/logo.png" width="900" height="540" alt="Chuyện trên non"></a>
+  <a class="logo" href="index.html" aria-label="Chuyện trên non – về trang chủ" data-en-aria="Chuyen tren non – back to home"><img class="logo-mark" src="resources/images/logo_bieu_tuong.png" width="700" height="471" alt=""><img class="logo-name" src="resources/images/ten_web.png" width="900" height="154" alt="Chuyện trên non"></a>
   <nav><a href="index.html" data-en="Home">Trang chủ</a><a href="html/xuan.html" data-en="Spring">Mùa Xuân</a><a href="html/ha.html" data-en="Summer">Mùa Hạ</a><a href="html/thu.html" data-en="Autumn">Mùa Thu</a><a href="html/dong.html" data-en="Winter">Mùa Đông</a><a href="html/thuong.html" data-en="Love">Mùa Yêu thương</a></nav>
   <div class="hr">
     <div class="srch"><div class="sfield"><input id="q" type="search" placeholder="Tìm kiếm…" autocomplete="off" aria-label="Tìm kiếm" role="combobox" aria-expanded="false" aria-controls="res"></div><button class="ic sbtn" id="sbtn" type="button" aria-label="Tìm kiếm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg></button><div class="res" id="res" role="listbox" hidden></div></div>
@@ -76,10 +76,7 @@
     </figure>
     <figure class="collage rv" aria-label="Những khoảnh khắc tuổi thơ của trẻ em vùng cao" data-en-aria="Moments from the childhood of highland children">
       <span class="ph p1"><img src="resources/images/anh_ghep/ghep-a1.jpg" width="389" height="565" alt="Các bạn nhỏ vừa nhảy dây vừa cười rạng rỡ" loading="lazy"></span>
-      <span class="ph p2"><img src="resources/images/anh_ghep/ghep-a2.jpg" width="595" height="396" alt="Trẻ em dưới rừng hoa mận trắng" loading="lazy"></span>
-      <span class="ph p3"><img src="resources/images/anh_ghep/ghep-a3.jpg" width="674" height="490" alt="Những đứa trẻ chơi đu trên cây hoa" loading="lazy"></span>
-      <span class="ph p4"><img src="resources/images/anh_ghep/ghep-a4.jpg" width="613" height="432" alt="Các em nhỏ ôm sách Tiếng Việt, cười tươi" loading="lazy"></span>
-      <span class="ph p5"><img src="resources/images/anh_ghep/ghep-a5.jpg" width="613" height="391" alt="Các bạn nhỏ cùng thổi sáo, khèn" loading="lazy"></span>
+      <span class="ph p2"><img src="resources/images/anh_ghep/ghep-a4.jpg" width="613" height="432" alt="Các em nhỏ ôm sách Tiếng Việt, cười tươi" loading="lazy"></span>
     </figure>
   </div>
 
@@ -178,8 +175,8 @@
     <div class="dh-card b rv">
       <p class="dh-close" data-en="Every act of companionship, whether it begins with one book or one small opportunity, can add another beautiful page to a child's story of childhood.">Mỗi sự đồng hành, dù bắt đầu từ một cuốn sách hay một cơ hội nhỏ, đều có thể góp thêm một trang đẹp vào câu chuyện tuổi thơ của em.</p>
       <div class="dh-actions">
-        <a class="btn mag" data-kind="story" href="mailto:chuyentrennon@gmail.com" data-en="Send a story">Gửi câu chuyện</a>
-        <a class="btn blue mag" data-kind="join" href="mailto:chuyentrennon@gmail.com" data-en="Join us">Đồng hành cùng chúng tôi</a>
+        <a class="btn mag" href="html/dieu_uoc_cua_em.html" data-en="Send a story">Gửi câu chuyện</a>
+        <a class="btn blue mag" href="html/noi_mot_soi_thuong.html" data-en="Join us">Đồng hành cùng chúng tôi</a>
       </div>
       <p class="dh-note" id="dhNote" role="status" hidden></p>
     </div>
@@ -205,9 +202,9 @@
     </li>
   </ul>
 </div></section>
+<div class="tb-div tb-sec" aria-hidden="true"><i></i><img src="resources/images/taybac/trong_dong.png" alt=""><i></i></div>
 </main>
-<footer class="ft">
-  <section class="ft-team" aria-labelledby="ftTeamH">
+<section class="team-sec" id="doingu" aria-labelledby="ftTeamH"><div class="team-in">
     <h3 id="ftTeamH" data-en="Our team">Đội ngũ thực hiện</h3>
     <div class="ft-team-grid">
       <figure class="tm">
@@ -225,10 +222,11 @@
         <figcaption><b class="tm-name">Vũ Duy Bách</b><span class="tm-role" data-en="Technical advisor">Cố vấn kỹ thuật</span></figcaption>
       </figure>
     </div>
-  </section>
+  </div></section>
+<footer class="ft">
   <div class="ft-in">
     <div class="ft-brand">
-      <a class="ft-name" href="index.html" aria-label="Chuyện Trên Non"><img src="resources/images/logo.png" width="900" height="540" alt="Chuyện Trên Non"></a>
+      <a class="ft-name" href="index.html" aria-label="Chuyện Trên Non"><img class="ft-logo-mark" src="resources/images/logo_bieu_tuong.png" width="700" height="471" alt=""><img class="ft-logo-name" src="resources/images/ten_web.png" width="900" height="154" alt="Chuyện Trên Non"></a>
       <ul class="ft-contact">
         <li><b>Hotline:</b> 037 254 9701</li>
         <li><b>Email:</b> chuyentrennon@gmail.com</li>
@@ -267,7 +265,7 @@
   </div>
 </footer>
 <button class="top-btn" id="topBtn" aria-label="Về đầu trang" data-en-aria="Back to top">↑</button>
-<script src="js/script.js?v=20261111"></script>
+<script src="js/script.js?v=20261124"></script>
 <script src="js/footer.js?v=3"></script>
 <script src="js/config.js?v=2"></script>
 <script src="js/account.js?v=4"></script>
